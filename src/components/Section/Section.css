@@ -1,0 +1,7 @@
+.section {
+  padding: var(--space-2xl) 0;
+}
+
+.section--alt {
+  background: var(--color-mist);
+}

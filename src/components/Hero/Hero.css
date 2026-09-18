@@ -1,0 +1,49 @@
+.hero {
+  background: linear-gradient(160deg, var(--color-navy) 0%, var(--color-navy-2) 55%, var(--color-teal-dark) 130%);
+  color: #fff;
+  padding: 90px 0 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  right: -120px;
+  top: -120px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(18, 167, 154, 0.35), transparent 70%);
+}
+
+.hero .container {
+  position: relative;
+}
+
+.hero__kicker {
+  font-size: 0.95rem;
+  color: #9fe8de;
+  margin-bottom: 14px;
+  max-width: 640px;
+}
+
+.hero h1 {
+  font-size: var(--fs-hero);
+  line-height: 1.08;
+  margin: 0 0 20px;
+  max-width: 760px;
+}
+
+.hero__lead {
+  font-size: 1.15rem;
+  max-width: 600px;
+  color: #d8e7e6;
+  margin: 0 0 32px;
+}
+
+.hero__ctas {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}

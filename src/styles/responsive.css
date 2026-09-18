@@ -1,0 +1,16 @@
+@import "./variables.css";
+
+/* Shared responsive helpers used across pages/components.
+   Component-specific breakpoints live in each component's own CSS file. */
+
+@media (max-width: 860px) {
+  .container {
+    padding: 0 var(--space-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: var(--space-xl) 0 !important;
+  }
+}

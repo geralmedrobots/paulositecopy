@@ -1,0 +1,20 @@
+.home__grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: var(--space-xl);
+}
+
+.home__grid-2 {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 56px;
+  align-items: center;
+}
+
+@media (max-width: 860px) {
+  .home__grid-4,
+  .home__grid-2 {
+    grid-template-columns: 1fr;
+  }
+}

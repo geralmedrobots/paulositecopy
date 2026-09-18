@@ -1,0 +1,33 @@
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.btn--solid {
+  background: var(--color-teal);
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(18, 167, 154, 0.35);
+}
+
+.btn--solid:hover {
+  background: var(--color-teal-dark);
+  transform: translateY(-2px);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: #fff;
+  border: 1.5px solid rgba(255, 255, 255, 0.55);
+}
+
+.btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
