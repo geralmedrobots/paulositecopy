@@ -2,6 +2,23 @@
 
 Website institucional reconstruído em React, Vite, React Router e CSS próprio. O conteúdo público é preservado em [src/data/content.json](src/data/content.json); imagens, vídeos, fontes e logótipos são servidos localmente.
 
+## Conversão do website Wix para código próprio
+
+Este projeto converte a experiência pública do website da Med Robots, anteriormente disponibilizada através do Wix, numa implementação programada de raiz. A referência é o resultado que o visitante vê: páginas, conteúdo, organização visual, navegação e interações. A aplicação não reutiliza HTML, CSS, JavaScript, componentes, formulários ou runtime gerados pelo Wix e não depende da sua CDN.
+
+A nova estrutura usa React para as páginas e componentes, React Router para a navegação, Vite para desenvolvimento e build, dados centralizados para o conteúdo, CSS próprio para os estilos e assets locais para imagens, vídeos, fontes e logótipos.
+
+As características implementadas incluem:
+
+- 18 páginas, cinco redirecionamentos de URLs históricas e página 404;
+- navbar e footer próprios, menu mobile, CTAs, FAQ, diálogos de encomenda e candidatura;
+- layout responsive, navegação por teclado, estados de foco e suporte a movimento reduzido;
+- metadados SEO por página, Open Graph, sitemap e robots;
+- formulário de contacto com validação e integração preparada, sem simular envios bem-sucedidos;
+- testes automatizados e documentação dos assets, da arquitetura e da preparação para alojamento.
+
+O histórico anterior está preservado pela tag `v1-initial`; a reconstrução base está identificada pela tag `v2-react-vite`. As traduções PT/EN completas e o envio real de contactos dependem, respetivamente, de conteúdo aprovado e de um endpoint de backend.
+
 ## Arranque
 
 Requer Node.js 20.19+ ou 22.12+ e npm. Na pasta do projeto:
