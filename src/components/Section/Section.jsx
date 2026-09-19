@@ -6,7 +6,10 @@ import "./Section.css";
  */
 function Section({ id, alt = false, children, className = "" }) {
   return (
-    <section id={id} className={`section ${alt ? "section--alt" : ""} ${className}`.trim()}>
+    <section
+      id={id}
+      className={`section ${alt ? "section--alt" : ""} ${className}`.trim()}
+    >
       <div className="container">{children}</div>
     </section>
   );

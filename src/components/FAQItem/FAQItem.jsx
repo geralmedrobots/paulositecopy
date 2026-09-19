@@ -1,12 +1,9 @@
 import "./FAQItem.css";
-
-function FAQItem({ question, answer, defaultOpen = false }) {
+export default function FAQItem({ question, answer }) {
   return (
-    <details className="faq-item" open={defaultOpen}>
-      <summary>{question}</summary>
+    <article className="faq-item">
+      <h2>{question}</h2>
       <p>{answer}</p>
-    </details>
+    </article>
   );
 }
-
-export default FAQItem;

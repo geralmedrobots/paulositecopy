@@ -1,34 +1,12 @@
-.faq-item {
-  border-bottom: 1px solid var(--color-line);
-  padding: 20px 0;
-}
-
-.faq-item summary {
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 1.05rem;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.faq-item summary::-webkit-details-marker {
-  display: none;
-}
-
-.faq-item summary::after {
-  content: "+";
-  font-size: 1.4rem;
-  color: var(--color-teal-dark);
-  font-weight: 400;
-}
-
-.faq-item[open] summary::after {
-  content: "\2013";
-}
-
-.faq-item p {
-  color: var(--color-muted);
-  margin: 12px 0 0;
+@layer components {
+  .faq-item {
+    margin-block: 45px;
+  }
+  .faq-item h2 {
+    font-size: 23px;
+    margin: 0 0 20px;
+  }
+  .faq-item p {
+    margin: 0;
+  }
 }

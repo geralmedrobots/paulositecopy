@@ -1,49 +1,79 @@
-import { useState } from "react";
-
-const INITIAL_STATE = {
-  firstName: "",
-  lastName: "",
-  email: "",
-  phone: "",
-  address: "",
-  message: "",
-};
-
-/**
- * Client-side only form state + validation.
- * Submission is abstracted behind `onSubmitSuccess` so a real backend
- * or email service can be wired in later without touching the UI.
- */
-export function useContactForm(onSubmitSuccess) {
-  const [values, setValues] = useState(INITIAL_STATE);
+import { useEffect, useRef, useState } from "react";
+import { fieldsFor, formMessages } from "../data/forms";
+import {
+  configuredEndpoint,
+  isValidEndpoint,
+  submitContact,
+  validateContact,
+} from "../services/contactService";
+export function useContactForm(kind = "contact") {
+  const fields = fieldsFor(kind);
+  const [values, setValues] = useState(() =>
+    Object.fromEntries(fields.map((field) => [field.name, ""])),
+  );
   const [errors, setErrors] = useState({});
-  const [submitted, setSubmitted] = useState(false);
-
+  const [status, setStatus] = useState("idle");
+  const [message, setMessage] = useState("");
+  const pending = useRef(null);
+  const request = useRef(null);
+  const available = isValidEndpoint(configuredEndpoint);
+  useEffect(() => () => pending.current?.abort(), []);
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setValues((prev) => ({ ...prev, [name]: value }));
+    setValues((previous) => ({ ...previous, [name]: value }));
+    setErrors((previous) => ({ ...previous, [name]: undefined }));
+    setStatus("idle");
+    setMessage("");
+    request.current = null;
   };
-
-  const validate = () => {
-    const nextErrors = {};
-    if (!values.firstName.trim()) nextErrors.firstName = "Required";
-    if (!values.lastName.trim()) nextErrors.lastName = "Required";
-    if (!values.email.trim() || !values.email.includes("@")) {
-      nextErrors.email = "Valid email required";
-    }
-    setErrors(nextErrors);
-    return Object.keys(nextErrors).length === 0;
-  };
-
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    if (!validate()) return;
-
-    // Placeholder for a future backend/email integration.
-    setSubmitted(true);
-    setValues(INITIAL_STATE);
-    onSubmitSuccess?.();
+    if (pending.current) return;
+    const nextErrors = validateContact(values, kind);
+    setErrors(nextErrors);
+    if (Object.keys(nextErrors).length) {
+      event.currentTarget.elements
+        .namedItem(Object.keys(nextErrors)[0])
+        ?.focus();
+      return;
+    }
+    if (!available) {
+      setStatus("error");
+      setMessage(formMessages.unavailable);
+      return;
+    }
+    const controller = new AbortController();
+    pending.current = controller;
+    request.current ||= crypto.randomUUID();
+    setStatus("sending");
+    setMessage("");
+    try {
+      await submitContact(values, {
+        kind,
+        signal: controller.signal,
+        requestId: request.current,
+      });
+      if (!controller.signal.aborted) {
+        setStatus("success");
+        setMessage(formMessages.success);
+      }
+    } catch (error) {
+      if (!controller.signal.aborted) {
+        setStatus("error");
+        setMessage(error.message);
+      }
+    } finally {
+      pending.current = null;
+    }
   };
-
-  return { values, errors, submitted, handleChange, handleSubmit };
+  return {
+    fields,
+    values,
+    errors,
+    status,
+    message,
+    available,
+    handleChange,
+    handleSubmit,
+  };
 }

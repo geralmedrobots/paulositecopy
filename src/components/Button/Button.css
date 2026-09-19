@@ -1,33 +1,35 @@
-.btn {
-  display: inline-block;
-  padding: 14px 30px;
-  border-radius: var(--radius-sm);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-  transition: transform 0.15s ease, background 0.15s ease;
-}
-
-.btn--solid {
-  background: var(--color-teal);
-  color: #fff;
-  box-shadow: 0 8px 24px rgba(18, 167, 154, 0.35);
-}
-
-.btn--solid:hover {
-  background: var(--color-teal-dark);
-  transform: translateY(-2px);
-}
-
-.btn--ghost {
-  background: transparent;
-  color: #fff;
-  border: 1.5px solid rgba(255, 255, 255, 0.55);
-}
-
-.btn--ghost:hover {
-  background: rgba(255, 255, 255, 0.1);
+@layer components {
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    min-height: 48px;
+    padding: 13px 34px;
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-family: var(--font-ui);
+    font-size: 18px;
+    text-decoration: none;
+    background: var(--color-teal);
+    color: #fff;
+    transition: background 0.15s;
+  }
+  .btn:hover {
+    background: var(--color-teal-dark);
+  }
+  .btn--dark {
+    background: #333;
+  }
+  .btn--dark:hover {
+    background: #111;
+  }
+  .btn--ghost {
+    color: var(--color-ink);
+    background: transparent;
+    border-color: currentColor;
+  }
+  .btn--ghost:hover {
+    background: var(--color-mist);
+  }
 }
