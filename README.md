@@ -1,59 +1,43 @@
-# Med Robots
+# Med Robots website — v3.0.0
 
-Website institucional reconstruído em React, Vite, React Router e CSS próprio. O conteúdo público é preservado em [src/data/content.json](src/data/content.json); imagens, vídeos, fontes e logótipos são servidos localmente.
+React + Vite reconstruction of the current [Med Robots website](https://www.medrobots.pt/), limited to the website foundation and product presentation. This version is published on a separate GitHub branch and tag so the previous version remains available. Source copy and official project values were collected from the public pages on 19 September 2026. The final content inventory and unresolved editorial issues are in [docs/IMPLEMENTATION_REPORT.md](docs/IMPLEMENTATION_REPORT.md).
 
-## Conversão do website Wix para código próprio
+## Run and verify
 
-Este projeto converte a experiência pública do website da Med Robots, anteriormente disponibilizada através do Wix, numa implementação programada de raiz. A referência é o resultado que o visitante vê: páginas, conteúdo, organização visual, navegação e interações. A aplicação não reutiliza HTML, CSS, JavaScript, componentes, formulários ou runtime gerados pelo Wix e não depende da sua CDN.
-
-A nova estrutura usa React para as páginas e componentes, React Router para a navegação, Vite para desenvolvimento e build, dados centralizados para o conteúdo, CSS próprio para os estilos e assets locais para imagens, vídeos, fontes e logótipos.
-
-As características implementadas incluem:
-
-- 18 páginas, cinco redirecionamentos de URLs históricas e página 404;
-- navbar e footer próprios, menu mobile, CTAs, FAQ, diálogos de encomenda e candidatura;
-- layout responsive, navegação por teclado, estados de foco e suporte a movimento reduzido;
-- metadados SEO por página, Open Graph, sitemap e robots;
-- formulário de contacto com validação e integração preparada, sem simular envios bem-sucedidos;
-- testes automatizados e documentação dos assets, da arquitetura e da preparação para alojamento.
-
-O histórico anterior está preservado pela tag `v1-initial`; a reconstrução base está identificada pela tag `v2-react-vite`. As traduções PT/EN completas e o envio real de contactos dependem, respetivamente, de conteúdo aprovado e de um endpoint de backend.
-
-## Arranque
-
-Requer Node.js 20.19+ ou 22.12+ e npm. Na pasta do projeto:
+Requires Node.js 24 or newer.
 
 ```bash
 npm ci
 npm run dev
-```
-
-A aplicação local abre no endereço apresentado pelo Vite. Para verificar a entrega:
-
-```bash
-npm test
 npm run lint
+npm test
 npm run build
+npm run test:e2e
 npm run preview
 ```
 
-O build cria `dist/`, incluindo entradas HTML com metadados específicos para cada rota, `sitemap.xml` e `robots.txt`.
+`npm run build` creates static HTML for each route, local CSS/JS/assets, a sitemap, a robots file, host redirect rules, and localized 404 pages in `dist/`. `npm run preview` uses the included Node server, which handles direct requests, trailing slashes, redirects, 404 status codes, MIME types, security headers, and video byte ranges. A static host must honor `dist/_redirects` or be configured with equivalent rules. Set the canonical origin in `src/data/site.js` only if the live production domain changes.
 
-## Conteúdo e rotas
+Additional checks:
 
-Existem 18 páginas canónicas: Home, UltraBot, Benefits, Healthcare Industry, The Company, Recruitment, PharmaRobot, FAQ, Contact, Privacy, Cookies, Gender Equality, quatro vagas, Original Home e Solutions. As duas páginas históricas finais conservam conteúdo próprio e não entram no sitemap. Cinco endereços antigos redirecionam para rotas canónicas; o catálogo completo está em [src/data/routes.js](src/data/routes.js).
+```bash
+npm run audit:site
+npm run qa:visual
+npm audit --omit=dev --audit-level=high
+```
 
-A fonte pública está maioritariamente em inglês. PharmaRobot está em português. A alternativa de idioma permanece desativada em cada página porque não existe uma tradução equivalente verificada. A tradução e a alternância contextual precisam de conteúdo aprovado; não há texto traduzido artificialmente.
+`qa:visual` visits every canonical PT/EN page at 375 and 1440 px and writes 64 screenshots plus an index to `artifacts/visual/`. The browser test suite checks all 32 route variants at 375, 390, 414, 768, 1024, 1280, 1440, and 1920 px. It also checks navigation, keyboard behavior, the contact form, media loading, redirects, 404, and WCAG rules with axe-core.
 
-## Formulários
+## Content and routing
 
-O formulário de contacto e o diálogo “Order Now” usam [src/services/contactService.js](src/services/contactService.js). Sem `VITE_CONTACT_ENDPOINT`, mostram o endereço de email e não permitem um envio que aparentaria ter sido concluído. Consulte [.env.example](.env.example) e [docs/deployment.md](docs/deployment.md) para o contrato do serviço. As candidaturas abrem as instruções e o endereço de recrutamento; não enviam automaticamente emails ou anexos.
+`src/data/content.json` stores page copy, `src/data/site.js` stores navigation and contact details, `src/data/routes.js` stores canonical routes and legacy aliases, and `src/data/assets.json` records local image dimensions. English routes live at `/`, Portuguese equivalents at `/pt/`. The source has incomplete language variants; they remain accessible with a visible notice but are excluded from the sitemap and indexing until reviewed. Legacy copies redirect to current routes; their nonduplicated material is classified in the report and archived in `docs/legacy-content.json`.
 
-## Documentação
+## Contact delivery
 
-- [Arquitetura](docs/architecture.md)
-- [Assets e proveniência](docs/assets.json)
-- [Preparação de alojamento](docs/deployment.md)
-- [Validação e limites](docs/qa.md)
+The production form has **no configured endpoint**. It says “SUBMISSION NOT AVAILABLE”, disables submit, and provides the real email and telephone links. It never reports a successful delivery without a server acknowledgement.
 
-Não foi feita publicação, alteração do domínio ou envio de mensagens reais.
+A future approved same-origin backend can be connected by setting `VITE_CONTACT_ENDPOINT` to its actual path at build time. The endpoint must accept POST JSON and return `Content-Type: application/json` with `{ "ok": true }` only after accepting the message. Do not place credentials in Vite environment variables. The browser tests exercise success, failure, loading, validation, and duplicate prevention against a test-only intercepted endpoint.
+
+## Assets
+
+All served images, videos, fonts, and the funding graphic are local in `public/assets/`. The two optional hero videos load only when a visitor chooses to play them. A still image is always present, including when playback fails or motion is reduced. The production pages make no third-party runtime requests.

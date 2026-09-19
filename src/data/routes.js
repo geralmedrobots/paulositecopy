@@ -1,84 +1,50 @@
-export const routes = [
-  { path: "/", key: "home", title: "Home", language: "en" },
-  { path: "/ultrabot", key: "ultrabot", title: "UltraBot", language: "en" },
-  { path: "/benefits", key: "benefits", title: "Benefits", language: "en" },
-  {
-    path: "/healthcare",
-    key: "healthcare",
-    title: "Healthcare Industry",
-    language: "en",
-  },
-  { path: "/thecompany", key: "company", title: "The Company", language: "en" },
-  {
-    path: "/recruitment",
-    key: "recruitment",
-    title: "Recruitment",
-    language: "en",
-  },
-  { path: "/projeto", key: "project", title: "PharmaRobot", language: "pt" },
-  { path: "/faq", key: "faq", title: "FAQ", language: "en" },
-  { path: "/contacts", key: "contact", title: "Contact", language: "en" },
-  { path: "/privacy", key: "privacy", title: "Privacy Policy", language: "en" },
-  {
-    path: "/cookies",
-    key: "cookies",
-    title: "About the Cookies",
-    language: "en",
-  },
-  {
-    path: "/genderequality",
-    key: "genderequality",
-    title: "Gender Equality",
-    language: "en",
-  },
-  {
-    path: "/mechanicalengineer",
-    key: "mechanicalengineer",
-    title: "Mechanical Engineer",
-    language: "en",
-  },
-  {
-    path: "/roboticssoftwareengineer",
-    key: "roboticssoftwareengineer",
-    title: "Robotics Software Engineer",
-    language: "en",
-  },
-  {
-    path: "/seniorroboticsengineer",
-    key: "seniorroboticsengineer",
-    title: "Senior Robotics Engineer",
-    language: "en",
-  },
-  {
-    path: "/computerengineer",
-    key: "computerengineer",
-    title: "Computer Engineer",
-    language: "en",
-  },
-  {
-    path: "/original-home",
-    key: "originalHome",
-    title: "Copy of Home Original",
-    language: "en",
-    noindex: true,
-  },
-  {
-    path: "/solutions",
-    key: "solutions",
-    title: "Copy of Solutions",
-    language: "en",
-    noindex: true,
-  },
+import { jobs } from "./site.js";
+export const pageIds = [
+  "home",
+  "ultrabot",
+  "benefits",
+  "healthcare-industry-1",
+  "thecompany",
+  "recruitment",
+  "projeto",
+  "contacts",
+  "faq",
+  "privacy",
+  "cookies",
+  "genderequality",
+  ...jobs,
 ];
-export const redirects = {
-  "/portugal2030": "/projeto",
-  "/healthcare-industry-1": "/healthcare",
-  "/copy-of-the-company": "/recruitment",
-  "/copy-of-home": "/original-home",
-  "/copy-of-ultrabot": "/solutions",
+export const aliases = {
+  "/copy-of-home": "home",
+  "/copy-of-ultrabot": "ultrabot",
+  "/copy-of-the-company": "recruitment",
+  "/portugal2030": "projeto",
+  "/index.html": "home",
 };
-export function findRoute(pathname) {
-  return routes.find(
-    (route) => route.path === (pathname.replace(/\/+$/, "") || "/"),
-  );
+export function pagePath(id, lang = "en") {
+  return `${lang === "pt" ? "/pt" : ""}/${id === "home" ? "" : id}`;
+}
+export function resolveRoute(input) {
+  const url = new URL(input, "https://www.medrobots.pt");
+  const clean = url.pathname.replace(/\/{2,}/g, "/").replace(/\/$/, "") || "/";
+  const lang =
+    clean === "/pt" ||
+    clean.startsWith("/pt/") ||
+    url.searchParams.get("lang") === "pt"
+      ? "pt"
+      : "en";
+  const bare = clean.replace(/^\/pt(?=\/|$)/, "") || "/";
+  const id = aliases[bare] || (bare === "/" ? "home" : bare.slice(1));
+  const found = pageIds.includes(id);
+  const path = found ? pagePath(id, lang) : url.pathname;
+  return {
+    id: found ? id : "404",
+    lang,
+    path,
+    found,
+    redirect:
+      found && (url.pathname !== path || url.searchParams.has("lang"))
+        ? path + url.hash
+        : null,
+  };
 }

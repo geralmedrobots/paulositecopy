@@ -1,9 +1,0 @@
-@layer components {
-  .feature-card {
-    padding: 20px 0;
-  }
-  .feature-card h3 {
-    font-size: 23px;
-    margin-bottom: 18px;
-  }
-}

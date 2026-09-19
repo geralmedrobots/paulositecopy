@@ -1,1419 +1,1886 @@
 {
-  "home": {
-    "intro": [
-      {
-        "type": "paragraph",
-        "text": "We work to make the greatest technological advances to reach hospitals,"
-      },
-      {
-        "type": "paragraph",
-        "text": "where it can be most beneficial."
-      }
-    ],
-    "tagline": [
-      {
-        "type": "paragraph",
-        "text": "Robotic disinfection solutions for healthcare facilities"
-      }
-    ],
-    "productIntro": [
-      {
-        "type": "paragraph",
-        "text": "Introducing the UltraBot, the ultimate UV-C light disinfection robot engineered for healthcare environments."
-      }
-    ],
-    "safetyTitle": [
-      {
-        "type": "paragraph",
-        "text": "Safety"
-      }
-    ],
-    "safety": [
-      {
-        "type": "paragraph",
-        "text": "Since UV-C light is harmful to humans, it automatically stops UV-C radiation as soon as it detects a person within 3 meters."
-      }
-    ],
-    "navigationTitle": [
-      {
-        "type": "paragraph",
-        "text": "Autonomous Navigation"
-      }
-    ],
-    "navigation": [
-      {
-        "type": "paragraph",
-        "text": "With high precision positioning and mapping, operates autonomously through complex environments without requiring human intervention."
-      }
-    ],
-    "coverageTitle": [
-      {
-        "type": "paragraph",
-        "text": "Critical Zone Coverage"
-      }
-    ],
-    "coverage": [
-      {
-        "type": "paragraph",
-        "text": "Identifies handrails and door knobs accurately and ensures consistent and repeated disinfection across these highly touched areas."
-      }
-    ],
-    "chargingTitle": [
-      {
-        "type": "paragraph",
-        "text": "Set and Forget"
-      }
-    ],
-    "charging": [
-      {
-        "type": "paragraph",
-        "text": "Once the battery needs recharging, it automatically goes to the charging dock and goes back to work once is charged."
-      }
-    ],
-    "innovationTitle": [
-      {
-        "type": "paragraph",
-        "text": "Innovation"
-      }
-    ],
-    "innovation": [
-      {
-        "type": "paragraph",
-        "text": "At Med Robots we are strongly committed to a strategy of constant innovation, where the product, in addition to design and quality, seeks to respond to the trends and needs of the worldwide hospital disinfection market."
-      }
-    ],
-    "objectiveTitle": [
-      {
-        "type": "paragraph",
-        "text": "Objective"
-      }
-    ],
-    "objective": [
-      {
-        "type": "paragraph",
-        "text": "We aim to identify needs in the healthcare disinfection sector that can be met with robotic products. Our mission is to present innovative and differentiating solutions for a safer hospital environment."
-      }
-    ],
-    "activityTitle": [
-      {
-        "type": "paragraph",
-        "text": "What We Do"
-      }
-    ],
-    "activity": [
-      {
-        "type": "paragraph",
-        "text": "At Med Robots we are strongly committed to a strategy of constant innovation, where the product, in addition to design and quality, seeks to respond to the trends and needs of the worldwide hospital market."
-      }
-    ]
+  "en": {
+    "home": {
+      "title": "UltraBot",
+      "lead": "Robotic disinfection solutions for healthcare facilities",
+      "intro": [
+        "We work to make the greatest technological advances to reach hospitals,",
+        "where it can be most beneficial."
+      ],
+      "description": "Introducing the UltraBot, the ultimate UV-C light disinfection robot engineered for healthcare environments.",
+      "sections": [
+        {
+          "title": "Safety",
+          "paragraphs": [
+            "Since UV-C light is harmful to humans, it automatically stops UV-C radiation as soon as it detects a person within 3 meters."
+          ]
+        },
+        {
+          "title": "Autonomous Navigation",
+          "paragraphs": [
+            "With high precision positioning and mapping, operates autonomously through complex environments without requiring human intervention."
+          ]
+        },
+        {
+          "title": "Critical Zone Coverage",
+          "paragraphs": [
+            "Identifies handrails and door knobs accurately and ensures consistent and repeated disinfection across these highly touched areas."
+          ]
+        },
+        {
+          "title": "Set and Forget",
+          "paragraphs": [
+            "Once the battery needs recharging, it automatically goes to the charging dock and goes back to work once is charged."
+          ]
+        },
+        {
+          "title": "Innovation",
+          "paragraphs": [
+            "At Med Robots we are strongly committed to a strategy of constant innovation, where the product, in addition to design and quality, seeks to respond to the trends and needs of the worldwide hospital disinfection market."
+          ]
+        },
+        {
+          "title": "Objective",
+          "paragraphs": [
+            "We aim to identify needs in the healthcare disinfection sector that can be met with robotic products. Our mission is to present innovative and differentiating solutions for a safer hospital environment."
+          ]
+        },
+        {
+          "title": "What We Do",
+          "paragraphs": [
+            "At Med Robots we are strongly committed to a strategy of constant innovation, where the product, in addition to design and quality, seeks to respond to the trends and needs of the worldwide hospital market."
+          ]
+        }
+      ]
+    },
+    "ultrabot": {
+      "title": "UltraBot",
+      "lead": "The technological evolution of an industry as we know it.",
+      "sections": [
+        {
+          "title": "UV-C",
+          "paragraphs": [
+            "Ultraviolet germicidal irradiation (UVGI) is a disinfection method that uses short-wavelength ultraviolet (ultraviolet C or UV-C, commonly referred to wavelengths between 200 – 280 nm) light to kill or inactivate microorganisms by destroying nucleic acids and disrupting their DNA, leaving them unable to perform vital cellular functions."
+          ]
+        },
+        {
+          "title": "What is UV-C disinfection?",
+          "paragraphs": [
+            "UV-C disinfection utilises UV-C light at wave lengths of 200 to 300 nm to destroy the DNA structure of viruses, bacteria, yeasts and fungi in seconds, leaving the microorganisms inactive and unable to spread, preventing further infection. This form of disinfection has a sufficiently high irradiance ensuring the UV-C disinfection is reliable and environmentally friendly."
+          ]
+        },
+        {
+          "title": "Why use a UV-C robot?",
+          "paragraphs": [
+            "There are several options available for facilities and businesses when it comes to UV-C disinfection, but shadowing must be considered. UV-C light can only disinfect surfaces that it can reach which can create problems areas that are shadowed. The Uultrabot is an innovative technology to solve this issue. By combining UV-C disinfection technology with an autonomous robot, it becomes a reliable solution that significantly reduces the likelihood of shadowing."
+          ]
+        },
+        {
+          "title": "How does the Ultrabot work?",
+          "paragraphs": [
+            "The Ultrabot has industry-leading navigation technology, high-precision positioning, memory-based mapping, recording personnel routes, autonomous movement, smart obstacle avoidance, and long-term stable operation in a responsible environment.",
+            "Ultrabot is fully autonomously and will make its way around corridors and rooms and any obstacles disinfecting with UV-C light. This disinfecting light is harmful to humans so as soon as the Ultrabot detects a human 3 meters away, it stops the radiation."
+          ],
+          "image": "ultrabot-2"
+        },
+        {
+          "title": "24 / 7",
+          "paragraphs": [
+            "Modern hospitals operate 24 hours a day, 365 days a year and desinfection processes need to increasingly becoming automated.",
+            "This is in response to changes in lifestyles and demographics which are putting pressure on healthcare facilities as never before. Improving the quality of – and access to – healthcare, while controlling costs as populations age and grow is a major challenge for the healthcare sector.",
+            "Relying on advanced AI and manufacturing technology, deep technical advances have been built in the fields of positioning and navigation, motion control, multi-machine scheduling, perception and obstacle avoidance.",
+            "When the Ultrabot's batteries need to be charged, it automatically returns to the charging dock. When the batteries are ready, goes back to work making healthcare structures safer environments for all."
+          ],
+          "image": "ultrabot-3"
+        }
+      ],
+      "image": "ultrabot-0",
+      "description": "The technological evolution of an industry as we know it."
+    },
+    "benefits": {
+      "title": "Benefits",
+      "lead": "Key points on why is beneficial to include robotics in healthcare facilities.",
+      "sections": [
+        {
+          "title": "Cost",
+          "paragraphs": [
+            "Although it might seem counter-intuitive to spend significant sums of money on robotics in healthcare with the aim of making healthcare universally cheaper, this is exactly what could happen given investment, both in public and private healthcare settings. Robots can improve patient safety and reduce costs in the long-term, meaning both public and private healthcare systems will benefit in terms of patient care and finances. This isn’t to say that efforts won’t need to be made in order to effect such change: the initial capital expenditure on equipment, ongoing maintenance and training will still need to be factored in, as well as upgrading the robots themselves."
+          ],
+          "image": "benefits-1"
+        },
+        {
+          "title": "Sanitation",
+          "paragraphs": [
+            "Perhaps one of the most important aspects of robotics-based healthcare solutions is the reduced incidence of transmitted infection between patients and healthcare professionals. This applies not just to surgery but also to more routine procedures like dispensing pharmaceuticals and disinfecting medical devices and equipment. Robots reduced the role of fomites (inanimate objects which can lead to infection) in the spread of disease while maintaining the quality of the healthcare system. This is an indispensable part of a modern healthcare system."
+          ],
+          "image": "benefits-2"
+        },
+        {
+          "title": "Quality of Life",
+          "paragraphs": [
+            "By maintaining a sterile environment without requiring constant human oversight, Ultrabot not only enhances patient safety but also allows healthcare staff to focus more on patient care, ultimately leading to better overall health outcomes and a more efficient, comfortable healthcare experience. Tirelessly working to eliminate harmful pathogens from surfaces, reducing the risk of infections that can compromise patient health. Its ability to operate independently and navigate complex environments means it can consistently disinfect high-touch areas like door knobs and handrails, which are often missed by manual cleaning."
+          ],
+          "image": "benefits-3"
+        },
+        {
+          "title": "Better Healthcare",
+          "paragraphs": [
+            "Advanced robotics will simply lead to better yet lower-cost health services in the healthcare industry. In fact, it can dramatically alter how people receive healthcare. Lower-cost healthcare enabled by advanced robotics will have a democratising effect for the entire world's population. And by reducing the spread of infection which leads to even further associated costs and by liberating medical staff from repetitive tasks in order to refocus on value-adding services, applying robotics in hospitals for the beginning of a dramatically more affordable system of healthcare for everyone.."
+          ],
+          "image": "benefits-1"
+        }
+      ],
+      "image": "benefits-0",
+      "description": "Key points on why is beneficial to include robotics in healthcare facilities."
+    },
+    "thecompany": {
+      "title": "The Company",
+      "lead": "The values and vision that move us forward everyday.",
+      "sections": [
+        {
+          "title": "Vision",
+          "paragraphs": [
+            "Our strategic vision focuses on developing logistic solutions for the healthcare industry. In a near future, robots will be part of every hospital performing repetitive and heavy duty tasks.",
+            "Our vision is one where robots and healthcare workers work seamlessly, continuously and efficiently with integrated solutions created by our technology."
+          ],
+          "image": "thecompany-1"
+        },
+        {
+          "title": "Values",
+          "paragraphs": [
+            "At Med Robots, our values are quality, capability and innovation. We believe technology holds the key for a better world through continuous improvement. We design, build, test and we innovate — constantly. We know that innovation is not a destination, but a mindset. We care deeply about everything that we do and we don’t compromise in our integrity to develop solutions that are safe and efficient."
+          ]
+        },
+        {
+          "title": "Mission",
+          "paragraphs": [
+            "Hospitals have complex and dense needs and our mission is to alleviate those structures with integrated solutions for a more safe, efficient and cost effective healthcare system.",
+            "Our mission focus is to provide robotic solutions through innovation, research, development, production, leasing and commercialisation of robots for hospital environments."
+          ],
+          "image": "thecompany-1"
+        },
+        {
+          "title": "Goals",
+          "paragraphs": [
+            "Our goal is to improve the stay of patients in healthcare environments by providing top of the line solutions. With our technology hospitals can be more efficient and healthcare workers can focus on the most important: the well being of patients."
+          ]
+        }
+      ],
+      "image": "thecompany-0",
+      "description": "The values and vision that move us forward everyday."
+    },
+    "healthcare-industry-1": {
+      "title": "Healthcare Industry",
+      "lead": "The technological evolution of an industry as we know it.",
+      "sections": [
+        {
+          "title": "Technology",
+          "paragraphs": [
+            "Robotics and digital automation are beginning to sweep through several major industry segments, but perhaps one of the most fascinating is healthcare. Whilst advanced machinery capable of performing the most delicate surgeries was once the domain of science-fiction or simply a goal to aspire towards, the reality is that we are now living in an era where health services are on the verge of being transformed in very exciting ways."
+          ],
+          "image": "healthcare-industry-1-1"
+        },
+        {
+          "title": "A New Era",
+          "paragraphs": [
+            "The COVID-19 pandemic has illustrated the necessity for integrating digital technologies such as robotic process automation (RPA) and artificial intelligence (AI) software into everyday business operations and it is in this regard that hospital robotics forms a timely focus.",
+            "Far from being a competitor to human workers, robots in healthcare are a unique opportunity to combine the abilities of both humans and people to achieve significantly better outcomes for patients."
+          ],
+          "image": "healthcare-industry-1-2"
+        },
+        {
+          "title": "A Better Way",
+          "paragraphs": [
+            "For example, in a typical 200-bed hospital, equipment and waste is transported just under 400 miles per week. It is estimated that the use of automated mobile robots reduces the cost per delivery by 50-80% and reduces the average distance of 3-4 miles that a nurse walks each day. Robots also help to reduce back injuries from lifting in hospital personnel and give nurses more time to concentrate on patient care.",
+            "Robotics are listed as among the nine technologies most likely to transform the financial and operational standards of health services by generating between USD$350bn and $410bn in annual value by 2025."
+          ],
+          "image": "healthcare-industry-1-3"
+        }
+      ],
+      "image": "healthcare-industry-1-0",
+      "description": "The technological evolution of an industry as we know it."
+    },
+    "recruitment": {
+      "title": "Recruitment",
+      "lead": "Join the team",
+      "sections": [
+        {
+          "title": "Working at Med Robots",
+          "paragraphs": [
+            "Working at Med Robots is to be part of a highly innovative, motivated and diversified workgroup. Join us and be part of a daring, inspired and committed team."
+          ],
+          "image": "copy-of-the-company-1"
+        },
+        {
+          "title": "The Team",
+          "paragraphs": [
+            "At Med Robots we are a team working together to achieve the best possible results to improve healthcare logistics.",
+            "Collaborating with colleagues to achieve goals, creating win-win relationships and constructively resolving conflicts is the way we work, always treating people with respect and fostering diversity."
+          ]
+        }
+      ],
+      "opportunities": "OPPORTUNITIES",
+      "location": "Coimbra, Portugal",
+      "image": "copy-of-the-company-0",
+      "description": "Join the team"
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Med Robots is a technology company that creates robotics solutions for the healthcare industry.",
+      "items": [
+        {
+          "question": "What is Med Robots?",
+          "answer": "Med Robots is a technology company that creates robotics solutions for the healthcare industry."
+        },
+        {
+          "question": "What Med Robots do?",
+          "answer": "Med Robots creates autonomous robots to respond to hospital logistical needs."
+        },
+        {
+          "question": "What is hospital logistics?",
+          "answer": "Hospital logistics encompasses all the processes inherent to the operation of an hospital, such as cleaning spaces, supplying food and pharmacists."
+        },
+        {
+          "question": "Why robots in hospitals?",
+          "answer": "Robots can do repetitive tasks autonomously, do not sleep, do not eat and represent an effective response that also reduces costs in hospital logistics."
+        },
+        {
+          "question": "What is the difference between Med Robots and other robotic companies?",
+          "answer": "Med Robots is a robotics company that focuses on hospital logistics needs, creating integrated solutions from scratch for the hospital environment."
+        },
+        {
+          "question": "What kind of robots does Med Robots offer?",
+          "answer": "Med Robots' range of robots comprises decontamination robots, transport robots, and welcome robots."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "PRIVACY POLICY",
+      "description": "All your data will be treated with the utmost confidentiality.",
+      "paragraphs": [
+        "All your data will be treated with the utmost confidentiality.",
+        "MED ROBOTS may request personal information by filling in forms containing personal data. This filling is completely voluntary, and may imply the indication of name, email address, telephone number, among others.",
+        "The personal data collected are processed automatically and have the sole purpose of providing a better service to the user.",
+        "MED ROBOTS reserves the right to transmit to suppliers of goods or services the data about its users in an aggregated form and without revealing any personal data, whenever this produces a clear added value for the user.",
+        "The inclusion of hyperlinks (electronic links) also known as “hyperlinks” or “links” on this website should not be interpreted as an offer by MED ROBOTS of existing content or services on this website, nor as a guarantee of their quality or veracity.",
+        "By accessing this website, the user acknowledges that MED ROBOTS does not exercise any control over the contents and services offered by third parties through the links that may exist on this website, and therefore the use of the information obtained through them is made under full responsibility of the user."
+      ]
+    },
+    "cookies": {
+      "title": "ABOUT COOKIES",
+      "description": "What are Cookies?",
+      "paragraphs": [
+        "What are Cookies?",
+        "Cookies are small text files that are stored on your computer or mobile device when you visit a website.",
+        "MED ROBOTS only uses cookies that are essential for the correct functioning of the website. Cookies are classified as follows:",
+        "Session Cookies: These cookies are automatically deleted when you close your browser (Browser). Permanent Cookies: These cookies remain on your device until they expire (in terms of minutes, days or years since the creation/update of the cookie). Third Party Cookies: These cookies are stored on behalf of third parties.",
+        "Cookies can be managed and deleted through your browser settings (Browser). However, this may prevent all functionality of our website from working properly.",
+        "Most common type of cookies: :",
+        "Essential: These cookies and their respective functionalities are essential for the correct functioning of the websites. Eg authentication cookies.",
+        "Comfort: These cookies allow us to improve the comfort and usability of websites and provide various features. Eg Comfort cookies can be used to store search results, language, text size.",
+        "Performance: These cookies collect information about how you use the websites. They help us, for example, to identify specific areas of our website. In this way, we can adapt the content of our websites more specifically to your needs and thus improve what we have to offer you.",
+        "How can you block the use of Cookies?",
+        "Your browser allows you to manage cookies in the configuration options, and may even block all navigation cookies. However, blocking Cookies will affect your experience as a user.",
+        "Which entities can have access to the information collected by Cookies?",
+        "The information collected by cookies can be used on MED ROBOTS Websites or its subcontractors."
+      ]
+    },
+    "genderequality": {
+      "title": "GENDER EQUALITY",
+      "description": "Norms for implementing a strategy of non-discrimination and equality between men and women.",
+      "paragraphs": [
+        "Norms for implementing a strategy of non-discrimination and equality between men and women.",
+        "I - Global Assessment",
+        "The operation took into account national and european priorities in the field of gender equality.",
+        "Our company has numerical and qualitative indicators disaggregated from gender.",
+        "Our company has a policy of balancing jobs between men and women.",
+        "Although there is a gender disproportionality between graduates / workers in certain areas (for example, production management and control is an area predominantly chosen by the female gender while the product development area has a higher proportion of males), we intend to maintain the proportionality between men and women, that is, if it is possible to hire men and women in equal numbers.",
+        "However, this proportionality is not mandatory in the sense that it cannot be discriminatory, that is, it is necessary to find a worker with professional, socio-relational skills and with the appropriate profile for each workplace, regardless of the gender with which they were born.",
+        "II - Equality in access to employment, work and professional training",
+        "Actions were planned to strengthen gender equality consciousness in the organization, that is, an equal and non-discriminatory management of human resources was promoted.",
+        "The operation promoted equal pay between men and women.",
+        "The basic salary will be established according to the training, skills and position to be performed. Other rewards will be set based on loyalty and performance.",
+        "People are evaluated on the basis of their performance and their contribution to the company's growth, with more responsibilities and higher remuneration being awarded according to this evaluation. Salary or other remunerations will be established in accordance with general objective criteria, namely effort, dedication and work and specific objectives, namely and by way of example, increase in the number of customers, improvement in financial results, proportion of new innovations in the development of products, improvement of creative and problem solving skills, improvement of promoted social skills.",
+        "In other words, people will be selected and evaluated by other criteria, which do not include the person's gender.",
+        "Mechanisms and strategies were established to increase the proportion of under-represented gender in decision-making processes.",
+        "We intend to have jobs filled by men and women, if possible on an equal basis, and to encourage the participation in the education of children, both fathers and mothers.",
+        "Use of non-sexist and inclusive language in internal and external communication.",
+        "III - Promotion of work-life balance",
+        "Actions were planned to facilitate the reconciliation between professional and personal life.",
+        "Workers who collaborate with us will enjoy school support for their children and internal and external training.",
+        "The personal life of each person is respected and efforts are made to reconcile work with the personal interests of employees.",
+        "Employees will be motivated to maintain a healthy balance between the work component and the personal component, so that they feel valued and committed to carrying out their responsibilities.",
+        "The emotional balance of our employees, the maintenance of their physical, psychological and social well-being is fundamental for us and valued.",
+        "Harassment prevention measures were developed, namely unwanted behaviors with the aim of disturbing or embarrassing the person, affecting their dignity or creating an intimidating, hostile, degrading, humiliating or destabilising environment.",
+        "Prevention measures consist of rules of conduct and rules of civilized behavior and respect for others, maintaining the organization and professionalism necessary to carry out education and training functions for people.",
+        "In case of harassment, there must be a mediation process, resulting in an effective and immediate change in behavior. If the behavior persists, this will not be allowed.",
+        "Preventive measures are privileged over exclusion measures. However, making employees aware of the consequences of verbal or physical behavior of harassment, intimidation or hostile behavior is a preventive measure.",
+        "The Administration,"
+      ]
+    },
+    "mechanicalengineer": {
+      "title": "Mechanical Engineer",
+      "description": "We are looking for an insightful, detail-oriented, team-oriented mechanical engineer. You will be responsible for providing technical knowledge about the company's product lines, detailed modeling of robotic systems using Solidworks, improving current designs / processes and much more. You should be a practical person, with your sleeves rolled up in a fast-paced environment.",
+      "blocks": [
+        {
+          "tag": "p",
+          "text": "Introduction"
+        },
+        {
+          "tag": "p",
+          "text": "We are looking for an insightful, detail-oriented, team-oriented mechanical engineer. You will be responsible for providing technical knowledge about the company's product lines, detailed modeling of robotic systems using Solidworks, improving current designs / processes and much more. You should be a practical person, with your sleeves rolled up in a fast-paced environment."
+        },
+        {
+          "tag": "p",
+          "text": "Responsibilities"
+        },
+        {
+          "tag": "p",
+          "text": "Your responsibilities will mainly be in hardware design, technical design, machine assembly and a variety of other systems, functions which also require the following:"
+        },
+        {
+          "tag": "li",
+          "text": "Ability to design and implement solutions from start to finish."
+        },
+        {
+          "tag": "li",
+          "text": "Provide technical supervision for robot service and production teams when necessary."
+        },
+        {
+          "tag": "li",
+          "text": "Evaluate solutions to a set of problems."
+        },
+        {
+          "tag": "li",
+          "text": "Assist in the design of test and execution methods."
+        },
+        {
+          "tag": "li",
+          "text": "Use and maintain various hand tools, measuring tools and other precision testing equipment."
+        },
+        {
+          "tag": "li",
+          "text": "Comply with all safety and health rules and regulations associated with this position and as directed by the supervisor."
+        },
+        {
+          "tag": "li",
+          "text": "Assist the team by conducting problem analysis as needed and taking corrective action."
+        },
+        {
+          "tag": "li",
+          "text": "Creation / development of tools and accessories needed for assembling robots."
+        },
+        {
+          "tag": "li",
+          "text": "Support production line performance and determine steps necessary to achieve optimal line efficiency and product quality."
+        },
+        {
+          "tag": "li",
+          "text": "Assist production engineers in data collection, preparation and analysis, development and maintenance of reports and line configuration changes."
+        },
+        {
+          "tag": "p",
+          "text": "Requirements"
+        },
+        {
+          "tag": "li",
+          "text": "Bachelor's Degree in Mechanical Engineering, Product Engineering or Design Engineering"
+        },
+        {
+          "tag": "li",
+          "text": "3 to 5 years of experience in similar fields"
+        },
+        {
+          "tag": "li",
+          "text": "Experience in Solidworks or related design software"
+        },
+        {
+          "tag": "li",
+          "text": "Excellent communication and organization skills"
+        },
+        {
+          "tag": "li",
+          "text": "Strong notions of geometry and product design"
+        },
+        {
+          "tag": "li",
+          "text": "Production and assembly skill set"
+        },
+        {
+          "tag": "li",
+          "text": "Solid foundation for process improvement with a focus on data accuracy"
+        },
+        {
+          "tag": "p",
+          "text": "What We Offer"
+        },
+        {
+          "tag": "li",
+          "text": "Competitive salary"
+        },
+        {
+          "tag": "li",
+          "text": "Health insurance"
+        },
+        {
+          "tag": "li",
+          "text": "Flexible free time - work and have fun!"
+        },
+        {
+          "tag": "p",
+          "text": "All qualified candidates will receive consideration for employment, regardless of race, color, religion, gender or national origin."
+        },
+        {
+          "tag": "p",
+          "text": "Local"
+        },
+        {
+          "tag": "p",
+          "text": "Coimbra, Portugal"
+        },
+        {
+          "tag": "p",
+          "text": "Type"
+        },
+        {
+          "tag": "p",
+          "text": "Presencial"
+        },
+        {
+          "tag": "p",
+          "text": "Department Product development"
+        },
+        {
+          "tag": "p",
+          "text": "Experience"
+        },
+        {
+          "tag": "p",
+          "text": "3 to 5 years"
+        },
+        {
+          "tag": "p",
+          "text": "Hours"
+        },
+        {
+          "tag": "p",
+          "text": "Full Time"
+        }
+      ],
+      "links": []
+    },
+    "roboticssoftwareengineer": {
+      "title": "Robotics Software Engineer",
+      "description": "We are looking for an exceptionally advanced software engineer with a focus on robotics. You will be responsible for developing solutions for robotic applications. Starting with a strong theoretical framework, you will develop complex algorithms, integrate code in a production-level collaborative software environment, and verify functionality with our robots and user interfaces.",
+      "blocks": [
+        {
+          "tag": "p",
+          "text": "Introduction"
+        },
+        {
+          "tag": "p",
+          "text": "We are looking for an exceptionally advanced software engineer with a focus on robotics. You will be responsible for developing solutions for robotic applications. Starting with a strong theoretical framework, you will develop complex algorithms, integrate code in a production-level collaborative software environment, and verify functionality with our robots and user interfaces."
+        },
+        {
+          "tag": "p",
+          "text": "Responsibilities"
+        },
+        {
+          "tag": "li",
+          "text": "Implement algorithms to be run on robots, both internal to the software system and user-oriented."
+        },
+        {
+          "tag": "li",
+          "text": "Software development including improvement of location, improvement of obstacle avoidance, identification of the cause of software failures, development of new techniques for mapping and navigation."
+        },
+        {
+          "tag": "li",
+          "text": "Ensure that the implementation is carefully thought out, keeping in mind readability, compute, scalability, maintainability, testing, and other best practice considerations."
+        },
+        {
+          "tag": "li",
+          "text": "Proactive when discovering issues with existing configuration."
+        },
+        {
+          "tag": "li",
+          "text": "Software design skills to choose the best solution to solve a given problem."
+        },
+        {
+          "tag": "p",
+          "text": "Requirements"
+        },
+        {
+          "tag": "li",
+          "text": "Bachelor's Degree or higher in Computer Science."
+        },
+        {
+          "tag": "li",
+          "text": "More than 3 years of experience writing production level software."
+        },
+        {
+          "tag": "li",
+          "text": "Working knowledge of multi-threading and object-oriented programming."
+        },
+        {
+          "tag": "li",
+          "text": "Proficiency in data structures and algorithms, particularly graphics-based concepts."
+        },
+        {
+          "tag": "li",
+          "text": "Excellent coding skills in ROS, C++, Python and Bash."
+        },
+        {
+          "tag": "li",
+          "text": "Experience in working with Linux systems."
+        },
+        {
+          "tag": "li",
+          "text": "General understanding of test writing and testable code."
+        },
+        {
+          "tag": "li",
+          "text": "Strong written and verbal communication skills."
+        },
+        {
+          "tag": "li",
+          "text": "Experience in software development for robots or autonomous systems."
+        },
+        {
+          "tag": "li",
+          "text": "Good understanding of robotics concepts such as sensor fusion, location, path planning, FSMs etc."
+        },
+        {
+          "tag": "p",
+          "text": "What We Offer"
+        },
+        {
+          "tag": "li",
+          "text": "Competitive salary"
+        },
+        {
+          "tag": "li",
+          "text": "Health insurance"
+        },
+        {
+          "tag": "li",
+          "text": "Flexible free time - work and have fun!"
+        },
+        {
+          "tag": "p",
+          "text": "All qualified candidates will receive consideration for employment, regardless of race, color, religion, gender or national origin."
+        },
+        {
+          "tag": "p",
+          "text": "Local"
+        },
+        {
+          "tag": "p",
+          "text": "Coimbra, Portugal"
+        },
+        {
+          "tag": "p",
+          "text": "Type"
+        },
+        {
+          "tag": "p",
+          "text": "Presencial"
+        },
+        {
+          "tag": "p",
+          "text": "Department Product development"
+        },
+        {
+          "tag": "p",
+          "text": "Experience"
+        },
+        {
+          "tag": "p",
+          "text": "3 to 5 years"
+        },
+        {
+          "tag": "p",
+          "text": "Hours"
+        },
+        {
+          "tag": "p",
+          "text": "Full Time"
+        }
+      ],
+      "links": []
+    },
+    "seniorroboticsengineer": {
+      "title": "Senior Robotics Engineer",
+      "description": "We are looking for an exceptionally insightful robotics engineer with a total system perspective to expand the functionality and robustness of Med Robots robots. You will be responsible for developing solutions for robotic applications in the real world. Starting with a strong theoretical framework, you'll develop complex algorithms, integrate code in a production-level collaborative software environment, work with sensor integration, and verify functionality with our robots and user interfaces.",
+      "blocks": [
+        {
+          "tag": "p",
+          "text": "Introduction"
+        },
+        {
+          "tag": "p",
+          "text": "We are looking for an exceptionally insightful robotics engineer with a total system perspective to expand the functionality and robustness of Med Robots robots. You will be responsible for developing solutions for robotic applications in the real world. Starting with a strong theoretical framework, you'll develop complex algorithms, integrate code in a production-level collaborative software environment, work with sensor integration, and verify functionality with our robots and user interfaces."
+        },
+        {
+          "tag": "p",
+          "text": "Responsibilities"
+        },
+        {
+          "tag": "li",
+          "text": "Integrate and expand capabilities using LIDAR, SONAR, wheel encoders, IMU and computer vision for autonomous real-world navigation."
+        },
+        {
+          "tag": "li",
+          "text": "Implement algorithms that run on robots, both internal to the software system and customer-facing."
+        },
+        {
+          "tag": "li",
+          "text": "Improve localisation, overcome obstacles, identify the cause of software failures, develop new techniques for mapping and navigation."
+        },
+        {
+          "tag": "li",
+          "text": "Integration of GPS-based navigation features."
+        },
+        {
+          "tag": "li",
+          "text": "Ensure that the implementation is carefully thought out, keeping in mind readability, compute, scalability, maintainability, testing, and other best practice considerations."
+        },
+        {
+          "tag": "li",
+          "text": "Proactive in discovering issues with existing configuration."
+        },
+        {
+          "tag": "li",
+          "text": "Design skills to choose the best solution to solve a given problem."
+        },
+        {
+          "tag": "p",
+          "text": "Requirements"
+        },
+        {
+          "tag": "li",
+          "text": "Master in Robotics Science."
+        },
+        {
+          "tag": "li",
+          "text": "More than 5 years of experience writing production level software / hardware versions."
+        },
+        {
+          "tag": "li",
+          "text": "Proficiency in standalone technology stack."
+        },
+        {
+          "tag": "li",
+          "text": "Excellent coding skills in C++, Python and Bash."
+        },
+        {
+          "tag": "li",
+          "text": "Experience in working with Linux systems."
+        },
+        {
+          "tag": "li",
+          "text": "General understanding for writing tests and testable code."
+        },
+        {
+          "tag": "li",
+          "text": "Strong written and verbal communication skills."
+        },
+        {
+          "tag": "li",
+          "text": "Experience in software development for autonomous systems."
+        },
+        {
+          "tag": "li",
+          "text": "Good understanding of robotics concepts such as sensor fusion, location, path planning, FSMs etc."
+        },
+        {
+          "tag": "p",
+          "text": "What We Offer"
+        },
+        {
+          "tag": "li",
+          "text": "Competitive salary"
+        },
+        {
+          "tag": "li",
+          "text": "Health insurance"
+        },
+        {
+          "tag": "li",
+          "text": "Flexible free time - work and have fun!"
+        },
+        {
+          "tag": "p",
+          "text": "All qualified candidates will receive consideration for employment, regardless of race, color, religion, gender or national origin."
+        },
+        {
+          "tag": "p",
+          "text": "Local"
+        },
+        {
+          "tag": "p",
+          "text": "Coimbra, Portugal"
+        },
+        {
+          "tag": "p",
+          "text": "Type"
+        },
+        {
+          "tag": "p",
+          "text": "Presencial"
+        },
+        {
+          "tag": "p",
+          "text": "Department Product development"
+        },
+        {
+          "tag": "p",
+          "text": "Experience"
+        },
+        {
+          "tag": "p",
+          "text": "5 or more years"
+        },
+        {
+          "tag": "p",
+          "text": "Hours"
+        },
+        {
+          "tag": "p",
+          "text": "Full Time"
+        }
+      ],
+      "links": []
+    },
+    "computerengineer": {
+      "title": "Computer Engineer",
+      "description": "We are looking for an exceptional computer engineer who is insightful and with a total system perspective to expand the functionality and robustness of Med Robots robots. You will be responsible for developing solutions for robotic applications in the real world. Starting with a strong theoretical framework, you'll develop complex algorithms, integrate code into a production-level collaborative software environment, and more.",
+      "blocks": [
+        {
+          "tag": "p",
+          "text": "Introduction"
+        },
+        {
+          "tag": "p",
+          "text": "We are looking for an exceptional computer engineer who is insightful and with a total system perspective to expand the functionality and robustness of Med Robots robots. You will be responsible for developing solutions for robotic applications in the real world. Starting with a strong theoretical framework, you'll develop complex algorithms, integrate code into a production-level collaborative software environment, and more."
+        },
+        {
+          "tag": "p",
+          "text": "Responsibilities"
+        },
+        {
+          "tag": "li",
+          "text": "Develop information systems designing, developing and installing software solutions."
+        },
+        {
+          "tag": "li",
+          "text": "Determine operational feasibility by evaluating analyses, problem definition, requirements and solution development."
+        },
+        {
+          "tag": "li",
+          "text": "Develop software solutions studying information needs, checking with potential users and studying system flow, data usage and work processes."
+        },
+        {
+          "tag": "li",
+          "text": "Investigate problem areas."
+        },
+        {
+          "tag": "li",
+          "text": "Follow the software development lifecycle."
+        },
+        {
+          "tag": "li",
+          "text": "Improved operations by conducting system reviews and recommending changes to policies and procedures."
+        },
+        {
+          "tag": "li",
+          "text": "Protect operations by keeping information confidential."
+        },
+        {
+          "tag": "li",
+          "text": "Provide information through data collection and analysis and summary of development and service issues."
+        },
+        {
+          "tag": "p",
+          "text": "Requirements"
+        },
+        {
+          "tag": "li",
+          "text": "Bachelor's and/or Master's Degree in Computer Science, or Computer Engineering"
+        },
+        {
+          "tag": "li",
+          "text": "More than 2 years of professional experience in software development"
+        },
+        {
+          "tag": "li",
+          "text": "ROS knowledge"
+        },
+        {
+          "tag": "li",
+          "text": "Java or C++ proficiency and object-oriented design skills"
+        },
+        {
+          "tag": "li",
+          "text": "Application architecture and design patterns"
+        },
+        {
+          "tag": "li",
+          "text": "Experience serving as a technical lead across the entire software development lifecycle, from conception, architecture definition, detailed design, planning, implementation, testing and documentation, delivery and maintenance."
+        },
+        {
+          "tag": "li",
+          "text": "Professional software engineering knowledge and best practices for the entire software development lifecycle, including coding standards, code reviews, source management, build processes, testing, and operations."
+        },
+        {
+          "tag": "li",
+          "text": "Experience in developing distributed / scalable systems and high-volume transaction applications"
+        },
+        {
+          "tag": "p",
+          "text": "What We Offer"
+        },
+        {
+          "tag": "li",
+          "text": "Competitive salary"
+        },
+        {
+          "tag": "li",
+          "text": "Health insurance"
+        },
+        {
+          "tag": "li",
+          "text": "Flexible free time - work and have fun!"
+        },
+        {
+          "tag": "p",
+          "text": "All qualified candidates will receive consideration for employment, regardless of race, color, religion, gender or national origin."
+        },
+        {
+          "tag": "p",
+          "text": "Local"
+        },
+        {
+          "tag": "p",
+          "text": "Coimbra, Portugal"
+        },
+        {
+          "tag": "p",
+          "text": "Type"
+        },
+        {
+          "tag": "p",
+          "text": "Presencial"
+        },
+        {
+          "tag": "p",
+          "text": "Department Product development"
+        },
+        {
+          "tag": "p",
+          "text": "Experience"
+        },
+        {
+          "tag": "p",
+          "text": "2 or more years"
+        },
+        {
+          "tag": "p",
+          "text": "Hours"
+        },
+        {
+          "tag": "p",
+          "text": "Full Time"
+        }
+      ],
+      "links": []
+    },
+    "contacts": {
+      "title": "Contact",
+      "description": "Thank you for getting in touch with us.",
+      "intro": [
+        "Thank you for getting in touch with us.",
+        "We will get back to you as soon as possible."
+      ],
+      "success": "Thanks for submitting!",
+      "fields": [
+        "First Name",
+        "Last Name",
+        "Email",
+        "Phone",
+        "Address",
+        "Type your message here"
+      ],
+      "submit": "Submit"
+    },
+    "projeto": {
+      "title": "PharmaRobot",
+      "lead": "Robô logístico de distribuição de fármacos urgentes",
+      "description": "Robô logístico de distribuição de fármacos urgentes",
+      "paragraphs": [
+        "Referência | Código da Operação: COMPETE2030-FEDER-01478600, Operação n.º18433",
+        "Acrónimo: PharmaRobot",
+        "Apresentação",
+        "Objetivo temático: Desenvolvimento de um robô autónomo que automatiza a entrega de medicamentos, reduzindo tempos de espera e minimizando erros humanos. Alinhado com as necessidades de modernização do setor da saúde, o PharmaRobot visa integrar tecnologia avançada para otimizar os processos hospitalares e melhorar a qualidade dos cuidados prestados aos pacientes.",
+        "Área Científica: Engenharia Eletrotécnica e de Computadores e Enhegharia Informática",
+        "Síntese do Projeto: O projeto PharmaRobot tem como objetivo melhorar a eficiência hospitalar através de um robô autónomo que distribui medicamentos urgentes de forma rápida e precisa, reduzindo o tempo de espera e minimizando erros humanos. A solução proposta permitirá uma gestão mais eficaz dos recursos, libertando profissionais para tarefas críticas e garantindo maior segurança e qualidade nos cuidados de saúde.",
+        "Área de intervenção: Nacional",
+        "Investigador Responsável na UC: Urbano Nunes e João Macedo",
+        "Unidade Orgânica UC: Departamento de engenharia Eletrotécnica e de Computadores e Departamento de Engenharia Informática - FCTUC",
+        "Instituições participantes no Projeto:",
+        "- MED ROBOTS ROBOTIC TECHNOLOGY AND INNOVATION, LDA",
+        "-UNIVERSIDADE DE COIMBRA",
+        "- UNIDADE LOCAL DE SAÚDE DE COIMBRA, E.P.E",
+        "- ESCOLA SUPERIOR DE ENFERMAGEM DE COIMBRA",
+        "Instituição Financiadora/Gestora: Agência para o Desenvolvimento e Coesão",
+        "Programa de Financiamento: PT2030 - MPr-2023-07 - Aviso SIID - I&D Empresarial - Operações em Copromoção – Outros territórios",
+        "Período de execução: 01/03/2025 a 29/02/2028",
+        "Custo total elegível (EUR): 799 532,80 €",
+        "Apoio financeiro da UE: através do FEDER: 679 602,88 €",
+        "Técnico do Projeto: Sérgio Ramalho - {email}",
+        "Contacto: {mobileInternational}"
+      ],
+      "originalPt": []
+    }
   },
-  "ultrabot": {
-    "intro": [
-      {
-        "type": "paragraph",
-        "text": "The technological evolution of an industry as we know it."
-      }
-    ],
-    "title": [
-      {
-        "type": "paragraph",
-        "text": "UltraBot"
-      }
-    ],
-    "uvTitle": [
-      {
-        "type": "paragraph",
-        "text": "UV-C"
-      }
-    ],
-    "uv": [
-      {
-        "type": "paragraph",
-        "text": "Ultraviolet germicidal irradiation (UVGI) is a disinfection method that uses short-wavelength ultraviolet (ultraviolet C or UV-C, commonly referred to wavelengths between 200 – 280 nm) light to kill or inactivate microorganisms by destroying nucleic acids and disrupting their DNA, leaving them unable to perform vital cellular functions."
-      }
-    ],
-    "disinfectionTitle": [
-      {
-        "type": "paragraph",
-        "text": "What is UV-C disinfection?"
-      }
-    ],
-    "disinfection": [
-      {
-        "type": "paragraph",
-        "text": "UV-C disinfection utilises UV-C light at wave lengths of 200 to 300 nm to destroy the DNA structure of viruses, bacteria, yeasts and fungi in seconds, leaving the microorganisms inactive and unable to spread, preventing further infection. This form of disinfection has a sufficiently high irradiance ensuring the UV-C disinfection is reliable and environmentally friendly."
-      }
-    ],
-    "whyTitle": [
-      {
-        "type": "paragraph",
-        "text": "Why use a UV-C robot?"
-      }
-    ],
-    "why": [
-      {
-        "type": "paragraph",
-        "text": "There are several options available for facilities and businesses when it comes to UV-C disinfection, but shadowing must be considered. UV-C light can only disinfect surfaces that it can reach which can create problems areas that are shadowed. The Uultrabot is an innovative technology to solve this issue. By combining UV-C disinfection technology with an autonomous robot, it becomes a reliable solution that significantly reduces the likelihood of shadowing."
-      }
-    ],
-    "howTitle": [
-      {
-        "type": "paragraph",
-        "text": "How does the Ultrabot work?"
-      }
-    ],
-    "how": [
-      {
-        "type": "paragraph",
-        "text": "The Ultrabot has industry-leading navigation technology, high-precision positioning, memory-based mapping, recording personnel routes, autonomous movement, smart obstacle avoidance, and long-term stable operation in a responsible environment."
-      },
-      {
-        "type": "paragraph",
-        "text": "Ultrabot is fully autonomously and will make its way around corridors and rooms and any obstacles disinfecting with UV-C light. This disinfecting light is harmful to humans so as soon as the Ultrabot detects a human 3 meters away, it stops the radiation."
-      }
-    ],
-    "continuousTitle": [
-      {
-        "type": "paragraph",
-        "text": "24 / 7"
-      }
-    ],
-    "continuous": [
-      {
-        "type": "paragraph",
-        "text": "Modern hospitals operate 24 hours a day, 365 days a year and desinfection processes need to increasingly becoming automated."
-      },
-      {
-        "type": "paragraph",
-        "text": "This is in response to changes in lifestyles and demographics which are putting pressure on healthcare facilities as never before. Improving the quality of – and access to – healthcare, while controlling costs as populations age and grow is a major challenge for the healthcare sector."
-      },
-      {
-        "type": "paragraph",
-        "text": "Relying on advanced AI and manufacturing technology, deep technical advances have been built in the fields of positioning and navigation, motion control, multi-machine scheduling, perception and obstacle avoidance."
-      },
-      {
-        "type": "paragraph",
-        "text": "When the Ultrabot's batteries need to be charged, it automatically returns to the charging dock. When the batteries are ready, goes back to work making healthcare structures safer environments for all."
-      }
-    ]
-  },
-  "benefits": {
-    "intro": [
-      {
-        "type": "paragraph",
-        "text": "Key points on why is beneficial to include robotics in healthcare facilities."
-      }
-    ],
-    "title": [
-      {
-        "type": "paragraph",
-        "text": "Benefits"
-      }
-    ],
-    "costTitle": [
-      {
-        "type": "paragraph",
-        "text": "Cost"
-      }
-    ],
-    "cost": [
-      {
-        "type": "paragraph",
-        "text": "Although it might seem counter-intuitive to spend significant sums of money on robotics in healthcare with the aim of making healthcare universally cheaper, this is exactly what could happen given investment, both in public and private healthcare settings. Robots can improve patient safety and reduce costs in the long-term, meaning both public and private healthcare systems will benefit in terms of patient care and finances. This isn’t to say that efforts won’t need to be made in order to effect such change: the initial capital expenditure on equipment, ongoing maintenance and training will still need to be factored in, as well as upgrading the robots themselves."
-      }
-    ],
-    "sanitationTitle": [
-      {
-        "type": "paragraph",
-        "text": "Sanitation"
-      }
-    ],
-    "sanitation": [
-      {
-        "type": "paragraph",
-        "text": "Perhaps one of the most important aspects of robotics-based healthcare solutions is the reduced incidence of transmitted infection between patients and healthcare professionals. This applies not just to surgery but also to more routine procedures like dispensing pharmaceuticals and disinfecting medical devices and equipment. Robots reduced the role of fomites (inanimate objects which can lead to infection) in the spread of disease while maintaining the quality of the healthcare system. This is an indispensable part of a modern healthcare system."
-      }
-    ],
-    "qualityTitle": [
-      {
-        "type": "paragraph",
-        "text": "Quality of Life"
-      }
-    ],
-    "quality": [
-      {
-        "type": "paragraph",
-        "text": "By maintaining a sterile environment without requiring constant human oversight, Ultrabot not only enhances patient safety but also allows healthcare staff to focus more on patient care, ultimately leading to better overall health outcomes and a more efficient, comfortable healthcare experience. Tirelessly working to eliminate harmful pathogens from surfaces, reducing the risk of infections that can compromise patient health. Its ability to operate independently and navigate complex environments means it can consistently disinfect high-touch areas like door knobs and handrails, which are often missed by manual cleaning."
-      }
-    ],
-    "healthcareTitle": [
-      {
-        "type": "paragraph",
-        "text": "Better Healthcare"
-      }
-    ],
-    "healthcare": [
-      {
-        "type": "paragraph",
-        "text": "Advanced robotics will simply lead to better yet lower-cost health services in the healthcare industry. In fact, it can dramatically alter how people receive healthcare. Lower-cost healthcare enabled by advanced robotics will have a democratising effect for the entire world's population. And by reducing the spread of infection which leads to even further associated costs and by liberating medical staff from repetitive tasks in order to refocus on value-adding services, applying robotics in hospitals for the beginning of a dramatically more affordable system of healthcare for everyone.."
-      }
-    ]
-  },
-  "company": {
-    "intro": [
-      {
-        "type": "paragraph",
-        "text": "The values and vision that move us forward everyday."
-      }
-    ],
-    "title": [
-      {
-        "type": "paragraph",
-        "text": "The Company"
-      }
-    ],
-    "visionTitle": [
-      {
-        "type": "paragraph",
-        "text": "Vision"
-      }
-    ],
-    "vision": [
-      {
-        "type": "paragraph",
-        "text": "Our strategic vision focuses on developing logistic solutions for the healthcare industry. In a near future, robots will be part of every hospital performing repetitive and heavy duty tasks."
-      },
-      {
-        "type": "paragraph",
-        "text": "Our vision is one where robots and healthcare workers work seamlessly, continuously and efficiently with integrated solutions created by our technology."
-      }
-    ],
-    "valuesTitle": [
-      {
-        "type": "paragraph",
-        "text": "Values"
-      }
-    ],
-    "values": [
-      {
-        "type": "paragraph",
-        "text": "At Med Robots, our values are quality, capability and innovation. We believe technology holds the key for a better world through continuous improvement. We design, build, test and we innovate — constantly. We know that innovation is not a destination, but a mindset. We care deeply about everything that we do and we don’t compromise in our integrity to develop solutions that are safe and efficient."
-      }
-    ],
-    "missionTitle": [
-      {
-        "type": "paragraph",
-        "text": "Mission"
-      }
-    ],
-    "mission": [
-      {
-        "type": "paragraph",
-        "text": "Hospitals have complex and dense needs and our mission is to alleviate those structures with integrated solutions for a more safe, efficient and cost effective healthcare system."
-      },
-      {
-        "type": "paragraph",
-        "text": "Our mission focus is to provide robotic solutions through innovation, research, development, production, leasing and commercialisation of robots for hospital environments."
-      }
-    ],
-    "goalsTitle": [
-      {
-        "type": "paragraph",
-        "text": "Goals"
-      }
-    ],
-    "goals": [
-      {
-        "type": "paragraph",
-        "text": "Our goal is to improve the stay of patients in healthcare environments by providing top of the line solutions. With our technology hospitals can be more efficient and healthcare workers can focus on the most important: the well being of patients."
-      }
-    ]
-  },
-  "healthcare": {
-    "intro": [
-      {
-        "type": "paragraph",
-        "text": "The technological evolution of an industry as we know it."
-      }
-    ],
-    "title": [
-      {
-        "type": "paragraph",
-        "text": "Healthcare Industry"
-      }
-    ],
-    "overview": [
-      {
-        "type": "paragraph",
-        "text": "Robotics and digital automation are beginning to sweep through several major industry segments, but perhaps one of the most fascinating is healthcare. Whilst advanced machinery capable of performing the most delicate surgeries was once the domain of science-fiction or simply a goal to aspire towards, the reality is that we are now living in an era where health services are on the verge of being transformed in very exciting ways."
-      }
-    ],
-    "technologyTitle": [
-      {
-        "type": "paragraph",
-        "text": "Technology"
-      }
-    ],
-    "eraTitle": [
-      {
-        "type": "paragraph",
-        "text": "A New Era"
-      }
-    ],
-    "era": [
-      {
-        "type": "paragraph",
-        "text": "The COVID-19 pandemic has illustrated the necessity for integrating digital technologies such as robotic process automation (RPA) and artificial intelligence (AI) software into everyday business operations and it is in this regard that hospital robotics forms a timely focus."
-      },
-      {
-        "type": "paragraph",
-        "text": "Far from being a competitor to human workers, robots in healthcare are a unique opportunity to combine the abilities of both humans and people to achieve significantly better outcomes for patients."
-      }
-    ],
-    "betterTitle": [
-      {
-        "type": "paragraph",
-        "text": "A Better Way"
-      }
-    ],
-    "better": [
-      {
-        "type": "paragraph",
-        "text": "For example, in a typical 200-bed hospital, equipment and waste is transported just under 400 miles per week. It is estimated that the use of automated mobile robots reduces the cost per delivery by 50-80% and reduces the average distance of 3-4 miles that a nurse walks each day. Robots also help to reduce back injuries from lifting in hospital personnel and give nurses more time to concentrate on patient care."
-      },
-      {
-        "type": "paragraph",
-        "text": "Robotics are listed as among the nine technologies most likely to transform the financial and operational standards of health services by generating between USD$350bn and $410bn in annual value by 2025."
-      }
-    ]
-  },
-  "recruitment": {
-    "intro": [
-      {
-        "type": "paragraph",
-        "text": "Join the team"
-      }
-    ],
-    "title": [
-      {
-        "type": "paragraph",
-        "text": "Recruitment"
-      }
-    ],
-    "workingTitle": [
-      {
-        "type": "paragraph",
-        "text": "Working at Med Robots"
-      }
-    ],
-    "working": [
-      {
-        "type": "paragraph",
-        "text": "Working at Med Robots is to be part of a highly innovative, motivated and diversified workgroup. Join us and be part of a daring, inspired and committed team."
-      }
-    ],
-    "opportunitiesTitle": [
-      {
-        "type": "paragraph",
-        "text": "OPPORTUNITIES"
-      }
-    ],
-    "location1": [
-      {
-        "type": "paragraph",
-        "text": "Coimbra, Portugal"
-      }
-    ],
-    "location2": [
-      {
-        "type": "paragraph",
-        "text": "Coimbra, Portugal"
-      }
-    ],
-    "location3": [
-      {
-        "type": "paragraph",
-        "text": "Coimbra, Portugal"
-      }
-    ],
-    "location4": [
-      {
-        "type": "paragraph",
-        "text": "Coimbra, Portugal"
-      }
-    ],
-    "teamTitle": [
-      {
-        "type": "paragraph",
-        "text": "The Team"
-      }
-    ],
-    "team": [
-      {
-        "type": "paragraph",
-        "text": "At Med Robots we are a team working together to achieve the best possible results to improve healthcare logistics."
-      },
-      {
-        "type": "paragraph",
-        "text": "Collaborating with colleagues to achieve goals, creating win-win relationships and constructively resolving conflicts is the way we work, always treating people with respect and fostering diversity."
-      }
-    ]
-  },
-  "project": {
-    "title": [
-      {
-        "type": "paragraph",
-        "text": "PharmaRobot"
-      },
-      {
-        "type": "paragraph",
-        "text": "Robô logístico de distribuição de fármacos urgentes"
-      }
-    ],
-    "details": [
-      {
-        "type": "paragraph",
-        "text": "Referência | Código da Operação: COMPETE2030-FEDER-01478600, Operação n.º18433"
-      },
-      {
-        "type": "paragraph",
-        "text": "Acrónimo: PharmaRobot"
-      },
-      {
-        "type": "paragraph",
-        "text": "Apresentação"
-      },
-      {
-        "type": "paragraph",
-        "text": "Objetivo temático: Desenvolvimento de um robô autónomo que automatiza a entrega de medicamentos, reduzindo tempos de espera e minimizando erros humanos. Alinhado com as necessidades de modernização do setor da saúde, o PharmaRobot visa integrar tecnologia avançada para otimizar os processos hospitalares e melhorar a qualidade dos cuidados prestados aos pacientes."
-      },
-      {
-        "type": "paragraph",
-        "text": "Área Científica: Engenharia Eletrotécnica e de Computadores e Enhegharia Informática"
-      },
-      {
-        "type": "paragraph",
-        "text": "Síntese do Projeto: O projeto PharmaRobot tem como objetivo melhorar a eficiência hospitalar através de um robô autónomo que distribui medicamentos urgentes de forma rápida e precisa, reduzindo o tempo de espera e minimizando erros humanos. A solução proposta permitirá uma gestão mais eficaz dos recursos, libertando profissionais para tarefas críticas e garantindo maior segurança e qualidade nos cuidados de saúde."
-      },
-      {
-        "type": "paragraph",
-        "text": "Área de intervenção: Nacional"
-      },
-      {
-        "type": "paragraph",
-        "text": "Investigador Responsável na UC: Urbano Nunes e João Macedo"
-      },
-      {
-        "type": "paragraph",
-        "text": "Unidade Orgânica UC: Departamento de engenharia Eletrotécnica e de Computadores e Departamento de Engenharia Informática - FCTUC"
-      },
-      {
-        "type": "paragraph",
-        "text": "Instituições participantes no Projeto:"
-      },
-      {
-        "type": "paragraph",
-        "text": "- MED ROBOTS ROBOTIC TECHNOLOGY AND INNOVATION, LDA"
-      },
-      {
-        "type": "paragraph",
-        "text": "-UNIVERSIDADE DE COIMBRA"
-      },
-      {
-        "type": "paragraph",
-        "text": "- UNIDADE LOCAL DE SAÚDE DE COIMBRA, E.P.E"
-      },
-      {
-        "type": "paragraph",
-        "text": "- ESCOLA SUPERIOR DE ENFERMAGEM DE COIMBRA"
-      },
-      {
-        "type": "paragraph",
-        "text": "Instituição Financiadora/Gestora: Agência para o Desenvolvimento e Coesão"
-      },
-      {
-        "type": "paragraph",
-        "text": "Programa de Financiamento: PT2030 - MPr-2023-07 - Aviso SIID - I&D Empresarial - Operações em Copromoção – Outros territórios"
-      },
-      {
-        "type": "paragraph",
-        "text": "Período de execução: 01/03/2025 a 29/02/2028"
-      },
-      {
-        "type": "paragraph",
-        "text": "Custo total elegível (EUR): 799 532,80 €"
-      },
-      {
-        "type": "paragraph",
-        "text": "Apoio financeiro da UE: através do FEDER: 679 602,88 €"
-      },
-      {
-        "type": "paragraph",
-        "text": "Técnico do Projeto: Sérgio Ramalho - geral@medrobots.pt"
-      },
-      {
-        "type": "paragraph",
-        "text": "Contacto: +351 930 472 535"
-      }
-    ]
-  },
-  "privacy": {
-    "document": [
-      {
-        "type": "paragraph",
-        "text": "PRIVACY POLICY"
-      },
-      {
-        "type": "paragraph",
-        "text": "All your data will be treated with the utmost confidentiality."
-      },
-      {
-        "type": "paragraph",
-        "text": "MED ROBOTS may request personal information by filling in forms containing personal data. This filling is completely voluntary, and may imply the indication of name, email address, telephone number, among others."
-      },
-      {
-        "type": "paragraph",
-        "text": "The personal data collected are processed automatically and have the sole purpose of providing a better service to the user."
-      },
-      {
-        "type": "paragraph",
-        "text": "MED ROBOTS reserves the right to transmit to suppliers of goods or services the data about its users in an aggregated form and without revealing any personal data, whenever this produces a clear added value for the user."
-      },
-      {
-        "type": "paragraph",
-        "text": "The inclusion of hyperlinks (electronic links) also known as “hyperlinks” or “links” on this website should not be interpreted as an offer by MED ROBOTS of existing content or services on this website, nor as a guarantee of their quality or veracity."
-      },
-      {
-        "type": "paragraph",
-        "text": "By accessing this website, the user acknowledges that MED ROBOTS does not exercise any control over the contents and services offered by third parties through the links that may exist on this website, and therefore the use of the information obtained through them is made under full responsibility of the user."
-      }
-    ]
-  },
-  "cookies": {
-    "document": [
-      {
-        "type": "paragraph",
-        "text": "ABOUT COOKIES"
-      },
-      {
-        "type": "paragraph",
-        "text": "What are Cookies?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Cookies are small text files that are stored on your computer or mobile device when you visit a website."
-      },
-      {
-        "type": "paragraph",
-        "text": "MED ROBOTS only uses cookies that are essential for the correct functioning of the website. Cookies are classified as follows:"
-      },
-      {
-        "type": "paragraph",
-        "text": "Session Cookies: These cookies are automatically deleted when you close your browser (Browser). Permanent Cookies: These cookies remain on your device until they expire (in terms of minutes, days or years since the creation/update of the cookie). Third Party Cookies: These cookies are stored on behalf of third parties."
-      },
-      {
-        "type": "paragraph",
-        "text": "Cookies can be managed and deleted through your browser settings (Browser). However, this may prevent all functionality of our website from working properly."
-      },
-      {
-        "type": "paragraph",
-        "text": "Most common type of cookies: :"
-      },
-      {
-        "type": "paragraph",
-        "text": "Essential: These cookies and their respective functionalities are essential for the correct functioning of the websites. Eg authentication cookies."
-      },
-      {
-        "type": "paragraph",
-        "text": "Comfort: These cookies allow us to improve the comfort and usability of websites and provide various features. Eg Comfort cookies can be used to store search results, language, text size."
-      },
-      {
-        "type": "paragraph",
-        "text": "Performance: These cookies collect information about how you use the websites. They help us, for example, to identify specific areas of our website. In this way, we can adapt the content of our websites more specifically to your needs and thus improve what we have to offer you."
-      },
-      {
-        "type": "paragraph",
-        "text": "How can you block the use of Cookies?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Your browser allows you to manage cookies in the configuration options, and may even block all navigation cookies. However, blocking Cookies will affect your experience as a user."
-      },
-      {
-        "type": "paragraph",
-        "text": "Which entities can have access to the information collected by Cookies?"
-      },
-      {
-        "type": "paragraph",
-        "text": "The information collected by cookies can be used on MED ROBOTS Websites or its subcontractors."
-      }
-    ]
-  },
-  "genderequality": {
-    "document": [
-      {
-        "type": "paragraph",
-        "text": "GENDER EQUALITY"
-      },
-      {
-        "type": "paragraph",
-        "text": "Norms for implementing a strategy of non-discrimination and equality between men and women."
-      },
-      {
-        "type": "paragraph",
-        "text": "I - Global Assessment"
-      },
-      {
-        "type": "paragraph",
-        "text": "The operation took into account national and european priorities in the field of gender equality."
-      },
-      {
-        "type": "paragraph",
-        "text": "Our company has numerical and qualitative indicators disaggregated from gender."
-      },
-      {
-        "type": "paragraph",
-        "text": "Our company has a policy of balancing jobs between men and women."
-      },
-      {
-        "type": "paragraph",
-        "text": "Although there is a gender disproportionality between graduates / workers in certain areas (for example, production management and control is an area predominantly chosen by the female gender while the product development area has a higher proportion of males), we intend to maintain the proportionality between men and women, that is, if it is possible to hire men and women in equal numbers."
-      },
-      {
-        "type": "paragraph",
-        "text": "However, this proportionality is not mandatory in the sense that it cannot be discriminatory, that is, it is necessary to find a worker with professional, socio-relational skills and with the appropriate profile for each workplace, regardless of the gender with which they were born."
-      },
-      {
-        "type": "paragraph",
-        "text": "II - Equality in access to employment, work and professional training"
-      },
-      {
-        "type": "paragraph",
-        "text": "Actions were planned to strengthen gender equality consciousness in the organization, that is, an equal and non-discriminatory management of human resources was promoted."
-      },
-      {
-        "type": "paragraph",
-        "text": "The operation promoted equal pay between men and women."
-      },
-      {
-        "type": "paragraph",
-        "text": "The basic salary will be established according to the training, skills and position to be performed. Other rewards will be set based on loyalty and performance."
-      },
-      {
-        "type": "paragraph",
-        "text": "People are evaluated on the basis of their performance and their contribution to the company's growth, with more responsibilities and higher remuneration being awarded according to this evaluation. Salary or other remunerations will be established in accordance with general objective criteria, namely effort, dedication and work and specific objectives, namely and by way of example, increase in the number of customers, improvement in financial results, proportion of new innovations in the development of products, improvement of creative and problem solving skills, improvement of promoted social skills."
-      },
-      {
-        "type": "paragraph",
-        "text": "In other words, people will be selected and evaluated by other criteria, which do not include the person's gender."
-      },
-      {
-        "type": "paragraph",
-        "text": "Mechanisms and strategies were established to increase the proportion of under-represented gender in decision-making processes."
-      },
-      {
-        "type": "paragraph",
-        "text": "We intend to have jobs filled by men and women, if possible on an equal basis, and to encourage the participation in the education of children, both fathers and mothers."
-      },
-      {
-        "type": "paragraph",
-        "text": "Use of non-sexist and inclusive language in internal and external communication."
-      },
-      {
-        "type": "paragraph",
-        "text": "III - Promotion of work-life balance"
-      },
-      {
-        "type": "paragraph",
-        "text": "Actions were planned to facilitate the reconciliation between professional and personal life."
-      },
-      {
-        "type": "paragraph",
-        "text": "Workers who collaborate with us will enjoy school support for their children and internal and external training."
-      },
-      {
-        "type": "paragraph",
-        "text": "The personal life of each person is respected and efforts are made to reconcile work with the personal interests of employees."
-      },
-      {
-        "type": "paragraph",
-        "text": "Employees will be motivated to maintain a healthy balance between the work component and the personal component, so that they feel valued and committed to carrying out their responsibilities."
-      },
-      {
-        "type": "paragraph",
-        "text": "The emotional balance of our employees, the maintenance of their physical, psychological and social well-being is fundamental for us and valued."
-      },
-      {
-        "type": "paragraph",
-        "text": "Harassment prevention measures were developed, namely unwanted behaviors with the aim of disturbing or embarrassing the person, affecting their dignity or creating an intimidating, hostile, degrading, humiliating or destabilising environment."
-      },
-      {
-        "type": "paragraph",
-        "text": "Prevention measures consist of rules of conduct and rules of civilized behavior and respect for others, maintaining the organization and professionalism necessary to carry out education and training functions for people."
-      },
-      {
-        "type": "paragraph",
-        "text": "In case of harassment, there must be a mediation process, resulting in an effective and immediate change in behavior. If the behavior persists, this will not be allowed."
-      },
-      {
-        "type": "paragraph",
-        "text": "Preventive measures are privileged over exclusion measures. However, making employees aware of the consequences of verbal or physical behavior of harassment, intimidation or hostile behavior is a preventive measure."
-      },
-      {
-        "type": "paragraph",
-        "text": "The Administration,"
-      }
-    ]
-  },
-  "computerengineer": {
-    "title": [
-      {
-        "type": "paragraph",
-        "text": "Computer Engineer"
-      }
-    ],
-    "description": [
-      {
-        "type": "paragraph",
-        "text": "Introduction"
-      },
-      {
-        "type": "paragraph",
-        "text": "We are looking for an exceptional computer engineer who is insightful and with a total system perspective to expand the functionality and robustness of Med Robots robots. You will be responsible for developing solutions for robotic applications in the real world. Starting with a strong theoretical framework, you'll develop complex algorithms, integrate code into a production-level collaborative software environment, and more."
-      },
-      {
-        "type": "paragraph",
-        "text": "Responsibilities"
-      },
-      {
-        "type": "item",
-        "text": "Develop information systems designing, developing and installing software solutions."
-      },
-      {
-        "type": "item",
-        "text": "Determine operational feasibility by evaluating analyses, problem definition, requirements and solution development."
-      },
-      {
-        "type": "item",
-        "text": "Develop software solutions studying information needs, checking with potential users and studying system flow, data usage and work processes."
-      },
-      {
-        "type": "item",
-        "text": "Investigate problem areas."
-      },
-      {
-        "type": "item",
-        "text": "Follow the software development lifecycle."
-      },
-      {
-        "type": "item",
-        "text": "Improved operations by conducting system reviews and recommending changes to policies and procedures."
-      },
-      {
-        "type": "item",
-        "text": "Protect operations by keeping information confidential."
-      },
-      {
-        "type": "item",
-        "text": "Provide information through data collection and analysis and summary of development and service issues."
-      },
-      {
-        "type": "paragraph",
-        "text": "Requirements"
-      },
-      {
-        "type": "item",
-        "text": "Bachelor's and/or Master's Degree in Computer Science, or Computer Engineering"
-      },
-      {
-        "type": "item",
-        "text": "More than 2 years of professional experience in software development"
-      },
-      {
-        "type": "item",
-        "text": "ROS knowledge"
-      },
-      {
-        "type": "item",
-        "text": "Java or C++ proficiency and object-oriented design skills"
-      },
-      {
-        "type": "item",
-        "text": "Application architecture and design patterns"
-      },
-      {
-        "type": "item",
-        "text": "Experience serving as a technical lead across the entire software development lifecycle, from conception, architecture definition, detailed design, planning, implementation, testing and documentation, delivery and maintenance."
-      },
-      {
-        "type": "item",
-        "text": "Professional software engineering knowledge and best practices for the entire software development lifecycle, including coding standards, code reviews, source management, build processes, testing, and operations."
-      },
-      {
-        "type": "item",
-        "text": "Experience in developing distributed / scalable systems and high-volume transaction applications"
-      },
-      {
-        "type": "paragraph",
-        "text": "What We Offer"
-      },
-      {
-        "type": "item",
-        "text": "Competitive salary"
-      },
-      {
-        "type": "item",
-        "text": "Health insurance"
-      },
-      {
-        "type": "item",
-        "text": "Flexible free time - work and have fun!"
-      },
-      {
-        "type": "paragraph",
-        "text": "All qualified candidates will receive consideration for employment, regardless of race, color, religion, gender or national origin."
-      }
-    ],
-    "details": [
-      {
-        "type": "paragraph",
-        "text": "Local"
-      },
-      {
-        "type": "paragraph",
-        "text": "Coimbra, Portugal"
-      },
-      {
-        "type": "paragraph",
-        "text": "Type"
-      },
-      {
-        "type": "paragraph",
-        "text": "Presencial"
-      },
-      {
-        "type": "paragraph",
-        "text": "Department Product development"
-      },
-      {
-        "type": "paragraph",
-        "text": "Experience"
-      },
-      {
-        "type": "paragraph",
-        "text": "2 or more years"
-      },
-      {
-        "type": "paragraph",
-        "text": "Hours"
-      },
-      {
-        "type": "paragraph",
-        "text": "Full Time"
-      }
-    ]
-  },
-  "mechanicalengineer": {
-    "title": [
-      {
-        "type": "paragraph",
-        "text": "Mechanical Engineer"
-      }
-    ],
-    "description": [
-      {
-        "type": "paragraph",
-        "text": "Introduction"
-      },
-      {
-        "type": "paragraph",
-        "text": "We are looking for an insightful, detail-oriented, team-oriented mechanical engineer. You will be responsible for providing technical knowledge about the company's product lines, detailed modeling of robotic systems using Solidworks, improving current designs / processes and much more. You should be a practical person, with your sleeves rolled up in a fast-paced environment."
-      },
-      {
-        "type": "paragraph",
-        "text": "Responsibilities"
-      },
-      {
-        "type": "paragraph",
-        "text": "Your responsibilities will mainly be in hardware design, technical design, machine assembly and a variety of other systems, functions which also require the following:"
-      },
-      {
-        "type": "item",
-        "text": "Ability to design and implement solutions from start to finish."
-      },
-      {
-        "type": "item",
-        "text": "Provide technical supervision for robot service and production teams when necessary."
-      },
-      {
-        "type": "item",
-        "text": "Evaluate solutions to a set of problems."
-      },
-      {
-        "type": "item",
-        "text": "Assist in the design of test and execution methods."
-      },
-      {
-        "type": "item",
-        "text": "Use and maintain various hand tools, measuring tools and other precision testing equipment."
-      },
-      {
-        "type": "item",
-        "text": "Comply with all safety and health rules and regulations associated with this position and as directed by the supervisor."
-      },
-      {
-        "type": "item",
-        "text": "Assist the team by conducting problem analysis as needed and taking corrective action."
-      },
-      {
-        "type": "item",
-        "text": "Creation / development of tools and accessories needed for assembling robots."
-      },
-      {
-        "type": "item",
-        "text": "Support production line performance and determine steps necessary to achieve optimal line efficiency and product quality."
-      },
-      {
-        "type": "item",
-        "text": "Assist production engineers in data collection, preparation and analysis, development and maintenance of reports and line configuration changes."
-      },
-      {
-        "type": "paragraph",
-        "text": "Requirements"
-      },
-      {
-        "type": "item",
-        "text": "Bachelor's Degree in Mechanical Engineering, Product Engineering or Design Engineering"
-      },
-      {
-        "type": "item",
-        "text": "3 to 5 years of experience in similar fields"
-      },
-      {
-        "type": "item",
-        "text": "Experience in Solidworks or related design software"
-      },
-      {
-        "type": "item",
-        "text": "Excellent communication and organization skills"
-      },
-      {
-        "type": "item",
-        "text": "Strong notions of geometry and product design"
-      },
-      {
-        "type": "item",
-        "text": "Production and assembly skill set"
-      },
-      {
-        "type": "item",
-        "text": "Solid foundation for process improvement with a focus on data accuracy"
-      },
-      {
-        "type": "paragraph",
-        "text": "What We Offer"
-      },
-      {
-        "type": "item",
-        "text": "Competitive salary"
-      },
-      {
-        "type": "item",
-        "text": "Health insurance"
-      },
-      {
-        "type": "item",
-        "text": "Flexible free time - work and have fun!"
-      },
-      {
-        "type": "paragraph",
-        "text": "All qualified candidates will receive consideration for employment, regardless of race, color, religion, gender or national origin."
-      }
-    ],
-    "details": [
-      {
-        "type": "paragraph",
-        "text": "Local"
-      },
-      {
-        "type": "paragraph",
-        "text": "Coimbra, Portugal"
-      },
-      {
-        "type": "paragraph",
-        "text": "Type"
-      },
-      {
-        "type": "paragraph",
-        "text": "Presencial"
-      },
-      {
-        "type": "paragraph",
-        "text": "Department Product development"
-      },
-      {
-        "type": "paragraph",
-        "text": "Experience"
-      },
-      {
-        "type": "paragraph",
-        "text": "3 to 5 years"
-      },
-      {
-        "type": "paragraph",
-        "text": "Hours"
-      },
-      {
-        "type": "paragraph",
-        "text": "Full Time"
-      }
-    ]
-  },
-  "seniorroboticsengineer": {
-    "title": [
-      {
-        "type": "paragraph",
-        "text": "Senior Robotics Engineer"
-      }
-    ],
-    "description": [
-      {
-        "type": "paragraph",
-        "text": "Introduction"
-      },
-      {
-        "type": "paragraph",
-        "text": "We are looking for an exceptionally insightful robotics engineer with a total system perspective to expand the functionality and robustness of Med Robots robots. You will be responsible for developing solutions for robotic applications in the real world. Starting with a strong theoretical framework, you'll develop complex algorithms, integrate code in a production-level collaborative software environment, work with sensor integration, and verify functionality with our robots and user interfaces."
-      },
-      {
-        "type": "paragraph",
-        "text": "Responsibilities"
-      },
-      {
-        "type": "item",
-        "text": "Integrate and expand capabilities using LIDAR, SONAR, wheel encoders, IMU and computer vision for autonomous real-world navigation."
-      },
-      {
-        "type": "item",
-        "text": "Implement algorithms that run on robots, both internal to the software system and customer-facing."
-      },
-      {
-        "type": "item",
-        "text": "Improve localisation, overcome obstacles, identify the cause of software failures, develop new techniques for mapping and navigation."
-      },
-      {
-        "type": "item",
-        "text": "Integration of GPS-based navigation features."
-      },
-      {
-        "type": "item",
-        "text": "Ensure that the implementation is carefully thought out, keeping in mind readability, compute, scalability, maintainability, testing, and other best practice considerations."
-      },
-      {
-        "type": "item",
-        "text": "Proactive in discovering issues with existing configuration."
-      },
-      {
-        "type": "item",
-        "text": "Design skills to choose the best solution to solve a given problem."
-      },
-      {
-        "type": "paragraph",
-        "text": "Requirements"
-      },
-      {
-        "type": "item",
-        "text": "Master in Robotics Science."
-      },
-      {
-        "type": "item",
-        "text": "More than 5 years of experience writing production level software / hardware versions."
-      },
-      {
-        "type": "item",
-        "text": "Proficiency in standalone technology stack."
-      },
-      {
-        "type": "item",
-        "text": "Excellent coding skills in C++, Python and Bash."
-      },
-      {
-        "type": "item",
-        "text": "Experience in working with Linux systems."
-      },
-      {
-        "type": "item",
-        "text": "General understanding for writing tests and testable code."
-      },
-      {
-        "type": "item",
-        "text": "Strong written and verbal communication skills."
-      },
-      {
-        "type": "item",
-        "text": "Experience in software development for autonomous systems."
-      },
-      {
-        "type": "item",
-        "text": "Good understanding of robotics concepts such as sensor fusion, location, path planning, FSMs etc."
-      },
-      {
-        "type": "paragraph",
-        "text": "What We Offer"
-      },
-      {
-        "type": "item",
-        "text": "Competitive salary"
-      },
-      {
-        "type": "item",
-        "text": "Health insurance"
-      },
-      {
-        "type": "item",
-        "text": "Flexible free time - work and have fun!"
-      },
-      {
-        "type": "paragraph",
-        "text": "All qualified candidates will receive consideration for employment, regardless of race, color, religion, gender or national origin."
-      }
-    ],
-    "details": [
-      {
-        "type": "paragraph",
-        "text": "Local"
-      },
-      {
-        "type": "paragraph",
-        "text": "Coimbra, Portugal"
-      },
-      {
-        "type": "paragraph",
-        "text": "Type"
-      },
-      {
-        "type": "paragraph",
-        "text": "Presencial"
-      },
-      {
-        "type": "paragraph",
-        "text": "Department Product development"
-      },
-      {
-        "type": "paragraph",
-        "text": "Experience"
-      },
-      {
-        "type": "paragraph",
-        "text": "5 or more years"
-      },
-      {
-        "type": "paragraph",
-        "text": "Hours"
-      },
-      {
-        "type": "paragraph",
-        "text": "Full Time"
-      }
-    ]
-  },
-  "roboticssoftwareengineer": {
-    "title": [
-      {
-        "type": "paragraph",
-        "text": "Robotics Software Engineer"
-      }
-    ],
-    "description": [
-      {
-        "type": "paragraph",
-        "text": "Introduction"
-      },
-      {
-        "type": "paragraph",
-        "text": "We are looking for an exceptionally advanced software engineer with a focus on robotics. You will be responsible for developing solutions for robotic applications. Starting with a strong theoretical framework, you will develop complex algorithms, integrate code in a production-level collaborative software environment, and verify functionality with our robots and user interfaces."
-      },
-      {
-        "type": "paragraph",
-        "text": "Responsibilities"
-      },
-      {
-        "type": "item",
-        "text": "Implement algorithms to be run on robots, both internal to the software system and user-oriented."
-      },
-      {
-        "type": "item",
-        "text": "Software development including improvement of location, improvement of obstacle avoidance, identification of the cause of software failures, development of new techniques for mapping and navigation."
-      },
-      {
-        "type": "item",
-        "text": "Ensure that the implementation is carefully thought out, keeping in mind readability, compute, scalability, maintainability, testing, and other best practice considerations."
-      },
-      {
-        "type": "item",
-        "text": "Proactive when discovering issues with existing configuration."
-      },
-      {
-        "type": "item",
-        "text": "Software design skills to choose the best solution to solve a given problem."
-      },
-      {
-        "type": "paragraph",
-        "text": "Requirements"
-      },
-      {
-        "type": "item",
-        "text": "Bachelor's Degree or higher in Computer Science."
-      },
-      {
-        "type": "item",
-        "text": "More than 3 years of experience writing production level software."
-      },
-      {
-        "type": "item",
-        "text": "Working knowledge of multi-threading and object-oriented programming."
-      },
-      {
-        "type": "item",
-        "text": "Proficiency in data structures and algorithms, particularly graphics-based concepts."
-      },
-      {
-        "type": "item",
-        "text": "Excellent coding skills in ROS, C++, Python and Bash."
-      },
-      {
-        "type": "item",
-        "text": "Experience in working with Linux systems."
-      },
-      {
-        "type": "item",
-        "text": "General understanding of test writing and testable code."
-      },
-      {
-        "type": "item",
-        "text": "Strong written and verbal communication skills."
-      },
-      {
-        "type": "item",
-        "text": "Experience in software development for robots or autonomous systems."
-      },
-      {
-        "type": "item",
-        "text": "Good understanding of robotics concepts such as sensor fusion, location, path planning, FSMs etc."
-      },
-      {
-        "type": "paragraph",
-        "text": "What We Offer"
-      },
-      {
-        "type": "item",
-        "text": "Competitive salary"
-      },
-      {
-        "type": "item",
-        "text": "Health insurance"
-      },
-      {
-        "type": "item",
-        "text": "Flexible free time - work and have fun!"
-      },
-      {
-        "type": "paragraph",
-        "text": "All qualified candidates will receive consideration for employment, regardless of race, color, religion, gender or national origin."
-      }
-    ],
-    "details": [
-      {
-        "type": "paragraph",
-        "text": "Local"
-      },
-      {
-        "type": "paragraph",
-        "text": "Coimbra, Portugal"
-      },
-      {
-        "type": "paragraph",
-        "text": "Type"
-      },
-      {
-        "type": "paragraph",
-        "text": "Presencial"
-      },
-      {
-        "type": "paragraph",
-        "text": "Department Product development"
-      },
-      {
-        "type": "paragraph",
-        "text": "Experience"
-      },
-      {
-        "type": "paragraph",
-        "text": "3 to 5 years"
-      },
-      {
-        "type": "paragraph",
-        "text": "Hours"
-      },
-      {
-        "type": "paragraph",
-        "text": "Full Time"
-      }
-    ]
-  },
-  "originalHome": [
-    "We work to make the greatest technological advances reach hospitals, where it can be most beneficial.",
-    "Robotic solutions for healthcare facilities.",
-    "The ultimate disinfection tool designed specifically for hospital environments.",
-    "In a world where infection control is paramount, the UltraBot stands as a cutting-edge solution, actively preventing infections and ensuring that your hospital remains a safe and sterile environment. With its advanced technology, the UltraBot offers a level of precision and reliability that is unmatched in the healthcare industry.",
-    "30%",
-    "Operational costs reduced in hospitals by automated robots (2020)",
-    "$ 1.61 B",
-    "Health expenditure in USA (2019)",
-    "36.2 M",
-    "Admissions in all U.S. Hospitals (2019)",
-    "$ 10.62",
-    "Health expenditure per capita in USA (2018)",
-    "$ 918 M",
-    "Total revenue in hospital logistics robots market (2018)",
-    "$ 12.7 B",
-    "Expected medical robots market to reach by 2025",
-    "Automation",
-    "In an increasingly automated world, we design, develop and build robotic solutions of hospital logistics that facilitate the daily work of healthcare professionals and improve the stay of patients.",
-    "Our Focus",
-    "We create integrated robotic solutions for logistics management in the healthcare industry. Our focus is to answer the everyday logistic needs of hospitals and other healthcare environments with robots that work autonomously, integrated and seamlessly serving both healthcare personnel and patients.",
-    "Innovation",
-    "At Med Robots we are strongly committed to a strategy of constant innovation, where the product, in addition to design and quality, seeks to respond to the trends and needs of the worldwide hospital market.",
-    "Objective",
-    "We aim to identify needs in the healthcare logistics sector that can be met with robotic products. Our mission is to present innovative and differentiating solutions for a faster, safer and more effective hospital experience.",
-    "What We Do",
-    "At Med Robots we are strongly committed to a strategy of constant innovation, where the product, in addition to design and quality, seeks to respond to the trends and needs of the worldwide hospital market."
-  ],
-  "solutions": [
-    "The technological evolution of an industry as we know it.",
-    "UltraBot",
-    "UV-C",
-    "Ultraviolet germicidal irradiation (UVGI) is a disinfection method that uses short-wavelength ultraviolet (ultraviolet C or UV-C, commonly referred to wavelengths between 200 – 280 nm) light to kill or inactivate microorganisms by destroying nucleic acids and disrupting their DNA, leaving them unable to perform vital cellular functions.",
-    "What is UV-C disinfection?",
-    "UV-C disinfection utilises UV-C light at wave lengths of 200 to 300 nm to destroy the DNA structure of viruses, bacteria, yeasts and fungi in seconds, leaving the microorganisms inactive and unable to spread, preventing further infection. This form of disinfection has a sufficiently high irradiance ensuring the UV-C disinfection is reliable and environmentally friendly.",
-    "Why use a UV-C robot?",
-    "There are several options available for facilities and businesses when it comes to UV-C disinfection, but shadowing must be considered. UV-C light can only disinfect surfaces that it can reach which can create problems areas that are shadowed. UV-C Robots is an innovative technology to solve this issue. By combining UV-C disinfection technology with an autonomous robot, it becomes a reliable solution that significantly reduces the likelihood of shadowing.",
-    "How does UV-C robots it work?",
-    "Our Robots have industry-leading navigation technology, high-precision positioning, memory-based mapping, recording personnel routes, autonomous movement, smart obstacle avoidance, and long-term stable operation in a responsible environment. Our robots will be able to function fully autonomously and will make its way around corridors and rooms, disinfecting configured areas. UV-C light is harmful to humans so the benefit of our robots technology is that it doesn’t need manually moving and works autonomously or off a tablet device. As soon as it detects a human 3 meters away, it stops the radiation.",
-    "LOGISTICS",
-    "Modern hospitals are under increasing pressure. They operate around the clock and both the quality and cost of healthcare are constantly scrutinized.",
-    "Behind the Scenes",
-    "Behind the scenes, logistics play a vital role in smooth and efficient operation, and the more these processes are optimised, the more time healthcare staff can spend with patients. By using mobile robots to automate a lot of the logistical tasks, it is possible to free up resources to focus on increasing the quality of care for patients.",
-    "24 / 7",
-    "Modern hospitals operate 24 hours a day, 365 days a year and logistic processes are increasingly becoming automated. This is in response to changes in lifestyles and demographics which are putting pressure on healthcare facilities as never before. Improving the quality of – and access to – healthcare, while controlling costs as populations age and grow is a major challenge for the healthcare sector. Automation of internal hospital logistics is a way for hospitals to reduce costs and spend less time on non-care related tasks. Hospitals should be seen as an eco-system where food is brought in and waste thrown out, while beds, medical instruments and thousands of other things are constantly moved around. The more this is automated, the more time healthcare staff can spend with patients.",
-    "AI",
-    "Relying on advanced AI and manufacturing technology, deep technical advances have been built in the fields of positioning and navigation, motion control, multi-machine scheduling, perception and obstacle avoidance. Automated Guided Vehicles can help the healthcare logistics processes tremendously more effective. They can transport goods such as linen, food, medicine and empty beds and deliver them to each department as they need them.",
-    "At Med Robots, our values are quality, capability and innovation. Our mission is to provide robotic solutions through innovation, research, development, production, licensing and commercialisation of robots in hospital environments.",
-    "SOCIAL ROBOTS",
-    "Social robots interact directly with humans. Our “friendly” robot Veida can be used in long-term care environments to provide social interaction and monitoring. They may encourage patients to comply with treatment regimens or provide cognitive engagement, keeping patients alert and positive. They also can be used to offer direction to visitors and patients inside the hospital environment. In general, social robots help reduce caregivers workloads and improve patient's emotional well-being.",
-    "On screen consultation",
-    "Autonomous robots with a robust range of depth cameras can greet and guide patients like a receptionist would. Our robots can also self-navigate to patients in exam or hospital rooms, allowing clinicians to interact from afar. Robots controlled by a remote specialist or other worker can also accompany doctors as they make hospital rounds, allowing the specialist to contribute on-screen consultation regarding patient diagnostics and care. These robots can keep track of their own batteries and make their way back to charging stations when necessary.",
-    "A powerhouse of functions",
-    "With intelligent facial recognition, our robots take the initiative to greet patients with a welcome message. With full-duplex intelligent voice interaction, 5 meters far-field pickup, sensitive hearing, abundant body movements and stable walking ability. With indoor autonomous driving system, autonomous navigation and obstacle avoidance. The infrared thermal imager measures the temperature, quickly completes a temperature check, automatically enters the body temperature, and immediately alarms and takes pictures when abnormalities occur. A interaction that at the same time recognise and diagnoses the patient while creating an interactive experience."
-  ]
+  "pt": {
+    "home": {
+      "title": "UltraBot",
+      "lead": "Soluções robóticas para a indústria de saúde.",
+      "intro": [
+        "Trabalhamos para que os maiores avanços tecnológicos cheguem aos hospitais, onde é mais benéfico."
+      ],
+      "description": "Introducing the UltraBot, the ultimate UV-C light disinfection robot engineered for healthcare environments.",
+      "sections": [
+        {
+          "title": "Safety",
+          "paragraphs": [
+            "Since UV-C light is harmful to humans, it automatically stops UV-C radiation as soon as it detects a person within 3 meters."
+          ]
+        },
+        {
+          "title": "Autonomous Navigation",
+          "paragraphs": [
+            "With high precision positioning and mapping, operates autonomously through complex environments without requiring human intervention."
+          ]
+        },
+        {
+          "title": "Critical Zone Coverage",
+          "paragraphs": [
+            "Identifies handrails and door knobs accurately and ensures consistent and repeated disinfection across these highly touched areas."
+          ]
+        },
+        {
+          "title": "Set and Forget",
+          "paragraphs": [
+            "Once the battery needs recharging, it automatically goes to the charging dock and goes back to work once is charged."
+          ]
+        },
+        {
+          "title": "Innovation",
+          "paragraphs": [
+            "At Med Robots we are strongly committed to a strategy of constant innovation, where the product, in addition to design and quality, seeks to respond to the trends and needs of the worldwide hospital disinfection market."
+          ]
+        },
+        {
+          "title": "Objetivo",
+          "paragraphs": [
+            "Na Med Robots temos como objetivo identificar necessidades no sector da logística hospitalar que possam ser colmatadas com produtos robóticos. Temos como missão apresentar soluções inovadoras e diferenciadoras para uma experiência hospitalar mais rápida, segura e eficaz."
+          ]
+        },
+        {
+          "title": "O que nós fazemos",
+          "paragraphs": [
+            "A Med Robots apresenta soluções no âmbito da descontaminação automatizada por UV-C, entrega automatizada de medicamentos e entrega automatizada de refeições. Sendo a nossa oferta para um mercado globalizado, contribuímos para o desenvolvimento científico e tecnológico a nível nacional."
+          ]
+        }
+      ]
+    },
+    "ultrabot": {
+      "title": "Setor da Saúde",
+      "lead": "A evolução tecnológica de uma indústria como a conhecemos.",
+      "sections": [
+        {
+          "title": "UV-C",
+          "paragraphs": [
+            "A irradiação germicida ultravioleta é um método de desinfecção que usa luz ultravioleta de comprimento de onda curto (ultravioleta C ou UV-C, normalmente referindo a comprimentos de onda entre 200 - 280 nm) para matar ou inativar microorganismos destruindo ácidos nucleicos e interrompendo o seu DNA, deixando esses organismos nocivos incapazes de realizar funções celulares vitais."
+          ]
+        },
+        {
+          "title": "O que é desinfecção UV-C?",
+          "paragraphs": [
+            "A desinfecção UV-C utiliza luz UV-C em comprimentos de onda de 200 a 300 nm para destruir a estrutura do DNA de vírus, bactérias, leveduras e fungos em segundos, deixando os microorganismos inativos e incapazes de se espalhar, evitando novas infecções. Esta forma de desinfecção tem uma irradiância suficientemente alta garantindo que a desinfecção UV-C seja confiável e amiga do ambiente."
+          ]
+        },
+        {
+          "title": "Por que usar um robô UV-C?",
+          "paragraphs": [
+            "Existem várias opções disponíveis para instalações e empresas quando se trata de desinfecção UV-C, mas o efeito \"shadowing\" deve ser considerado. A luz UV-C só desinfeta as superfícies que ela pode alcançar, o que pode criar áreas problemáticas que ficam na sombra - \"shadowing\". Robôs de UV-C é uma tecnologia inovadora para resolver este problema. Ao combinar a tecnologia de desinfecção UV-C com um robô autónomo, torna-se uma solução eficiente e que reduz significativamente a probabilidade de \"shadowing\"."
+          ]
+        },
+        {
+          "title": "Como funcionam os robôs UV-C?",
+          "paragraphs": [
+            "Os nossos robôs têm tecnologia de navegação líder de mercado, posicionamento de alta precisão, mapeamento baseado em memória, registo de rotas de pessoal do staff, movimento autónomo, prevenção inteligente de obstáculos e operação estável de longo prazo num ambiente hospitalar de forma responsável. Os nossos robôs serão capazes de funcionar de forma totalmente autónoma e percorrerão corredores e salas, desinfetando áreas configuradas para tal. A luz UV-C é prejudicial aos seres humanos, o benefício da nossa tecnologia de robôs é que ela não precisa ser movida manualmente e funciona de forma autónoma ou a partir de um tablet. Assim que detecta um humano a 3 metros de distância, o nosso robô interrompe a radiação."
+          ],
+          "image": "ultrabot-2"
+        },
+        {
+          "title": "24 / 7",
+          "paragraphs": [
+            "Os hospitais modernos operam 24 horas por dia, 365 dias por ano e os processos logísticos precisam de cada vez mais serem automatizados. Isto é uma resposta às mudanças no estilo de vida e na demografia que pressionam as instalações de saúde como nunca antes. Melhorar a qualidade - e o acesso - aos cuidados de saúde, ao mesmo tempo que existe um controlo de custos à medida que as populações envelhecem e crescem, é um grande desafio para o setor da saúde. A automação da logística interna de um hospital é uma forma de redução de custos e de tempo em tarefas não relacionadas ao cuidado de utentes. Os hospitais devem ser vistos como um ecossistema onde alimentos são trazidas, onde resíduos são deitados fora, enquanto camas, instrumentos médicos e milhares de outras coisas são movidos constantemente. Quanto mais automatizado, mais tempo a equipa de saúde pode passar com os pacientes."
+          ],
+          "image": "ultrabot-3"
+        }
+      ],
+      "image": "ultrabot-0",
+      "description": "A evolução tecnológica de uma indústria como a conhecemos."
+    },
+    "benefits": {
+      "title": "Benefícios",
+      "lead": "Pontos-chave sobre os benefícios da inclusão da robótica nas instalações de saúde.",
+      "sections": [
+        {
+          "title": "CUSTO",
+          "paragraphs": [
+            "Embora possa parecer contra-intuitivo gastar somas significativas de dinheiro em robótica na saúde com o objetivo de tornar a saúde universalmente mais barata, é exatamente isso o que poderia acontecer com o investimento, tanto como no setor da saúde pública quanto na privada. Serão necessários esforços para efetuar uma mudança no paradigma tecnológico hospitalar: o gasto de capital inicial com equipamentos, manutenção contínua e formação ainda precisará de ser considerado, bem como a atualização dos próprios robôs.",
+            "A mão de obra é uma parte importante nos custos de saúde. Entre os hospitais, a mão de obra é normalmente a maior soma num orçamento de um hospital e responde quase a 60% dos gastos.",
+            "As empresas de planos de saúde e ciências biológicas também empregam muitas pessoas, com diversos empregos. Alguns deles são altamente focados em trabalhos complexos e inovadores, mas muitos deles têm aspectos que são rotineiros e repetitivos. É por meio da automação que os profissionais dos serviços de saúde finalmente serão capazes de se concentrar em aspectos estritamente qualitativos. Os robôs podem assim tornar-nos menos robóticos."
+          ],
+          "image": "benefits-1"
+        },
+        {
+          "title": "HIGIENIZAÇÃO",
+          "paragraphs": [
+            "Talvez um dos aspectos mais importantes das soluções de saúde baseadas na robótica seja a incidência reduzida de infecções transmitidas entre pacientes e profissionais de saúde através de higienização robótica por método UV-C. A descontaminação para a segurança hospitalar visa proteger desde cirurgias a procedimentos mais rotineiros, como dispensar produtos farmacêuticos e desinfetar dispositivos e equipamentos médicos. Os robôs reduzem o papel dos fomites (partículas inanimados que podem levar à infecção) na disseminação de doenças, mantendo a qualidade do sistema de saúde. Esta é uma parte indispensável de um sistema de saúde moderno."
+          ],
+          "image": "benefits-2"
+        },
+        {
+          "title": "QUALIDADE DE VIDA",
+          "paragraphs": [
+            "Um benefício interessante da robótica nos serviços de saúde que é fácil de ignorar é permitir que as pessoas permaneçam nas suas próprias casas por mais tempo, automatizando tarefas essenciais de recepção e guia e diagnóstico ou mesmo sendo programadas para 'conversar' com os pacientes para aliviar a sua solidão. Esta aplicação da robótica pode reduzir a necessidade de hospitalização em muitos casos, abrindo assim a disponibilidade de camas e reduzindo os custos operacionais para hospitais e unidades de saúde."
+          ],
+          "image": "benefits-3"
+        },
+        {
+          "title": "MELHORES CUIDADOS DE SAÚDE",
+          "paragraphs": [
+            "A robótica avançada tornará os serviços de saúde melhores e de custo mais baixo. Na verdade, pode alterar drasticamente a forma como as pessoas recebem cuidados de saúde. Cuidados de saúde de baixo custo habilitados por robótica avançada terão um efeito democratizador para toda a população mundial. E ao reduzir a propagação da infecção, o que leva a ainda mais custos associados e ao liberar a equipa médica de tarefas repetitivas para se concentrar em serviços de valor para o paciente, a aplicação da robótica em hospitais pode ser o início de um sistema de saúde dramaticamente mais acessível para todos."
+          ],
+          "image": "benefits-1"
+        }
+      ],
+      "image": "benefits-0",
+      "description": "Pontos-chave sobre os benefícios da inclusão da robótica nas instalações de saúde."
+    },
+    "thecompany": {
+      "title": "A empresa",
+      "lead": "Passado, Presente, Valores e Visão.",
+      "sections": [
+        {
+          "title": "Visão",
+          "paragraphs": [
+            "A nossa visão estratégica foca-se no desenvolvimento de soluções logísticas para o setor da saúde. Num futuro próximo, os robôs farão parte integrante de todos os hospitais, realizando tarefas repetitivas e pesadas. A nossa visão a de a um o setor de saúde, onde robôs e profissionais de saúde trabalham de forma integrada, continua e eficiente com soluções integradas criadas pela nossa tecnologia."
+          ],
+          "image": "thecompany-1"
+        },
+        {
+          "title": "Valores",
+          "paragraphs": [
+            "Na Med Robots, os nossos valores são os de qualidade, capacidade e inovação. Acreditamos que a tecnologia é a chave para um mundo melhor através da melhoria contínua. Projetamos, construímos, testamos e inovamos - constantemente. Sabemos que inovação não é um destino, mas uma mentalidade. Preocupamos profundamente com tudo o que fazemos e não abrimos mão da nossa integridade no desenvolvimento de soluções seguras e eficientes."
+          ]
+        },
+        {
+          "title": "Missão",
+          "paragraphs": [
+            "Os hospitais têm necessidades logísticas complexas e densas, nossa missão é aliviar essas estruturas com soluções integradas para um sistema de saúde mais seguro, eficiente e económico. A nossa missão passa por fornecer soluções robóticas inovadoras através de pesquisa, desenvolvimento, produção, aluguer e comercialização de robôs em ambientes hospitalares."
+          ],
+          "image": "thecompany-1"
+        },
+        {
+          "title": "Objetivos",
+          "paragraphs": [
+            "O nosso objetivo é melhorar a estadia dos pacientes em ambientes hospitalar fornecendo soluções logísticas integradas de primeira linha. Com a nossa tecnologia, os hospitais podem ser mais eficientes e os profissionais de saúde podem se concentrar no mais importante: o bem-estar dos pacientes. Ao aliviar as cargas de trabalho repetitivas e difíceis em hospitais, a robótica pode tornar os humanos menos robóticos. E além de focar nos pacientes e tornar cada dia de trabalho mais fácil para os profissionais de saúde, o nosso objetivo é também oferecer uma solução menos dispendiosa para o setor da saúde."
+          ]
+        }
+      ],
+      "image": "thecompany-0",
+      "description": "Passado, Presente, Valores e Visão."
+    },
+    "healthcare-industry-1": {
+      "title": "Soluções",
+      "lead": "A crescente procura de cuidados de saúde acessíveis e eficientes.",
+      "sections": [
+        {
+          "title": "Tecnologia",
+          "paragraphs": [
+            "A robótica e a automação estão a começar a espalhar-se por vários segmentos importantes da indústria, mas talvez um dos mais fascinantes seja o da saúde. Embora máquinas avançadas capazes de realizar as cirurgias mais delicadas já tenham sido domínio da ficção científica ou simplesmente um objetivo científico, a realidade é que vivemos numa era em que os serviços de saúde estão prestes a serem transformados em algo muito interessante."
+          ],
+          "image": "healthcare-industry-1-1"
+        },
+        {
+          "title": "Uma nova era",
+          "paragraphs": [
+            "A pandemia do COVID-19 ilustrou a necessidade de integração de tecnologias digitais, como automação de processos robóticos e software de inteligência artificial, nas operações comerciais diárias e é nesse sentido que a robótica hospitalar se torna um foco oportuno.",
+            "Longe de poder entrar em competição com trabalhadores humanos, os robôs na área da saúde são uma oportunidade única para combinar as habilidades robóticas e humanos para alcançar resultados significativamente melhores para os pacientes."
+          ],
+          "image": "healthcare-industry-1-2"
+        },
+        {
+          "title": "Uma maneira melhor",
+          "paragraphs": [
+            "Por exemplo, num hospital típico de duzentas camas, o equipamento e o lixo são transportados quase 650 km por semana. Estima-se que o uso de robôs móveis automatizados reduz o custo da logística em 50-80% e reduz a distância média de 5 a 6 km que uma enfermeira percorre a cada dia. Os robôs também ajudam a reduzir lesões nas costas causados com o levantamento de pesos em funcionários do hospital e dão aos enfermeiros mais tempo para se concentrarem no cuidado do paciente.",
+            "A robótica está listada como uma das nove tecnologias com maior probabilidade de transformar os padrões financeiros e operacionais dos serviços de saúde, gerando entre US $ 350 bilhões e US $ 410 bilhões em valor anual até 2025."
+          ],
+          "image": "healthcare-industry-1-3"
+        }
+      ],
+      "image": "healthcare-industry-1-0",
+      "description": "A crescente procura de cuidados de saúde acessíveis e eficientes."
+    },
+    "recruitment": {
+      "title": "Recrutamento",
+      "lead": "Junta-te à nossa equipa.",
+      "sections": [
+        {
+          "title": "Trabalhar na Med Robots",
+          "paragraphs": [
+            "Somos uma empresa de capitais portuguesa fundada em 2020, e iniciámos atividade como representantes e distribuidores de equipamentos da Sanuvox Technologies, empresa canadiana líder global em sistemas de purificação de ar através de UV-C."
+          ],
+          "image": "copy-of-the-company-1"
+        },
+        {
+          "title": "A equipa",
+          "paragraphs": [
+            "Na Med Robots, somos uma equipa que trabalha em conjunto para alcançar os melhores resultados possíveis para melhorar a logística de saúde.",
+            "Colaborar com os colegas para o alcance de metas, criando relações win-win e resolvendo conflitos de forma construtiva é a nossa forma de trabalhar, sempre tratando as pessoas com respeito e promovendo a diversidade."
+          ]
+        }
+      ],
+      "opportunities": "OPORTUNIDADES",
+      "location": "Coimbra, Portugal",
+      "image": "copy-of-the-company-0",
+      "description": "Junta-te à nossa equipa."
+    },
+    "faq": {
+      "title": "Perguntas frequentes",
+      "description": "A Med Robots é uma empresa tecnológica que cria soluções hospitalares de robótica.",
+      "items": [
+        {
+          "question": "O que é a Med Robots?",
+          "answer": "A Med Robots é uma empresa tecnológica que cria soluções hospitalares de robótica."
+        },
+        {
+          "question": "O que é que a Med Robots faz?",
+          "answer": "A Med Robots cria robots autónomos para responder às necessidades logísticas hospitalares."
+        },
+        {
+          "question": "O que é logística hospitalar?",
+          "answer": "A logística hospitalar engloba todos os processos inerentes ao funcionamento de um hospital, como por exemplo a limpeza dos espaços, abastecimento de comida e farmacêuticos, etc."
+        },
+        {
+          "question": "Porquê robôs em hospitais?",
+          "answer": "Os robôs podem fazer tarefas repetitivas de forma autónoma, não dormem, não comem e representam uma resposta eficaz que também reduz os custos na logística hospitalar."
+        },
+        {
+          "question": "Qual a diferença entre a Med Robots e outras empresas robóticas?",
+          "answer": "A Med Robots é uma empresa robótica que se foca nas necessidades logísticas hospitalares, criando soluções integradas de raiz para o ambiente hospitalar."
+        },
+        {
+          "question": "Que tipo de robôs a Med Robots oferece?",
+          "answer": "A gama de robots da Med Robots é composta por robots de descontaminação, robôs de transporte, e robôs de boas vindas."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "POLÍTICA DE PRIVACIDADE",
+      "description": "Todos os seus dados serão tratados com a máxima confidencialidade.",
+      "paragraphs": [
+        "Todos os seus dados serão tratados com a máxima confidencialidade.",
+        "O MED ROBOTS pode solicitar informações pessoais preenchendo formulários que contenham dados pessoais. Este preenchimento é totalmente voluntário, podendo implicar na indicação de nome, endereço de email, número de telefone, entre outros.",
+        "Os dados pessoais recolhidos são processados de forma automática e têm como único objectivo prestar um melhor serviço ao utilizador.",
+        "A MED ROBOTS reserva-se o direito de transmitir aos fornecedores de bens ou serviços os dados dos seus utilizadores de forma agregada e sem revelar quaisquer dados pessoais, sempre que isso produza um claro valor acrescentado para o utilizador.",
+        "A inclusão de hiperlinks (links eletrônicos) também conhecidos como “hiperlinks” ou “links” neste site não deve ser interpretada como uma oferta da MED ROBOTS de conteúdo ou serviços existentes neste site, nem como garantia de sua qualidade ou veracidade.",
+        "Ao aceder a este site, o utilizador reconhece que a MED ROBOTS não exerce qualquer controlo sobre os conteúdos e serviços oferecidos por terceiros através dos links que possam existir neste site, pelo que a utilização das informações obtidas através deles é da inteira responsabilidade do usuário."
+      ]
+    },
+    "cookies": {
+      "title": "SOBRE COOKIES",
+      "description": "O que são cookies?",
+      "paragraphs": [
+        "O que são cookies?",
+        "Cookies são pequenos arquivos de texto que são armazenados em seu computador ou dispositivo móvel quando você visita um site.",
+        "A MED ROBOTS utiliza apenas cookies essenciais para o correto funcionamento do site. Os cookies são classificados da seguinte forma:",
+        "Cookies de sessão: Esses cookies são excluídos automaticamente quando você fecha o navegador (navegador). Cookies permanentes: Esses cookies permanecem no seu dispositivo até que expirem (em termos de minutos, dias ou anos desde a criação / atualização do cookie). Cookies de terceiros: Esses cookies são armazenados em nome de terceiros.",
+        "Os cookies podem ser gerenciados e excluídos através das configurações do seu navegador (navegador). No entanto, isso pode impedir que todas as funcionalidades do nosso site funcionem corretamente.",
+        "Tipo mais comum de cookies ::",
+        "Essencial: Esses cookies e suas respectivas funcionalidades são essenciais para o correto funcionamento dos sites. Por exemplo, cookies de autenticação.",
+        "Conforto: Esses cookies nos permitem melhorar o conforto e a usabilidade dos sites e fornecer vários recursos. Por exemplo, os cookies Comfort podem ser usados para armazenar resultados de pesquisa, idioma, tamanho do texto.",
+        "Desempenho: Esses cookies coletam informações sobre como você usa os sites. Eles nos ajudam, por exemplo, a identificar áreas específicas de nosso site. Desta forma, podemos adaptar o conteúdo dos nossos sites de forma mais específica às suas necessidades e, assim, melhorar o que temos para lhe oferecer.",
+        "Como você pode bloquear o uso de cookies?",
+        "Seu navegador permite que você gerencie cookies nas opções de configuração, podendo até mesmo bloquear todos os cookies de navegação. No entanto, o bloqueio de Cookies afetará sua experiência como usuário.",
+        "Quais entidades podem ter acesso às informações coletadas pelos Cookies?",
+        "As informações coletadas por cookies podem ser usadas nos sites da MED ROBOTS ou em seus subcontratados."
+      ]
+    },
+    "genderequality": {
+      "title": "GENDER EQUALITY",
+      "description": "Norms for implementing a strategy of non-discrimination and equality between men and women.",
+      "paragraphs": [
+        "Norms for implementing a strategy of non-discrimination and equality between men and women.",
+        "I - Global Assessment",
+        "The operation took into account national and european priorities in the field of gender equality.",
+        "Our company has numerical and qualitative indicators disaggregated from gender.",
+        "Our company has a policy of balancing jobs between men and women.",
+        "Although there is a gender disproportionality between graduates / workers in certain areas (for example, production management and control is an area predominantly chosen by the female gender while the product development area has a higher proportion of males), we intend to maintain the proportionality between men and women, that is, if it is possible to hire men and women in equal numbers.",
+        "However, this proportionality is not mandatory in the sense that it cannot be discriminatory, that is, it is necessary to find a worker with professional, socio-relational skills and with the appropriate profile for each workplace, regardless of the gender with which they were born.",
+        "II - Equality in access to employment, work and professional training",
+        "Actions were planned to strengthen gender equality consciousness in the organization, that is, an equal and non-discriminatory management of human resources was promoted.",
+        "The operation promoted equal pay between men and women.",
+        "The basic salary will be established according to the training, skills and position to be performed. Other rewards will be set based on loyalty and performance.",
+        "People are evaluated on the basis of their performance and their contribution to the company's growth, with more responsibilities and higher remuneration being awarded according to this evaluation. Salary or other remunerations will be established in accordance with general objective criteria, namely effort, dedication and work and specific objectives, namely and by way of example, increase in the number of customers, improvement in financial results, proportion of new innovations in the development of products, improvement of creative and problem solving skills, improvement of promoted social skills.",
+        "In other words, people will be selected and evaluated by other criteria, which do not include the person's gender.",
+        "Mechanisms and strategies were established to increase the proportion of under-represented gender in decision-making processes.",
+        "We intend to have jobs filled by men and women, if possible on an equal basis, and to encourage the participation in the education of children, both fathers and mothers.",
+        "Use of non-sexist and inclusive language in internal and external communication.",
+        "III - Promotion of work-life balance",
+        "Actions were planned to facilitate the reconciliation between professional and personal life.",
+        "Workers who collaborate with us will enjoy school support for their children and internal and external training.",
+        "The personal life of each person is respected and efforts are made to reconcile work with the personal interests of employees.",
+        "Employees will be motivated to maintain a healthy balance between the work component and the personal component, so that they feel valued and committed to carrying out their responsibilities.",
+        "The emotional balance of our employees, the maintenance of their physical, psychological and social well-being is fundamental for us and valued.",
+        "Harassment prevention measures were developed, namely unwanted behaviors with the aim of disturbing or embarrassing the person, affecting their dignity or creating an intimidating, hostile, degrading, humiliating or destabilising environment.",
+        "Prevention measures consist of rules of conduct and rules of civilized behavior and respect for others, maintaining the organization and professionalism necessary to carry out education and training functions for people.",
+        "In case of harassment, there must be a mediation process, resulting in an effective and immediate change in behavior. If the behavior persists, this will not be allowed.",
+        "Preventive measures are privileged over exclusion measures. However, making employees aware of the consequences of verbal or physical behavior of harassment, intimidation or hostile behavior is a preventive measure.",
+        "The Administration,"
+      ],
+      "contentLanguage": "en"
+    },
+    "mechanicalengineer": {
+      "title": "Engenheiro mecânico",
+      "description": "Procuramos um engenheiro mecânico perspicaz, orientado para os detalhes e orientado para a equipa. Você será responsável por fornecer conhecimento técnico sobre as linhas de produtos da empresa, modelagem detalhada de sistemas robóticos usando Solidworks, aprimoramento de projetos / processos atuais e muito mais. Você deve ser uma pessoa prática, com as mangas arregaçadas em um ambiente acelerado.",
+      "blocks": [
+        {
+          "tag": "p",
+          "text": "Introdução"
+        },
+        {
+          "tag": "p",
+          "text": "Procuramos um engenheiro mecânico perspicaz, orientado para os detalhes e orientado para a equipa. Você será responsável por fornecer conhecimento técnico sobre as linhas de produtos da empresa, modelagem detalhada de sistemas robóticos usando Solidworks, aprimoramento de projetos / processos atuais e muito mais. Você deve ser uma pessoa prática, com as mangas arregaçadas em um ambiente acelerado."
+        },
+        {
+          "tag": "p",
+          "text": "Responsabilidades"
+        },
+        {
+          "tag": "p",
+          "text": "Suas responsabilidades serão principalmente no projeto de hardware, projeto técnico, montagem da máquina e uma variedade de outros sistemas, funções que também requerem o seguinte:"
+        },
+        {
+          "tag": "li",
+          "text": "Capacidade de projetar e implementar soluções do início ao fim."
+        },
+        {
+          "tag": "li",
+          "text": "Fornecer supervisão técnica para equipes de serviço e produção de robôs quando necessário."
+        },
+        {
+          "tag": "li",
+          "text": "Avalie soluções para um conjunto de problemas."
+        },
+        {
+          "tag": "li",
+          "text": "Auxiliar no projeto de métodos de teste e execução."
+        },
+        {
+          "tag": "li",
+          "text": "Use e mantenha várias ferramentas manuais, ferramentas de medição e outros equipamentos de teste de precisão."
+        },
+        {
+          "tag": "li",
+          "text": "Cumprir todas as normas e regulamentos de segurança e saúde associados a este cargo e conforme orientado pelo supervisor."
+        },
+        {
+          "tag": "li",
+          "text": "Auxilie a equipe conduzindo análises de problemas conforme necessário e tomando ações corretivas."
+        },
+        {
+          "tag": "li",
+          "text": "Criação / desenvolvimento de ferramentas e acessórios necessários para a montagem de robôs."
+        },
+        {
+          "tag": "li",
+          "text": "Apoie o desempenho da linha de produção e determine as etapas necessárias para alcançar a eficiência ideal da linha e a qualidade do produto."
+        },
+        {
+          "tag": "li",
+          "text": "Auxiliar os engenheiros de produção na coleta, preparação e análise de dados, desenvolvimento e manutenção de relatórios e alterações na configuração da linha."
+        },
+        {
+          "tag": "p",
+          "text": "Requisitos"
+        },
+        {
+          "tag": "li",
+          "text": "Graduação em Engenharia Mecânica, Engenharia de Produto ou Engenharia de Projeto"
+        },
+        {
+          "tag": "li",
+          "text": "3 a 5 anos de experiência em áreas semelhantes"
+        },
+        {
+          "tag": "li",
+          "text": "Experiência em Solidworks ou software de design relacionado"
+        },
+        {
+          "tag": "li",
+          "text": "Excelentes habilidades de comunicação e organização"
+        },
+        {
+          "tag": "li",
+          "text": "Noções fortes de geometria e design de produto"
+        },
+        {
+          "tag": "li",
+          "text": "Conjunto de habilidades de produção e montagem"
+        },
+        {
+          "tag": "li",
+          "text": "Base sólida para melhoria de processos com foco na precisão dos dados"
+        },
+        {
+          "tag": "p",
+          "text": "O que nós oferecemos"
+        },
+        {
+          "tag": "li",
+          "text": "Salário competitivo"
+        },
+        {
+          "tag": "li",
+          "text": "Plano de saúde"
+        },
+        {
+          "tag": "li",
+          "text": "Horário livre flexível - trabalhe e divirta-se!"
+        },
+        {
+          "tag": "p",
+          "text": "Todos os candidatos qualificados receberão consideração para emprego, independentemente de raça, cor, religião, sexo ou nacionalidade."
+        },
+        {
+          "tag": "p",
+          "text": "Local"
+        },
+        {
+          "tag": "p",
+          "text": "Coimbra, Portugal"
+        },
+        {
+          "tag": "p",
+          "text": "Modelo"
+        },
+        {
+          "tag": "p",
+          "text": "Presencial"
+        },
+        {
+          "tag": "p",
+          "text": "Departamento Desenvolvimento de produto"
+        },
+        {
+          "tag": "p",
+          "text": "Experiência"
+        },
+        {
+          "tag": "p",
+          "text": "3 a 5 anos"
+        },
+        {
+          "tag": "p",
+          "text": "Horas"
+        },
+        {
+          "tag": "p",
+          "text": "Tempo total"
+        }
+      ],
+      "links": []
+    },
+    "roboticssoftwareengineer": {
+      "title": "Engenheiro de software de robótica",
+      "description": "Procuramos um engenheiro de software excepcionalmente avançado com foco em robótica. Você será responsável pelo desenvolvimento de soluções para aplicativos robóticos. Começando com uma estrutura teórica forte, você desenvolverá algoritmos complexos, integrará código em um ambiente de software colaborativo em nível de produção e verificará a funcionalidade com nossos robôs e interfaces de usuário.",
+      "blocks": [
+        {
+          "tag": "p",
+          "text": "Introdução"
+        },
+        {
+          "tag": "p",
+          "text": "Procuramos um engenheiro de software excepcionalmente avançado com foco em robótica. Você será responsável pelo desenvolvimento de soluções para aplicativos robóticos. Começando com uma estrutura teórica forte, você desenvolverá algoritmos complexos, integrará código em um ambiente de software colaborativo em nível de produção e verificará a funcionalidade com nossos robôs e interfaces de usuário."
+        },
+        {
+          "tag": "p",
+          "text": "Responsabilidades"
+        },
+        {
+          "tag": "li",
+          "text": "Implementar algoritmos para serem executados em robôs, tanto internos ao sistema de software quanto orientados ao usuário."
+        },
+        {
+          "tag": "li",
+          "text": "Desenvolvimento de software incluindo melhoria de localização, melhoria de prevenção de obstáculos, identificação da causa de falhas de software, desenvolvimento de novas técnicas de mapeamento e navegação."
+        },
+        {
+          "tag": "li",
+          "text": "Certifique-se de que a implementação seja cuidadosamente pensada, tendo em mente a capacidade de leitura, computação, escalabilidade, capacidade de manutenção, teste e outras considerações de práticas recomendadas."
+        },
+        {
+          "tag": "li",
+          "text": "Proativo ao descobrir problemas com a configuração existente."
+        },
+        {
+          "tag": "li",
+          "text": "Habilidades de design de software para escolher a melhor solução para resolver um determinado problema."
+        },
+        {
+          "tag": "p",
+          "text": "Requisitos"
+        },
+        {
+          "tag": "li",
+          "text": "Graduação ou superior em Ciência da Computação."
+        },
+        {
+          "tag": "li",
+          "text": "Mais de 3 anos de experiência escrevendo software de nível de produção."
+        },
+        {
+          "tag": "li",
+          "text": "Conhecimento prático de programação multi-threading e orientada a objetos."
+        },
+        {
+          "tag": "li",
+          "text": "Proficiência em estruturas de dados e algoritmos, especialmente conceitos baseados em gráficos."
+        },
+        {
+          "tag": "li",
+          "text": "Excelentes habilidades de codificação em ROS, C ++, Python e Bash."
+        },
+        {
+          "tag": "li",
+          "text": "Experiência em trabalhar com sistemas Linux."
+        },
+        {
+          "tag": "li",
+          "text": "Compreensão geral de escrita de teste e código testável."
+        },
+        {
+          "tag": "li",
+          "text": "Fortes habilidades de comunicação escrita e verbal."
+        },
+        {
+          "tag": "li",
+          "text": "Experiência em desenvolvimento de software para robôs ou sistemas autônomos."
+        },
+        {
+          "tag": "li",
+          "text": "Boa compreensão dos conceitos de robótica, como fusão de sensores, localização, planejamento de caminho, FSMs etc."
+        },
+        {
+          "tag": "p",
+          "text": "O que nós oferecemos"
+        },
+        {
+          "tag": "li",
+          "text": "Salário competitivo"
+        },
+        {
+          "tag": "li",
+          "text": "Plano de saúde"
+        },
+        {
+          "tag": "li",
+          "text": "Horário livre flexível - trabalhe e divirta-se!"
+        },
+        {
+          "tag": "p",
+          "text": "Todos os candidatos qualificados receberão consideração para emprego, independentemente de raça, cor, religião, sexo ou nacionalidade."
+        },
+        {
+          "tag": "p",
+          "text": "Local"
+        },
+        {
+          "tag": "p",
+          "text": "Coimbra, Portugal"
+        },
+        {
+          "tag": "p",
+          "text": "Modelo"
+        },
+        {
+          "tag": "p",
+          "text": "Presencial"
+        },
+        {
+          "tag": "p",
+          "text": "Departamento Desenvolvimento de produto"
+        },
+        {
+          "tag": "p",
+          "text": "Experiência"
+        },
+        {
+          "tag": "p",
+          "text": "3 a 5 anos"
+        },
+        {
+          "tag": "p",
+          "text": "Horas"
+        },
+        {
+          "tag": "p",
+          "text": "Tempo total"
+        }
+      ],
+      "links": []
+    },
+    "seniorroboticsengineer": {
+      "title": "Engenheiro de Robótica Sênior",
+      "description": "Procuramos um engenheiro de robótica excepcionalmente perspicaz com uma perspectiva total do sistema para expandir a funcionalidade e robustez dos robôs Med Robots. Você será responsável pelo desenvolvimento de soluções para aplicações robóticas no mundo real. Começando com uma forte estrutura teórica, você desenvolverá algoritmos complexos, integrará código em um ambiente de software colaborativo em nível de produção, trabalhará com integração de sensores e verificará a funcionalidade com nossos robôs e interfaces de usuário.",
+      "blocks": [
+        {
+          "tag": "p",
+          "text": "Introdução"
+        },
+        {
+          "tag": "p",
+          "text": "Procuramos um engenheiro de robótica excepcionalmente perspicaz com uma perspectiva total do sistema para expandir a funcionalidade e robustez dos robôs Med Robots. Você será responsável pelo desenvolvimento de soluções para aplicações robóticas no mundo real. Começando com uma forte estrutura teórica, você desenvolverá algoritmos complexos, integrará código em um ambiente de software colaborativo em nível de produção, trabalhará com integração de sensores e verificará a funcionalidade com nossos robôs e interfaces de usuário."
+        },
+        {
+          "tag": "p",
+          "text": "Responsabilidades"
+        },
+        {
+          "tag": "li",
+          "text": "Integre e expanda recursos usando LIDAR, SONAR, codificadores de roda, IMU e visão computacional para navegação autônoma no mundo real."
+        },
+        {
+          "tag": "li",
+          "text": "Implemente algoritmos que são executados em robôs, tanto internos ao sistema de software quanto voltados para o cliente."
+        },
+        {
+          "tag": "li",
+          "text": "Melhore a localização, supere obstáculos, identifique a causa das falhas de software, desenvolva novas técnicas de mapeamento e navegação."
+        },
+        {
+          "tag": "li",
+          "text": "Integração de recursos de navegação baseados em GPS."
+        },
+        {
+          "tag": "li",
+          "text": "Certifique-se de que a implementação seja cuidadosamente pensada, tendo em mente a capacidade de leitura, computação, escalabilidade, capacidade de manutenção, teste e outras considerações de práticas recomendadas."
+        },
+        {
+          "tag": "li",
+          "text": "Proativo na descoberta de problemas com a configuração existente."
+        },
+        {
+          "tag": "li",
+          "text": "Habilidades de design para escolher a melhor solução para resolver um determinado problema."
+        },
+        {
+          "tag": "p",
+          "text": "Requisitos"
+        },
+        {
+          "tag": "li",
+          "text": "Mestre em Ciência da Robótica."
+        },
+        {
+          "tag": "li",
+          "text": "Mais de 5 anos de experiência escrevendo versões de software / hardware de nível de produção."
+        },
+        {
+          "tag": "li",
+          "text": "Proficiência em pilha de tecnologia autônoma."
+        },
+        {
+          "tag": "li",
+          "text": "Excelentes habilidades de codificação em C ++, Python e Bash."
+        },
+        {
+          "tag": "li",
+          "text": "Experiência em trabalhar com sistemas Linux."
+        },
+        {
+          "tag": "li",
+          "text": "Compreensão geral para escrever testes e código testável."
+        },
+        {
+          "tag": "li",
+          "text": "Fortes habilidades de comunicação escrita e verbal."
+        },
+        {
+          "tag": "li",
+          "text": "Experiência em desenvolvimento de software para sistemas autônomos."
+        },
+        {
+          "tag": "li",
+          "text": "Boa compreensão dos conceitos de robótica, como fusão de sensores, localização, planejamento de caminho, FSMs etc."
+        },
+        {
+          "tag": "p",
+          "text": "O que nós oferecemos"
+        },
+        {
+          "tag": "li",
+          "text": "Salário competitivo"
+        },
+        {
+          "tag": "li",
+          "text": "Plano de saúde"
+        },
+        {
+          "tag": "li",
+          "text": "Horário livre flexível - trabalhe e divirta-se!"
+        },
+        {
+          "tag": "p",
+          "text": "Todos os candidatos qualificados receberão consideração para emprego, independentemente de raça, cor, religião, sexo ou nacionalidade."
+        },
+        {
+          "tag": "p",
+          "text": "Local"
+        },
+        {
+          "tag": "p",
+          "text": "Coimbra, Portugal"
+        },
+        {
+          "tag": "p",
+          "text": "Modelo"
+        },
+        {
+          "tag": "p",
+          "text": "Presencial"
+        },
+        {
+          "tag": "p",
+          "text": "Departamento Desenvolvimento de produto"
+        },
+        {
+          "tag": "p",
+          "text": "Experiência"
+        },
+        {
+          "tag": "p",
+          "text": "5 ou mais anos"
+        },
+        {
+          "tag": "p",
+          "text": "Horas"
+        },
+        {
+          "tag": "p",
+          "text": "Tempo total"
+        }
+      ],
+      "links": []
+    },
+    "computerengineer": {
+      "title": "Engenheiro de computação",
+      "description": "Procuramos um engenheiro de computação excepcional que seja perspicaz e com uma perspectiva de sistema total para expandir a funcionalidade e robustez dos robôs Med Robots. Você será responsável pelo desenvolvimento de soluções para aplicações robóticas no mundo real. Começando com uma forte estrutura teórica, você desenvolverá algoritmos complexos, integrará código em um ambiente de software colaborativo em nível de produção e muito mais.",
+      "blocks": [
+        {
+          "tag": "p",
+          "text": "Introdução"
+        },
+        {
+          "tag": "p",
+          "text": "Procuramos um engenheiro de computação excepcional que seja perspicaz e com uma perspectiva de sistema total para expandir a funcionalidade e robustez dos robôs Med Robots. Você será responsável pelo desenvolvimento de soluções para aplicações robóticas no mundo real. Começando com uma forte estrutura teórica, você desenvolverá algoritmos complexos, integrará código em um ambiente de software colaborativo em nível de produção e muito mais."
+        },
+        {
+          "tag": "p",
+          "text": "Responsabilidades"
+        },
+        {
+          "tag": "li",
+          "text": "Desenvolver sistemas de informação projetando, desenvolvendo e instalando soluções de software."
+        },
+        {
+          "tag": "li",
+          "text": "Determinar a viabilidade operacional avaliando análises, definição de problemas, requisitos e desenvolvimento de soluções."
+        },
+        {
+          "tag": "li",
+          "text": "Desenvolver soluções de software estudando as necessidades de informação, checando com usuários potenciais e estudando o fluxo do sistema, uso de dados e processos de trabalho."
+        },
+        {
+          "tag": "li",
+          "text": "Investigue as áreas problemáticas."
+        },
+        {
+          "tag": "li",
+          "text": "Siga o ciclo de vida de desenvolvimento de software."
+        },
+        {
+          "tag": "li",
+          "text": "Operações aprimoradas conduzindo revisões do sistema e recomendando mudanças nas políticas e procedimentos."
+        },
+        {
+          "tag": "li",
+          "text": "Proteja as operações mantendo as informações confidenciais."
+        },
+        {
+          "tag": "li",
+          "text": "Fornece informações por meio de coleta e análise de dados e resumo de questões de desenvolvimento e serviço."
+        },
+        {
+          "tag": "p",
+          "text": "Requisitos"
+        },
+        {
+          "tag": "li",
+          "text": "Bacharelado e / ou Mestrado em Ciência da Computação ou Engenharia da Computação"
+        },
+        {
+          "tag": "li",
+          "text": "Mais de 2 anos de experiência profissional em desenvolvimento de software"
+        },
+        {
+          "tag": "li",
+          "text": "Conhecimento ROS"
+        },
+        {
+          "tag": "li",
+          "text": "Proficiência em Java ou C ++ e habilidades de design orientado a objetos"
+        },
+        {
+          "tag": "li",
+          "text": "Arquitetura de aplicativos e padrões de design"
+        },
+        {
+          "tag": "li",
+          "text": "Experiência atuando como líder técnico em todo o ciclo de vida de desenvolvimento de software, desde a concepção, definição da arquitetura, projeto detalhado, planejamento, implementação, teste e documentação, entrega e manutenção."
+        },
+        {
+          "tag": "li",
+          "text": "Conhecimento profissional de engenharia de software e práticas recomendadas para todo o ciclo de vida de desenvolvimento de software, incluindo padrões de codificação, revisões de código, gerenciamento de origem, processos de construção, testes e operações."
+        },
+        {
+          "tag": "li",
+          "text": "Experiência no desenvolvimento de sistemas distribuídos / escaláveis e aplicativos de transações de alto volume"
+        },
+        {
+          "tag": "p",
+          "text": "O que nós oferecemos"
+        },
+        {
+          "tag": "li",
+          "text": "Salário competitivo"
+        },
+        {
+          "tag": "li",
+          "text": "Plano de saúde"
+        },
+        {
+          "tag": "li",
+          "text": "Horário livre flexível - trabalhe e divirta-se!"
+        },
+        {
+          "tag": "p",
+          "text": "Todos os candidatos qualificados receberão consideração para emprego, independentemente de raça, cor, religião, sexo ou nacionalidade."
+        },
+        {
+          "tag": "p",
+          "text": "Local"
+        },
+        {
+          "tag": "p",
+          "text": "Coimbra, Portugal"
+        },
+        {
+          "tag": "p",
+          "text": "Modelo"
+        },
+        {
+          "tag": "p",
+          "text": "Presencial"
+        },
+        {
+          "tag": "p",
+          "text": "Departamento Desenvolvimento de produto"
+        },
+        {
+          "tag": "p",
+          "text": "Experiência"
+        },
+        {
+          "tag": "p",
+          "text": "2 ou mais anos"
+        },
+        {
+          "tag": "p",
+          "text": "Horas"
+        },
+        {
+          "tag": "p",
+          "text": "Tempo total"
+        }
+      ],
+      "links": []
+    },
+    "contacts": {
+      "title": "Contato",
+      "description": "Preencha o formulário e entraremos em contato consigo.",
+      "intro": [
+        "Preencha o formulário e entraremos em contato consigo."
+      ],
+      "success": "Obrigado por enviar!",
+      "fields": [
+        "Primeiro nome",
+        "Último nome",
+        "O email",
+        "Telefone",
+        "Endereço",
+        "Digite sua mensagem aqui"
+      ],
+      "submit": "Enviar"
+    },
+    "projeto": {
+      "title": "PharmaRobot",
+      "lead": "Robô logístico de distribuição de fármacos urgentes",
+      "description": "Robô logístico de distribuição de fármacos urgentes",
+      "paragraphs": [
+        "Referência | Código da Operação: COMPETE2030-FEDER-01478600, Operação n.º18433",
+        "Acrónimo: PharmaRobot",
+        "Apresentação",
+        "Objetivo temático: Desenvolvimento de um robô autónomo que automatiza a entrega de medicamentos, reduzindo tempos de espera e minimizando erros humanos. Alinhado com as necessidades de modernização do setor da saúde, o PharmaRobot visa integrar tecnologia avançada para otimizar os processos hospitalares e melhorar a qualidade dos cuidados prestados aos pacientes.",
+        "Área Científica: Engenharia Eletrotécnica e de Computadores e Enhegharia Informática",
+        "Síntese do Projeto: O projeto PharmaRobot tem como objetivo melhorar a eficiência hospitalar através de um robô autónomo que distribui medicamentos urgentes de forma rápida e precisa, reduzindo o tempo de espera e minimizando erros humanos. A solução proposta permitirá uma gestão mais eficaz dos recursos, libertando profissionais para tarefas críticas e garantindo maior segurança e qualidade nos cuidados de saúde.",
+        "Área de intervenção: Nacional",
+        "Investigador Responsável na UC: Urbano Nunes e João Macedo",
+        "Unidade Orgânica UC: Departamento de engenharia Eletrotécnica e de Computadores e Departamento de Engenharia Informática - FCTUC",
+        "Instituições participantes no Projeto:",
+        "- MED ROBOTS ROBOTIC TECHNOLOGY AND INNOVATION, LDA",
+        "-UNIVERSIDADE DE COIMBRA",
+        "- UNIDADE LOCAL DE SAÚDE DE COIMBRA, E.P.E",
+        "- ESCOLA SUPERIOR DE ENFERMAGEM DE COIMBRA",
+        "Instituição Financiadora/Gestora: Agência para o Desenvolvimento e Coesão",
+        "Programa de Financiamento: PT2030 - MPr-2023-07 - Aviso SIID - I&D Empresarial - Operações em Copromoção – Outros territórios",
+        "Período de execução: 01/03/2025 a 29/02/2028",
+        "Custo total elegível (EUR): 799 532,80 €",
+        "Apoio financeiro da UE: através do FEDER: 679 602,88 €",
+        "Técnico do Projeto: Sérgio Ramalho - {email}",
+        "Contacto: {mobileInternational}"
+      ],
+      "originalPt": [
+        "Objetivo",
+        "Na Med Robots temos como objetivo identificar necessidades no sector da logística hospitalar que possam ser colmatadas com produtos robóticos. Temos como missão apresentar soluções inovadoras e diferenciadoras para uma experiência hospitalar mais rápida, segura e eficaz."
+      ]
+    }
+  }
 }

@@ -1,0 +1,164 @@
+{
+  "home-0": {
+    "src": "/assets/home-0.webp",
+    "width": 1440,
+    "height": 810,
+    "alt": ""
+  },
+  "home-2": {
+    "src": "/assets/home-2.webp",
+    "width": 1440,
+    "height": 703,
+    "alt": "eebf1854-f653-426f-83f4-bd61e1ee6a5f_edi"
+  },
+  "home-3": {
+    "src": "/assets/home-3.webp",
+    "width": 1440,
+    "height": 960,
+    "alt": "pexels-thisisengineering-3862614.jpg"
+  },
+  "home-4": {
+    "src": "/assets/home-4.webp",
+    "width": 900,
+    "height": 1200,
+    "alt": "jon-tyson-ne2mqMgER8Y-unsplash.jpg"
+  },
+  "home-5": {
+    "src": "/assets/home-5.webp",
+    "width": 1440,
+    "height": 960,
+    "alt": "Engineers"
+  },
+  "ultrabot-0": {
+    "src": "/assets/ultrabot-0.webp",
+    "width": 1440,
+    "height": 810,
+    "alt": ""
+  },
+  "ultrabot-1": {
+    "src": "/assets/ultrabot-1.webp",
+    "width": 1440,
+    "height": 960,
+    "alt": "pexels-thisisengineering-3861457.jpg"
+  },
+  "ultrabot-2": {
+    "src": "/assets/ultrabot-2.webp",
+    "width": 1440,
+    "height": 703,
+    "alt": "eebf1854-f653-426f-83f4-bd61e1ee6a5f.png"
+  },
+  "ultrabot-3": {
+    "src": "/assets/ultrabot-3.webp",
+    "width": 1440,
+    "height": 958,
+    "alt": "Medical Professional"
+  },
+  "benefits-0": {
+    "src": "/assets/benefits-0.webp",
+    "width": 1440,
+    "height": 810,
+    "alt": ""
+  },
+  "benefits-1": {
+    "src": "/assets/benefits-1.webp",
+    "width": 800,
+    "height": 1200,
+    "alt": "pexels-matilda-wormwood-4099266.jpg"
+  },
+  "benefits-2": {
+    "src": "/assets/benefits-2.webp",
+    "width": 1440,
+    "height": 960,
+    "alt": "Patient Lying In Hospital Bed"
+  },
+  "benefits-3": {
+    "src": "/assets/benefits-3.webp",
+    "width": 1440,
+    "height": 942,
+    "alt": "Hospital Staff"
+  },
+  "healthcare-industry-1-0": {
+    "src": "/assets/healthcare-industry-1-0.webp",
+    "width": 1440,
+    "height": 810,
+    "alt": ""
+  },
+  "healthcare-industry-1-1": {
+    "src": "/assets/healthcare-industry-1-1.webp",
+    "width": 1440,
+    "height": 960,
+    "alt": "Paramedic"
+  },
+  "healthcare-industry-1-2": {
+    "src": "/assets/healthcare-industry-1-2.webp",
+    "width": 800,
+    "height": 1200,
+    "alt": "pexels-anna-shvets-4483323.jpg"
+  },
+  "healthcare-industry-1-3": {
+    "src": "/assets/healthcare-industry-1-3.webp",
+    "width": 1440,
+    "height": 960,
+    "alt": "Nurse And Patient"
+  },
+  "thecompany-0": {
+    "src": "/assets/thecompany-0.webp",
+    "width": 1440,
+    "height": 810,
+    "alt": ""
+  },
+  "thecompany-1": {
+    "src": "/assets/thecompany-1.webp",
+    "width": 800,
+    "height": 1200,
+    "alt": "thisisengineering-raeng-fr5h_07OrPI-unsplash.jpg"
+  },
+  "thecompany-2": {
+    "src": "/assets/thecompany-2.webp",
+    "width": 1440,
+    "height": 960,
+    "alt": "thisisengineering-raeng-LzwfKgKUyuw-unsplash.jpg"
+  },
+  "copy-of-the-company-0": {
+    "src": "/assets/copy-of-the-company-0.webp",
+    "width": 1440,
+    "height": 810,
+    "alt": ""
+  },
+  "copy-of-the-company-1": {
+    "src": "/assets/copy-of-the-company-1.webp",
+    "width": 1440,
+    "height": 960,
+    "alt": "pexels-thisisengineering-3913031.jpg"
+  },
+  "projeto-0": {
+    "src": "/assets/projeto-0.webp",
+    "width": 848,
+    "height": 1200,
+    "alt": ""
+  },
+  "contacts-0": {
+    "src": "/assets/contacts-0.webp",
+    "width": 800,
+    "height": 1200,
+    "alt": "thisisengineering-raeng-sCgQPQZAeO4-unsplash.jpg"
+  },
+  "genderequality-0": {
+    "src": "/assets/genderequality-0.webp",
+    "width": 1440,
+    "height": 268,
+    "alt": "Signatures Med Robots.png"
+  },
+  "logo": {
+    "src": "/assets/logo.webp",
+    "width": 192,
+    "height": 44,
+    "alt": "Med Robots"
+  },
+  "logo-footer": {
+    "src": "/assets/logo-footer.webp",
+    "width": 144,
+    "height": 54,
+    "alt": "Med Robots"
+  }
+}
