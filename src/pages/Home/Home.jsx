@@ -1,64 +1,66 @@
 import Hero from "../../components/Hero/Hero";
 import Section from "../../components/Section/Section";
-import Button from "../../components/Button/Button";
+import ImageSection from "../../components/ImageSection/ImageSection";
+import Content from "../../components/Content/Content";
+import Media from "../../components/Media/Media";
+import content from "../../data/content.json";
+import { text } from "../../utils/content";
 import FeatureCard from "../../components/FeatureCard/FeatureCard";
-import { ultraBotFeatures, companyContent } from "../../data/products";
+import ProductTitle from "../../components/ProductTitle/ProductTitle";
+import OrderButton from "../../components/OrderButton/OrderButton";
 import "./Home.css";
-
-function Home() {
+const data = content.home;
+export default function Home() {
   return (
     <>
       <Hero
-        kicker="We work to make the greatest technological advances to reach hospitals, where it can be most beneficial."
-        title="Robotic disinfection solutions for healthcare facilities"
-        lead="Introducing the UltraBot — the ultimate UV-C light disinfection robot engineered for healthcare environments."
-        primaryCta={{ to: "/contacts", label: "Order Now" }}
-        secondaryCta={{ to: "/ultrabot", label: "Learn more" }}
+        title={text(data.tagline)}
+        lead={text(data.intro)}
+        media="home-hero"
+        home
       />
-
       <Section id="ultrabot-preview">
-        <p className="eyebrow">Product</p>
-        <h2>UltraBot</h2>
-        <p className="section-sub">
-          Introducing the UltraBot, the ultimate UV-C light disinfection robot engineered for
-          healthcare environments.
-        </p>
-
-        <div className="home__grid-4">
-          {ultraBotFeatures.map((feature) => (
-            <FeatureCard key={feature.title} title={feature.title} description={feature.description} />
+        <ProductTitle />
+        <div className="home__product-intro">
+          <Content blocks={data.productIntro} />
+        </div>
+        <Media
+          name="ultrabot-overview"
+          alt="UltraBot"
+          className="home__product"
+        />
+        <div className="home__order">
+          <OrderButton />
+        </div>
+        <div className="home__features">
+          {["safety", "navigation", "coverage", "charging"].map((key) => (
+            <FeatureCard
+              key={key}
+              title={text(data[`${key}Title`])}
+              description={text(data[key])}
+            />
           ))}
         </div>
-
-        <Button to="/ultrabot">Order Now</Button>
       </Section>
-
-      <Section alt id="innovation">
-        <div className="home__grid-2">
-          <div>
-            <p className="eyebrow">Innovation</p>
-            <h2>Innovation</h2>
-            <p className="section-sub">
-              At Med Robots we are strongly committed to a strategy of constant innovation, where
-              the product, in addition to design and quality, seeks to respond to the trends and
-              needs of the worldwide hospital disinfection market.
-            </p>
-          </div>
-        </div>
+      <Section id="innovation" className="home__innovation">
+        <Media name="innovation-engineering" />
+        <h2>{text(data.innovationTitle)}</h2>
+        <Content blocks={data.innovation} />
       </Section>
-
-      <Section id="objective">
-        <p className="eyebrow">Objective</p>
-        <h2>What We Do</h2>
-        <p className="section-sub">
-          We aim to identify needs in the healthcare disinfection sector that can be met with
-          robotic products. Our mission is to present innovative and differentiating solutions
-          for a safer hospital environment.
-        </p>
-        <p className="section-sub">{companyContent.vision}</p>
-      </Section>
+      <ImageSection
+        id="objective"
+        title={text(data.objectiveTitle)}
+        blocks={data.objective}
+        image="hospital-objective"
+        reverse
+      />
+      <ImageSection
+        id="activity"
+        title={text(data.activityTitle)}
+        blocks={data.activity}
+        image="engineering-team"
+        wide
+      />
     </>
   );
 }
-
-export default Home;

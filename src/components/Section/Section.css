@@ -1,7 +1,8 @@
-.section {
-  padding: var(--space-2xl) 0;
-}
-
-.section--alt {
-  background: var(--color-mist);
+@layer components {
+  .section {
+    padding: var(--space-xl) 0;
+  }
+  .section--alt {
+    background: var(--color-mist);
+  }
 }

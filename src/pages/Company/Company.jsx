@@ -1,47 +1,46 @@
+import Hero from "../../components/Hero/Hero";
 import Section from "../../components/Section/Section";
-import { companyContent } from "../../data/products";
-import "./Company.css";
-
-const ENGINEERS_IMG =
-  "https://static.wixstatic.com/media/7498c2_2c41891153014669afeafac0bdab96ec~mv2.jpg";
-const TEAM_IMG =
-  "https://static.wixstatic.com/media/7498c2_f700da0ea9cf4b71a4f90f896294a0e8~mv2.jpg";
-
-function Company() {
+import ImageSection from "../../components/ImageSection/ImageSection";
+import Content from "../../components/Content/Content";
+import Media from "../../components/Media/Media";
+import content from "../../data/content.json";
+import { text } from "../../utils/content";
+const data = content.company;
+export default function Company() {
   return (
-    <Section id="company">
-      <p className="eyebrow">Who we are</p>
-      <h2>The Company</h2>
-      <p className="section-sub">The values and vision that move us forward every day.</p>
-
-      <div className="company__row">
-        <div>
-          <h3>Vision</h3>
-          <p>{companyContent.vision}</p>
+    <>
+      <Hero
+        title={text(data.title)}
+        lead={text(data.intro)}
+        media="company-hero"
+      />
+      <Section>
+        <div className="prose">
+          <h2>{text(data.visionTitle)}</h2>
+          <Content blocks={data.vision} />
         </div>
-        <div className="company__media">
-          <img src={ENGINEERS_IMG} alt="Engenheiro a trabalhar" loading="lazy" decoding="async" />
+      </Section>
+      <ImageSection
+        title={text(data.valuesTitle)}
+        blocks={data.values}
+        image="company-engineer"
+        reverse
+      />
+      <Section>
+        <div className="prose">
+          <h2>{text(data.missionTitle)}</h2>
+          <Content blocks={data.mission} />
         </div>
+      </Section>
+      <div className="container">
+        <Media name="company-team" className="full-image" />
       </div>
-
-      <div className="company__row company__row--reverse">
-        <div className="company__media">
-          <img src={TEAM_IMG} alt="Equipa de engenharia" loading="lazy" decoding="async" />
+      <Section>
+        <div className="prose">
+          <h2>{text(data.goalsTitle)}</h2>
+          <Content blocks={data.goals} />
         </div>
-        <div>
-          <h3>Values</h3>
-          <p>{companyContent.values}</p>
-          <h3>Mission</h3>
-          <p>{companyContent.mission}</p>
-        </div>
-      </div>
-
-      <div className="company__goals">
-        <h3>Goals</h3>
-        <p>{companyContent.goals}</p>
-      </div>
-    </Section>
+      </Section>
+    </>
   );
 }
-
-export default Company;
