@@ -1,25 +1,28 @@
 import { Link } from "react-router-dom";
-import { navItems, footerLinks } from "../../data/navigation";
+import { navigationPaths, footerLinks } from "../../data/navigation";
 import { contactInfo } from "../../data/products";
+import { useI18n } from "../../i18n/i18n";
 import "./Footer.css";
 
 function Footer() {
+  const { t, path } = useI18n();
+  const labels = [t.nav.home, t.nav.solutions, t.nav.projects, t.nav.company, t.nav.contact];
   return (
     <footer className="footer">
       <div className="container footer__grid">
         <div>
           <h4>MEDROBOTS</h4>
           <p className="footer__blurb">
-            Hospital robotics and autonomous logistics for the healthcare sector.
+            {t.footer.blurb}
           </p>
         </div>
 
         <div>
-          <h4>Menu</h4>
+          <h4>{t.footer.menu}</h4>
           <ul>
-            {navItems.map((item) => (
-              <li key={item.path}>
-                <Link to={item.path}>{item.label}</Link>
+            {navigationPaths.map((itemPath, index) => (
+              <li key={itemPath}>
+                <Link to={path(itemPath)}>{labels[index]}</Link>
               </li>
             ))}
           </ul>
@@ -31,7 +34,7 @@ function Footer() {
         </div>}
 
         <div>
-          <h4>Contacts</h4>
+          <h4>{t.footer.contacts}</h4>
           <ul>
             <li>Tel. {contactInfo.phone}</li>
             <li>Tlm. {contactInfo.mobile}</li>
@@ -43,8 +46,8 @@ function Footer() {
       </div>
 
       <div className="container footer__bottom">
-        <span>Copyright © 2026 All Rights reserved.</span>
-        <span>Cofinanciado por Portugal 2030</span>
+        <span>{t.footer.copyright}</span>
+        <span>{t.footer.funded}</span>
       </div>
     </footer>
   );

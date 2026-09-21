@@ -1,39 +1,44 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { navItems } from "../../data/navigation";
+import { navigationPaths } from "../../data/navigation";
+import { equivalentPath, useI18n } from "../../i18n/i18n";
 import "./Navbar.css";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { lang, t, path, pathname } = useI18n();
+  const labels = [t.nav.home, t.nav.solutions, t.nav.projects, t.nav.company, t.nav.contact];
 
   const closeMenu = () => setIsOpen(false);
 
   return (
     <header className="navbar">
       <div className="container navbar__bar">
-        <Link to="/" className="navbar__logo" onClick={closeMenu}>
+        <Link to={path("/")} className="navbar__logo" onClick={closeMenu}>
           MEDROBOTS
         </Link>
 
         <nav className={`navbar__nav ${isOpen ? "navbar__nav--open" : ""}`}>
           <ul>
-            {navItems.map((item) => (
-              <li key={item.path}>
+            {navigationPaths.map((itemPath, index) => (
+              <li key={itemPath}>
                 <NavLink
-                  to={item.path}
+                  to={path(itemPath)}
+                  end={itemPath === "/"}
                   onClick={closeMenu}
                   className={({ isActive }) => (isActive ? "active" : undefined)}
                 >
-                  {item.label}
+                  {labels[index]}
                 </NavLink>
               </li>
             ))}
+            <li><Link className="navbar__language" to={equivalentPath(pathname, lang === "pt" ? "en" : "pt")} onClick={closeMenu}>{t.nav.language}</Link></li>
           </ul>
         </nav>
 
         <button
           className="navbar__toggle"
-          aria-label={isOpen ? "Close menu" : "Open menu"}
+          aria-label={isOpen ? t.nav.close : t.nav.open}
           aria-expanded={isOpen}
           onClick={() => setIsOpen((open) => !open)}
         >

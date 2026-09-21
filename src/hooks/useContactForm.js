@@ -14,7 +14,7 @@ const INITIAL_STATE = {
  * Submission is abstracted behind `onSubmitSuccess` so a real backend
  * or email service can be wired in later without touching the UI.
  */
-export function useContactForm(onSubmitSuccess) {
+export function useContactForm(messages, onSubmitSuccess) {
   const [values, setValues] = useState(INITIAL_STATE);
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
@@ -26,10 +26,10 @@ export function useContactForm(onSubmitSuccess) {
 
   const validate = () => {
     const nextErrors = {};
-    if (!values.firstName.trim()) nextErrors.firstName = "Required";
-    if (!values.lastName.trim()) nextErrors.lastName = "Required";
+    if (!values.firstName.trim()) nextErrors.firstName = messages.required;
+    if (!values.lastName.trim()) nextErrors.lastName = messages.required;
     if (!values.email.trim() || !values.email.includes("@")) {
-      nextErrors.email = "Valid email required";
+      nextErrors.email = messages.validEmail;
     }
     setErrors(nextErrors);
     return Object.keys(nextErrors).length === 0;

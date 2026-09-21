@@ -24,6 +24,8 @@ React/Vite implementation of the Med Robots institutional website. The current p
 
 Legacy routes remain available through redirects: `/benefits`, `/projeto`, `/thecompany`, and `/contacts`.
 
+Portuguese pages use the same route structure under `/pt`, for example `/pt/solutions` and `/pt/projects/pharmarobot`. The visible language switcher preserves the equivalent current page.
+
 ## Development
 
 ```bash
@@ -41,7 +43,7 @@ npm run preview
 
 ## Current scope and notes
 
-- PT/EN internationalisation is planned but not implemented.
+- English is available on unprefixed routes and European Portuguese on equivalent `/pt` routes.
 - The contact form is frontend-only; no backend or email service is connected.
 - Some legacy imagery still references the Wix CDN and will be migrated separately.
 - Verified legal documents are not currently included; unverified legal links are not rendered.

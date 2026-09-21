@@ -2,110 +2,13 @@ import Section from "../../components/Section/Section";
 import Button from "../../components/Button/Button";
 import { useContactForm } from "../../hooks/useContactForm";
 import { contactInfo } from "../../data/products";
+import { useI18n } from "../../i18n/i18n";
 import "./Contact.css";
 
 function Contact() {
-  const { values, errors, submitted, handleChange, handleSubmit } = useContactForm();
-
-  return (
-    <Section id="contacts" alt>
-      <p className="eyebrow">Get in touch</p>
-      <h2>Contact</h2>
-      <p className="section-sub">
-        Thank you for getting in touch with us. We will get back to you as soon as possible.
-      </p>
-
-      <div className="contact__grid">
-        <form className="contact-form" onSubmit={handleSubmit} noValidate>
-          <div>
-            <label htmlFor="firstName">First Name</label>
-            <input
-              id="firstName"
-              name="firstName"
-              type="text"
-              value={values.firstName}
-              onChange={handleChange}
-              aria-invalid={Boolean(errors.firstName)}
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="lastName">Last Name</label>
-            <input
-              id="lastName"
-              name="lastName"
-              type="text"
-              value={values.lastName}
-              onChange={handleChange}
-              aria-invalid={Boolean(errors.lastName)}
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="email">Email</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              value={values.email}
-              onChange={handleChange}
-              aria-invalid={Boolean(errors.email)}
-              required
-            />
-          </div>
-          <div>
-            <label htmlFor="phone">Phone</label>
-            <input id="phone" name="phone" type="tel" value={values.phone} onChange={handleChange} />
-          </div>
-          <div className="contact-form__full">
-            <label htmlFor="address">Address</label>
-            <input id="address" name="address" type="text" value={values.address} onChange={handleChange} />
-          </div>
-          <div className="contact-form__full">
-            <label htmlFor="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Type your message here"
-              value={values.message}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="contact-form__full">
-            <Button type="submit">Submit</Button>
-            {submitted && <p className="contact-form__success">Thanks for submitting!</p>}
-          </div>
-        </form>
-
-        <div className="contact-info">
-          <div className="contact-info__item">
-            <span className="contact-info__icon" aria-hidden="true">
-              &#9742;
-            </span>
-            <span>
-              Tel. {contactInfo.phone}
-              <br />
-              Tlm. {contactInfo.mobile}
-            </span>
-          </div>
-          <div className="contact-info__item">
-            <span className="contact-info__icon" aria-hidden="true">
-              &#9993;
-            </span>
-            <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
-          </div>
-          {contactInfo.addresses.map((address) => (
-            <div className="contact-info__item" key={address}>
-              <span className="contact-info__icon" aria-hidden="true">
-                &#128205;
-              </span>
-              <span>{address}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </Section>
-  );
+  const { t } = useI18n(); const c = t.contact;
+  const { values, errors, submitted, handleChange, handleSubmit } = useContactForm(c);
+  const fields = [["firstName", "text", c.fields[0]], ["lastName", "text", c.fields[1]], ["email", "email", c.fields[2]], ["phone", "tel", c.fields[3]], ["address", "text", c.fields[4]]];
+  return <Section id="contacts" alt><p className="eyebrow">{c.eyebrow}</p><h2>{c.title}</h2><p className="section-sub">{c.intro}</p><div className="contact__grid"><form className="contact-form" onSubmit={handleSubmit} noValidate>{fields.map(([name, type, label], index) => <div className={index === 4 ? "contact-form__full" : ""} key={name}><label htmlFor={name}>{label}</label><input id={name} name={name} type={type} value={values[name]} onChange={handleChange} aria-invalid={Boolean(errors[name])} required={index < 3} />{errors[name] && <span className="contact-form__error">{errors[name]}</span>}</div>)}<div className="contact-form__full"><label htmlFor="message">{c.fields[5]}</label><textarea id="message" name="message" placeholder={c.placeholder} value={values.message} onChange={handleChange} /></div><div className="contact-form__full"><Button type="submit">{c.submit}</Button>{submitted && <p className="contact-form__success">{c.success}</p>}</div></form><div className="contact-info"><div className="contact-info__item"><span className="contact-info__icon" aria-hidden="true">&#9742;</span><span>Tel. {contactInfo.phone}<br />Tlm. {contactInfo.mobile}</span></div><div className="contact-info__item"><span className="contact-info__icon" aria-hidden="true">&#9993;</span><a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a></div>{contactInfo.addresses.map((address) => <div className="contact-info__item" key={address}><span className="contact-info__icon" aria-hidden="true">&#128205;</span><span>{address}</span></div>)}</div></div></Section>;
 }
-
 export default Contact;

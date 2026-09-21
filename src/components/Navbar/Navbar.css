@@ -51,6 +51,8 @@
   margin-top: 5px;
 }
 
+.navbar__language { border-left: 1px solid var(--color-line); padding-left: 20px; font-size: .82rem !important; text-transform: uppercase; letter-spacing: .08em; }
+
 .navbar__toggle {
   display: none;
   background: none;
@@ -83,6 +85,8 @@
     display: block;
     padding: 12px 0;
   }
+
+  .navbar__language { border-left: 0; padding-left: 0; border-top: 1px solid var(--color-line); margin-top: 6px; }
 
   .navbar__toggle {
     display: block;

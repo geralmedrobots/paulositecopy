@@ -21,6 +21,14 @@ function App() {
         <Route path="/company" element={<Company />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/pt" element={<Home />} />
+        <Route path="/pt/ultrabot" element={<UltraBot />} />
+        <Route path="/pt/solutions" element={<Benefits />} />
+        <Route path="/pt/projects" element={<Navigate to="/pt/projects/pharmarobot" replace />} />
+        <Route path="/pt/projects/pharmarobot" element={<Projects />} />
+        <Route path="/pt/company" element={<Company />} />
+        <Route path="/pt/faq" element={<FAQ />} />
+        <Route path="/pt/contact" element={<Contact />} />
         <Route path="/benefits" element={<Navigate to="/solutions" replace />} />
         <Route path="/projeto" element={<Navigate to="/projects/pharmarobot" replace />} />
         <Route path="/thecompany" element={<Navigate to="/company" replace />} />
