@@ -2,9 +2,9 @@ import Section from "../../components/Section/Section";
 import Button from "../../components/Button/Button";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import { useI18n } from "../../i18n/i18n";
+import ultraBotImage800 from "../../assets/products/ultrabot-operation-800.webp";
+import ultraBotImage1600 from "../../assets/products/ultrabot-operation-1600.webp";
 import "./UltraBot.css";
-
-const ULTRABOT_ACTION_IMG = "https://static.wixstatic.com/media/7498c2_a2bf6e5068e14567a70aa8f001b9f180~mv2.jpg";
 
 function UltraBot() {
   const { t, path } = useI18n();
@@ -22,7 +22,15 @@ function UltraBot() {
         <Button to={path("/contact")}>{copy.order}</Button>
       </Section>
       <Section alt id="ultrabot-how">
-        <ProductCard image={ULTRABOT_ACTION_IMG} alt={copy.alt} title={copy.howTitle}>
+        <ProductCard
+          image={ultraBotImage1600}
+          imageSrcSet={`${ultraBotImage800} 800w, ${ultraBotImage1600} 1600w`}
+          imageSizes="(max-width: 860px) calc(100vw - 32px), 42vw"
+          imageWidth={1600}
+          imageHeight={1068}
+          alt={copy.alt}
+          title={copy.howTitle}
+        >
           {copy.how.map((text) => <p key={text}>{text}</p>)}
           <Button to={path("/contact")}>{copy.order}</Button>
         </ProductCard>
