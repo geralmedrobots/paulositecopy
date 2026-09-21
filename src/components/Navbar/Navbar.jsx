@@ -2,12 +2,15 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { navigationPaths } from "../../data/navigation";
 import { equivalentPath, useI18n } from "../../i18n/i18n";
+import logo from "../../assets/brand/medrobots-logo.png";
 import "./Navbar.css";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { lang, t, path, pathname } = useI18n();
-  const labels = [t.nav.home, t.nav.solutions, t.nav.projects, t.nav.company, t.nav.contact];
+  const labels = lang === "pt"
+    ? ["UltraBot", "Benefícios", "A Empresa", "Projeto", "Contactos"]
+    : ["UltraBot", "Benefits", "The Company", "Project", "Contacts"];
 
   const closeMenu = () => setIsOpen(false);
 
@@ -15,7 +18,7 @@ function Navbar() {
     <header className="navbar">
       <div className="container navbar__bar">
         <Link to={path("/")} className="navbar__logo" onClick={closeMenu}>
-          MEDROBOTS
+          <img src={logo} width="192" height="44" alt="Med Robots" />
         </Link>
 
         <nav id="main-navigation" aria-label={t.nav.navigationLabel} className={`navbar__nav ${isOpen ? "navbar__nav--open" : ""}`}>
@@ -32,9 +35,10 @@ function Navbar() {
                 </NavLink>
               </li>
             ))}
-            <li><Link className="navbar__language" to={equivalentPath(pathname, lang === "pt" ? "en" : "pt")} hrefLang={lang === "pt" ? "en" : "pt-PT"} lang={lang === "pt" ? "en" : "pt-PT"} aria-label={t.nav.languageLabel} onClick={closeMenu}>{t.nav.language}</Link></li>
           </ul>
         </nav>
+
+        <Link className="navbar__language" to={equivalentPath(pathname, lang === "pt" ? "en" : "pt")} hrefLang={lang === "pt" ? "en" : "pt-PT"} lang={lang === "pt" ? "en" : "pt-PT"} aria-label={t.nav.languageLabel} onClick={closeMenu}>{lang === "pt" ? "EN" : "PT"}</Link>
 
         <button
           className="navbar__toggle"

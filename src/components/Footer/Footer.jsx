@@ -1,20 +1,22 @@
 import { Link } from "react-router-dom";
 import { navigationPaths, footerLinks } from "../../data/navigation";
 import { contactInfo } from "../../data/products";
-import { useI18n } from "../../i18n/i18n";
+import { equivalentPath, useI18n } from "../../i18n/i18n";
+import footerLogo from "../../assets/brand/medrobots-footer-logo.png";
 import "./Footer.css";
 
 function Footer() {
-  const { t, path } = useI18n();
-  const labels = [t.nav.home, t.nav.solutions, t.nav.projects, t.nav.company, t.nav.contact];
+  const { lang, t, path, pathname } = useI18n();
+  const labels = lang === "pt"
+    ? ["UltraBot", "Benefícios", "A Empresa", "Projeto", "Contactos"]
+    : ["UltraBot", "Benefits", "The Company", "Project", "Contacts"];
   return (
     <footer className="footer">
       <div className="container footer__grid">
-        <div>
-          <h4>MEDROBOTS</h4>
-          <p className="footer__blurb">
-            {t.footer.blurb}
-          </p>
+        <div className="footer__brand">
+          <img src={footerLogo} width="144" height="54" alt="Med Robots" loading="lazy" decoding="async" />
+          <Link className="footer__faq" to={path("/faq")}>FAQ</Link>
+          <span className="footer__funding">Portugal 2030</span>
         </div>
 
         <div>
@@ -41,13 +43,15 @@ function Footer() {
             <li>
               <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
             </li>
+            {contactInfo.addresses.map((address) => <li key={address}>{address}</li>)}
           </ul>
         </div>
       </div>
 
       <div className="container footer__bottom">
         <span>{t.footer.copyright}</span>
-        <span>{t.footer.funded}</span>
+        <span>{lang === "pt" ? "Política de Privacidade · Cookies · Igualdade de Género" : "Privacy Policy · Cookies · Gender Equality"}</span>
+        <Link to={equivalentPath(pathname, lang === "pt" ? "en" : "pt")} hrefLang={lang === "pt" ? "en" : "pt-PT"}>{lang === "pt" ? "English" : "Português"}</Link>
       </div>
     </footer>
   );

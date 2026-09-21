@@ -1,5 +1,10 @@
 @import "./variables.css";
 
+@font-face { font-family: "Poppins"; src: url("../assets/fonts/poppins-300.ttf") format("truetype"); font-style: normal; font-weight: 300; font-display: swap; }
+@font-face { font-family: "Poppins"; src: url("../assets/fonts/poppins-400.ttf") format("truetype"); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: "Poppins"; src: url("../assets/fonts/poppins-500.ttf") format("truetype"); font-style: normal; font-weight: 500; font-display: swap; }
+@font-face { font-family: "Poppins"; src: url("../assets/fonts/poppins-600.ttf") format("truetype"); font-style: normal; font-weight: 600; font-display: swap; }
+
 *,
 *::before,
 *::after {
@@ -51,8 +56,8 @@ img {
 h1,
 h2,
 h3 {
-  letter-spacing: -0.04em;
-  line-height: 1.08;
+  letter-spacing: -0.02em;
+  line-height: 1.18;
 }
 
 h2 {

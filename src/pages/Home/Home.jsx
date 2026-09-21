@@ -1,21 +1,62 @@
-import Hero from "../../components/Hero/Hero";
-import Section from "../../components/Section/Section";
-import Button from "../../components/Button/Button";
-import FeatureCard from "../../components/FeatureCard/FeatureCard";
+import { Link } from "react-router-dom";
 import { useI18n } from "../../i18n/i18n";
+import { homePageContent } from "../../data/homePage";
+import heroImage from "../../assets/home/hospital-hero.jpg";
+import medicalStrip from "../../assets/home/medical-strip.jpg";
+import ultraBotImage from "../../assets/home/ultrabot-hero.webp";
+import innovationImage from "../../assets/home/innovation.jpg";
+import objectiveImage from "../../assets/home/objective.jpg";
+import engineersImage from "../../assets/home/engineers.jpg";
 import "./Home.css";
 
 function Home() {
-  const { t, path } = useI18n();
-  const c = t.home;
-  return <>
-    <Hero className="hero--home" kicker={c.hero.eyebrow} title={c.hero.title} lead={c.hero.description} primaryCta={{ to: path("/solutions"), label: c.hero.primaryCta }} secondaryCta={{ to: path("/contact"), label: c.hero.secondaryCta }} />
-    <Section id="challenge" className="home-section home-section--challenge"><div className="section-intro"><div><p className="eyebrow">{c.challenge.eyebrow}</p><h2>{c.challenge.title}</h2></div><p className="section-sub">{c.challenge.description}</p></div><div className="logistics-stream" aria-label={c.challenge.eyebrow}>{c.logistics.map((item, index) => <div className="logistics-stream__item" key={item}><span>0{index + 1}</span>{item}<i aria-hidden="true">↗</i></div>)}</div></Section>
-    <Section id="approach" alt className="home-section"><div className="section-intro"><div><p className="eyebrow">{c.approach.eyebrow}</p><h2>{c.approach.title}</h2></div><p className="section-sub">{c.approach.description}</p></div><div className="approach-grid">{c.layers.map(([title, description], index) => <FeatureCard key={title} title={<><span className="feature-card__number">0{index + 1}</span>{title}</>} description={description} />)}</div></Section>
-    <Section id="pharmarobot" className="home-section home-section--pharma"><div className="pharma-layout"><div><p className="eyebrow">{c.pharma.eyebrow}</p><h2>PharmaRobot</h2><p className="pharma-layout__tagline">{c.pharma.title}</p><p className="section-sub">{c.pharma.description}</p><Button to={path("/projects/pharmarobot")} variant="outline">{c.pharma.action}</Button></div><div className="mission-flow" aria-label={c.pharma.title}><div className="mission-flow__line" aria-hidden="true" />{c.mission.map((step, index) => <div className="mission-flow__step" key={step}><span>0{index + 1}</span><strong>{step}</strong></div>)}</div></div></Section>
-    <Section id="infrastructure" alt className="home-section"><div className="section-intro"><div><p className="eyebrow">{c.vision.eyebrow}</p><h2>{c.vision.title}</h2></div><p className="section-sub">{c.vision.description}</p></div><div className="evolution" aria-label={c.vision.title}>{c.evolution.map((item, index) => <div className="evolution__step" key={item}><span>0{index + 1}</span><strong>{item}</strong>{index < 3 && <b aria-hidden="true">→</b>}</div>)}</div></Section>
-    <Section id="value" className="home-section home-section--value"><div className="value-layout"><div><p className="eyebrow">{c.value.eyebrow}</p><h2>{c.value.title}</h2></div><div className="value-list">{c.values.map((item) => <div key={item}><span>+</span>{item}</div>)}</div></div></Section>
-    <section className="home-cta"><div className="container"><p className="eyebrow">{c.cta.eyebrow}</p><h2>{c.cta.title}</h2><Button to={path("/contact")}>{c.cta.action}</Button></div></section>
-  </>;
+  const { lang, path } = useI18n();
+  const copy = homePageContent[lang];
+
+  return (
+    <>
+      <section className="legacy-hero" style={{ "--hero-image": `url(${heroImage})` }}>
+        <div className="legacy-hero__overlay" />
+        <div className="legacy-hero__content">
+          <h1>{copy.hero.title}</h1>
+          <p>{copy.hero.lineOne}<br />{copy.hero.lineTwo}</p>
+        </div>
+      </section>
+
+      <section className="legacy-product">
+        <div className="legacy-product__strip" style={{ "--strip-image": `url(${medicalStrip})` }} />
+        <div className="container legacy-product__intro">
+          <h2>{copy.product.title}</h2>
+          <p>{copy.product.description}</p>
+        </div>
+        <div className="container legacy-product__visual">
+          <img src={ultraBotImage} width="1958" height="856" alt={copy.product.imageAlt} decoding="async" />
+          <Link className="legacy-button" to={path("/contact")}>{copy.product.action}</Link>
+        </div>
+        <div className="container legacy-features">
+          {copy.features.map(([title, description]) => (
+            <article key={title}><h3>{title}</h3><p>{description}</p></article>
+          ))}
+        </div>
+      </section>
+
+      <section className="legacy-split">
+        <img src={innovationImage} width="1084" height="1024" alt={copy.innovation.imageAlt} loading="lazy" decoding="async" />
+        <div className="legacy-split__copy"><h2>{copy.innovation.title}</h2><p>{copy.innovation.text}</p></div>
+      </section>
+
+      <section className="legacy-editorial">
+        <div className="legacy-editorial__objective">
+          <img src={objectiveImage} width="954" height="1324" alt={copy.objective.imageAlt} loading="lazy" decoding="async" />
+          <div><h2>{copy.objective.title}</h2><p>{copy.objective.text}</p></div>
+        </div>
+        <div className="legacy-editorial__work">
+          <div><h2>{copy.whatWeDo.title}</h2><p>{copy.whatWeDo.text}</p></div>
+          <img src={engineersImage} width="1472" height="1067" alt={copy.whatWeDo.imageAlt} loading="lazy" decoding="async" />
+        </div>
+      </section>
+    </>
+  );
 }
+
 export default Home;
