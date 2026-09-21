@@ -3,6 +3,7 @@ import Button from "../../components/Button/Button";
 import { useContactForm } from "../../hooks/useContactForm";
 import { contactInfo } from "../../data/products";
 import { useI18n } from "../../i18n/i18n";
+import contactImage from "../../assets/pages/contact/software-engineer.webp";
 import "./Contact.css";
 
 const fieldDefinitions = [
@@ -19,10 +20,12 @@ function Contact() {
   const { values, errors, submitted, handleChange, handleSubmit } = useContactForm(copy);
 
   return (
-    <Section id="contacts" alt>
-      <p className="eyebrow">{copy.eyebrow}</p>
-      <h1 className="section-page-title">{copy.title}</h1>
-      <p className="section-sub">{copy.intro}</p>
+    <Section id="contacts" alt className="contact-page">
+      <div className="contact-heading">
+        <p className="eyebrow">{copy.eyebrow}</p>
+        <h1 className="section-page-title">{copy.title}</h1>
+        <p className="section-sub">{copy.intro}</p>
+      </div>
       <div className="contact__grid">
         <form className="contact-form" onSubmit={handleSubmit} noValidate>
           {fieldDefinitions.map(({ name, type, required, full }) => {
@@ -44,11 +47,12 @@ function Contact() {
             {submitted && <p className="contact-form__success" role="status" aria-live="polite">{copy.success}</p>}
           </div>
         </form>
-        <div className="contact-info">
+        <aside className="contact-info">
+          <img className="contact-info__image" src={contactImage} width="900" height="1350" alt={copy.imageAlt} loading="lazy" decoding="async" />
           <div className="contact-info__item"><span className="contact-info__icon" aria-hidden="true">&#9742;</span><span>Tel. {contactInfo.phone}<br />Tlm. {contactInfo.mobile}</span></div>
           <div className="contact-info__item"><span className="contact-info__icon" aria-hidden="true">&#9993;</span><a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a></div>
           {contactInfo.addresses.map((address) => <div className="contact-info__item" key={address}><span className="contact-info__icon" aria-hidden="true">&#128205;</span><span>{address}</span></div>)}
-        </div>
+        </aside>
       </div>
     </Section>
   );
