@@ -38,7 +38,7 @@ export const equivalentPath = (pathname, targetLang) =>
 const metadata = {
   en: {
     "/": { title: "Home | Med Robots", description: "Med Robots develops and integrates autonomous robotic solutions for hospital logistics and healthcare environments." },
-    "/solutions": { title: "Solutions | Med Robots", description: "Autonomous robotic systems, navigation, infrastructure integration and operational workflows for hospitals." },
+    "/solutions": { title: "Benefits | Med Robots", description: "Key benefits of including robotics and autonomous disinfection technology in healthcare facilities." },
     "/projects/pharmarobot": { title: "PharmaRobot | Med Robots", description: "PharmaRobot is an R&D project focused on autonomous medication logistics for hospitals." },
     "/company": { title: "Med Robots | Company", description: "Med Robots is a technology company focused on hospital robotics, autonomous logistics and systems integration." },
     "/contact": { title: "Contact | Med Robots", description: "Contact Med Robots about hospital robotics and autonomous logistics." },
@@ -47,7 +47,7 @@ const metadata = {
   },
   pt: {
     "/": { title: "Início | Med Robots", description: "A Med Robots desenvolve e integra soluções robóticas autónomas para logística hospitalar e ambientes de saúde." },
-    "/solutions": { title: "Soluções | Med Robots", description: "Sistemas robóticos autónomos, navegação, integração com infraestrutura e fluxos operacionais para hospitais." },
+    "/solutions": { title: "Benefícios | Med Robots", description: "Principais benefícios da integração de robótica e tecnologia de desinfeção autónoma em instalações de saúde." },
     "/projects/pharmarobot": { title: "PharmaRobot | Med Robots", description: "O PharmaRobot é um projeto de I&D focado na logística autónoma de medicamentos para hospitais." },
     "/company": { title: "Med Robots | Empresa", description: "A Med Robots é uma empresa tecnológica focada em robótica hospitalar, logística autónoma e integração de sistemas." },
     "/contact": { title: "Contacto | Med Robots", description: "Contacte a Med Robots sobre robótica hospitalar e logística autónoma." },

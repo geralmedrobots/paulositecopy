@@ -1,16 +1,41 @@
-import Section from "../../components/Section/Section";
-import Button from "../../components/Button/Button";
 import { useI18n } from "../../i18n/i18n";
+import { benefitsPublicContent } from "../../data/publicPageContent";
+import heroImage from "../../assets/pages/benefits/hero.jpg";
+import sanitationImage from "../../assets/pages/benefits/sanitation.jpg";
+import qualityImage from "../../assets/pages/benefits/quality-of-life.jpg";
+import staffImage from "../../assets/pages/benefits/hospital-staff.jpg";
 import "./Benefits.css";
 
 function Benefits() {
-  const { t, path } = useI18n(); const c = t.solutions;
-  return <>
-    <section className="solutions-hero"><div className="container"><p className="eyebrow">{c.hero.eyebrow}</p><h1>{c.hero.title}</h1><p>{c.hero.description}</p></div></section>
-    <Section id="system" className="solutions-section"><div className="section-intro"><div><p className="eyebrow">{c.system.eyebrow}</p><h2>{c.system.title}</h2></div><p className="section-sub">{c.system.description}</p></div><div className="system-stack">{c.layers.map(([title, text], index) => <div className="system-stack__layer" key={title}><span>0{index + 1}</span><strong>{title}</strong><p>{text}</p></div>)}</div></Section>
-    <Section id="navigation" alt className="solutions-section"><div className="section-intro"><div><p className="eyebrow">{c.navigation.eyebrow}</p><h2>{c.navigation.title}</h2></div><p className="section-sub">{c.navigation.description}</p></div><div className="stage-flow">{c.stages.map((stage, index) => <div className="stage-flow__item" key={stage}><span>0{index + 1}</span><strong>{stage}</strong>{index < c.stages.length - 1 && <b aria-hidden="true">↓</b>}</div>)}</div></Section>
-    <Section id="integration" className="solutions-section"><div className="section-intro"><div><p className="eyebrow">{c.integration.eyebrow}</p><h2>{c.integration.title}</h2></div><p className="section-sub">{c.integration.description}</p></div><div className="integration-grid">{c.areas.map(([title, status]) => <div className="integration-card" key={title}><span className="integration-card__mark" aria-hidden="true">+</span><strong>{title}</strong><small>{status}</small></div>)}</div></Section>
-    <Section id="workflows" alt className="solutions-section"><div className="section-intro"><div><p className="eyebrow">{c.workflows.eyebrow}</p><h2>{c.workflows.title}</h2></div><p className="section-sub">{c.workflows.description}</p></div><div className="workflow-domains">{c.domains.map((domain, index) => <div key={domain}><span>0{index + 1}</span>{domain}</div>)}</div><Button to={path("/projects/pharmarobot")}>{c.workflows.action}</Button></Section>
-  </>;
+  const { lang } = useI18n();
+  const copy = benefitsPublicContent[lang];
+  const [cost, sanitation, quality, better] = copy.sections;
+
+  return (
+    <>
+      <section className="public-hero benefits-hero" style={{ "--page-hero": `url(${heroImage})` }}>
+        <div className="public-hero__shade" />
+        <div className="public-hero__copy"><h1>{copy.hero[0]}</h1><p>{copy.hero[1]}</p></div>
+      </section>
+
+      <section className="benefit-copy"><div className="container benefit-copy__row"><h2>{cost[0]}</h2><p>{cost[1]}</p></div></section>
+
+      <section className="benefit-split">
+        <img src={sanitationImage} width="958" height="1554" alt={copy.alt[0]} loading="lazy" decoding="async" />
+        <div><h2>{sanitation[0]}</h2><p>{sanitation[1]}</p></div>
+      </section>
+
+      <section className="benefit-split benefit-split--reverse">
+        <div><h2>{quality[0]}</h2><p>{quality[1]}</p></div>
+        <img src={qualityImage} width="958" height="1554" alt={copy.alt[1]} loading="lazy" decoding="async" />
+      </section>
+
+      <section className="benefit-better">
+        <div className="container benefit-copy__row"><h2>{better[0]}</h2><p>{better[1]}</p></div>
+        <img src={staffImage} width="1464" height="960" alt={copy.alt[2]} loading="lazy" decoding="async" />
+      </section>
+    </>
+  );
 }
+
 export default Benefits;

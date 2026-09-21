@@ -91,6 +91,41 @@ h2 {
   margin: 0;
 }
 
+.public-hero {
+  position: relative;
+  min-height: 325px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  text-align: center;
+  background: center / cover no-repeat var(--page-hero);
+}
+
+.public-hero__shade {
+  position: absolute;
+  inset: 0;
+  background: rgba(3, 29, 44, 0.46);
+}
+
+.public-hero__copy {
+  position: relative;
+  z-index: 1;
+  width: min(850px, calc(100% - 40px));
+}
+
+.public-hero h1 {
+  margin: 0 0 5px;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+
+.public-hero p {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+
 /* Visible keyboard focus */
 a:focus-visible,
 button:focus-visible,
