@@ -25,16 +25,10 @@ function Footer() {
           </ul>
         </div>
 
-        <div>
+        {footerLinks.legal.length > 0 && <div>
           <h4>Legal</h4>
-          <ul>
-            {footerLinks.legal.map((item) => (
-              <li key={item.path}>
-                <Link to={item.path}>{item.label}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+          <ul>{footerLinks.legal.map((item) => <li key={item.path}><Link to={item.path}>{item.label}</Link></li>)}</ul>
+        </div>}
 
         <div>
           <h4>Contacts</h4>

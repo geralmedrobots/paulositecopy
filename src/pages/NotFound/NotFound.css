@@ -1,0 +1,4 @@
+.not-found { min-height: 58vh; display: grid; place-items: center; text-align: center; }
+.not-found .container { display: flex; flex-direction: column; align-items: center; }
+.not-found h1 { font-size: var(--fs-h2); margin: 0 0 16px; }
+.not-found p:not(.eyebrow) { color: var(--color-muted); margin: 0 0 28px; }

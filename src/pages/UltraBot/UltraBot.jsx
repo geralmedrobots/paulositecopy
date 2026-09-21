@@ -47,7 +47,7 @@ function UltraBot() {
           </div>
         </div>
 
-        <Button to="/contacts">Order Now</Button>
+        <Button to="/contact">Order Now</Button>
       </Section>
 
       <Section alt id="ultrabot-how">
@@ -63,7 +63,7 @@ function UltraBot() {
             humans so as soon as the UltraBot detects a human 3 meters away, it stops the
             radiation.
           </p>
-          <Button to="/contacts">Order Now</Button>
+          <Button to="/contact">Order Now</Button>
         </ProductCard>
       </Section>
 

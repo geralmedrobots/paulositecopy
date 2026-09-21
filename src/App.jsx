@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Navigate, Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home/Home";
 import UltraBot from "./pages/UltraBot/UltraBot";
@@ -7,6 +7,7 @@ import Company from "./pages/Company/Company";
 import Projects from "./pages/Projects/Projects";
 import FAQ from "./pages/FAQ/FAQ";
 import Contact from "./pages/Contact/Contact";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -14,11 +15,17 @@ function App() {
       <Route element={<MainLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/ultrabot" element={<UltraBot />} />
-        <Route path="/benefits" element={<Benefits />} />
-        <Route path="/thecompany" element={<Company />} />
-        <Route path="/projeto" element={<Projects />} />
+        <Route path="/solutions" element={<Benefits />} />
+        <Route path="/projects" element={<Navigate to="/projects/pharmarobot" replace />} />
+        <Route path="/projects/pharmarobot" element={<Projects />} />
+        <Route path="/company" element={<Company />} />
         <Route path="/faq" element={<FAQ />} />
-        <Route path="/contacts" element={<Contact />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/benefits" element={<Navigate to="/solutions" replace />} />
+        <Route path="/projeto" element={<Navigate to="/projects/pharmarobot" replace />} />
+        <Route path="/thecompany" element={<Navigate to="/company" replace />} />
+        <Route path="/contacts" element={<Navigate to="/contact" replace />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );

@@ -1,15 +1,12 @@
 export const navItems = [
   { label: "Home", path: "/" },
-  { label: "Solutions", path: "/benefits" },
-  { label: "Projects", path: "/projeto" },
-  { label: "Med Robots", path: "/thecompany" },
-  { label: "Contact", path: "/contacts" },
+  { label: "Solutions", path: "/solutions" },
+  { label: "Projects", path: "/projects" },
+  { label: "Med Robots", path: "/company" },
+  { label: "Contact", path: "/contact" },
 ];
 
 export const footerLinks = {
-  legal: [
-    { label: "Privacy Policy", path: "/privacy" },
-    { label: "About the Cookies", path: "/cookies" },
-    { label: "Gender Equality", path: "/genderequality" },
-  ],
+  // Verified legal documents are not present in this repository yet.
+  legal: [],
 };
