@@ -1,9 +1,9 @@
 export const navItems = [
-  { label: "UltraBot", path: "/ultrabot" },
-  { label: "Benefits", path: "/benefits" },
-  { label: "The Company", path: "/thecompany" },
-  { label: "Project", path: "/projeto" },
-  { label: "Contacts", path: "/contacts" },
+  { label: "Home", path: "/" },
+  { label: "Solutions", path: "/benefits" },
+  { label: "Projects", path: "/projeto" },
+  { label: "Med Robots", path: "/thecompany" },
+  { label: "Contact", path: "/contacts" },
 ];
 
 export const footerLinks = {

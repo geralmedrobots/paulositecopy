@@ -17,7 +17,7 @@
   font-weight: 800;
   font-size: 1.25rem;
   letter-spacing: -0.02em;
-  color: var(--color-navy);
+  color: var(--color-ink);
   text-decoration: none;
 }
 
@@ -41,6 +41,14 @@
 .navbar__nav a.active {
   opacity: 1;
   color: var(--color-teal-dark);
+}
+
+.navbar__nav a.active::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: var(--color-teal);
+  margin-top: 5px;
 }
 
 .navbar__toggle {

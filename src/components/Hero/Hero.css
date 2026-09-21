@@ -1,7 +1,7 @@
 .hero {
-  background: linear-gradient(160deg, var(--color-navy) 0%, var(--color-navy-2) 55%, var(--color-teal-dark) 130%);
+  background: var(--color-navy);
   color: #fff;
-  padding: 90px 0 100px;
+  padding: 120px 0 132px;
   position: relative;
   overflow: hidden;
 }
@@ -14,7 +14,7 @@
   width: 420px;
   height: 420px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(18, 167, 154, 0.35), transparent 70%);
+  background: radial-gradient(circle, rgba(199, 53, 50, 0.32), transparent 70%);
 }
 
 .hero .container {
@@ -23,7 +23,7 @@
 
 .hero__kicker {
   font-size: 0.95rem;
-  color: #9fe8de;
+  color: #f2a6a3;
   margin-bottom: 14px;
   max-width: 640px;
 }
@@ -38,7 +38,7 @@
 .hero__lead {
   font-size: 1.15rem;
   max-width: 600px;
-  color: #d8e7e6;
+  color: #d5dcdf;
   margin: 0 0 32px;
 }
 

@@ -10,8 +10,7 @@ function Footer() {
         <div>
           <h4>MEDROBOTS</h4>
           <p className="footer__blurb">
-            Robotic solutions for hospital logistics — disinfection, transport and welcome
-            robots for the healthcare sector.
+            Hospital robotics and autonomous logistics for the healthcare sector.
           </p>
         </div>
 

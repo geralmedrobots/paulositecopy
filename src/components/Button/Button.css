@@ -1,7 +1,7 @@
 .btn {
   display: inline-block;
   padding: 14px 30px;
-  border-radius: var(--radius-sm);
+  border-radius: 3px;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
@@ -14,7 +14,7 @@
 .btn--solid {
   background: var(--color-teal);
   color: #fff;
-  box-shadow: 0 8px 24px rgba(18, 167, 154, 0.35);
+  box-shadow: 0 8px 24px rgba(199, 53, 50, 0.25);
 }
 
 .btn--solid:hover {

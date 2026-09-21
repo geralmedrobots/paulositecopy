@@ -1,9 +1,9 @@
 import Button from "../Button/Button";
 import "./Hero.css";
 
-function Hero({ kicker, title, lead, primaryCta, secondaryCta }) {
+function Hero({ kicker, title, lead, primaryCta, secondaryCta, className = "" }) {
   return (
-    <section className="hero">
+    <section className={`hero ${className}`.trim()}>
       <div className="container">
         {kicker && <p className="hero__kicker">{kicker}</p>}
         <h1>{title}</h1>
