@@ -4,7 +4,7 @@ function ProductCard({ image, alt, title, children, reverse = false }) {
   return (
     <div className={`product-card ${reverse ? "product-card--reverse" : ""}`}>
       <div className="product-card__text">
-        {title && <h3>{title}</h3>}
+        {title && <h2>{title}</h2>}
         {children}
       </div>
       <div className="product-card__media">

@@ -7,7 +7,34 @@ import "./UltraBot.css";
 const ULTRABOT_ACTION_IMG = "https://static.wixstatic.com/media/7498c2_a2bf6e5068e14567a70aa8f001b9f180~mv2.jpg";
 
 function UltraBot() {
-  const { t, path } = useI18n(); const c = t.ultrabot;
-  return <><Section id="ultrabot"><p className="eyebrow">{c.eyebrow}</p><h2>UltraBot</h2><p className="section-sub">{c.subtitle}</p><div className="ultrabot__intro">{c.intro.map(([title, text]) => <div key={title}><h3>{title}</h3><p>{text}</p></div>)}</div><Button to={path("/contact")}>{c.order}</Button></Section><Section alt id="ultrabot-how"><ProductCard image={ULTRABOT_ACTION_IMG} alt={c.alt} title={c.howTitle}>{c.how.map((text) => <p key={text}>{text}</p>)}<Button to={path("/contact")}>{c.order}</Button></ProductCard></Section><Section id="ultrabot-247"><div className="ultrabot__grid-4">{c.features.map(([title, description]) => <div key={title} className="ultrabot__feature"><h3>{title}</h3><p>{description}</p></div>)}</div><div className="ultrabot__day"><h3>24 / 7</h3>{c.day.map((text) => <p key={text}>{text}</p>)}</div></Section></>;
+  const { t, path } = useI18n();
+  const copy = t.ultrabot;
+
+  return (
+    <>
+      <Section id="ultrabot">
+        <p className="eyebrow">{copy.eyebrow}</p>
+        <h1 className="section-page-title">UltraBot</h1>
+        <p className="section-sub">{copy.subtitle}</p>
+        <div className="ultrabot__intro">
+          {copy.intro.map(([title, text]) => <div key={title}><h2>{title}</h2><p>{text}</p></div>)}
+        </div>
+        <Button to={path("/contact")}>{copy.order}</Button>
+      </Section>
+      <Section alt id="ultrabot-how">
+        <ProductCard image={ULTRABOT_ACTION_IMG} alt={copy.alt} title={copy.howTitle}>
+          {copy.how.map((text) => <p key={text}>{text}</p>)}
+          <Button to={path("/contact")}>{copy.order}</Button>
+        </ProductCard>
+      </Section>
+      <Section id="ultrabot-247">
+        <div className="ultrabot__grid-4">
+          {copy.features.map(([title, description]) => <div key={title} className="ultrabot__feature"><h2>{title}</h2><p>{description}</p></div>)}
+        </div>
+        <div className="ultrabot__day"><h2>24 / 7</h2>{copy.day.map((text) => <p key={text}>{text}</p>)}</div>
+      </Section>
+    </>
+  );
 }
+
 export default UltraBot;

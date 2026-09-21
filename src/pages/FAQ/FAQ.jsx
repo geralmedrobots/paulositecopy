@@ -5,6 +5,6 @@ import "./FAQ.css";
 
 function FAQ() {
   const { t } = useI18n();
-  return <Section id="faq"><p className="eyebrow">{t.faq.eyebrow}</p><h2>FAQ</h2><div className="faq-list">{t.faq.items.map(([question, answer], index) => <FAQItem key={question} question={question} answer={answer} defaultOpen={index === 0} />)}</div></Section>;
+  return <Section id="faq"><p className="eyebrow">{t.faq.eyebrow}</p><h1 className="section-page-title">FAQ</h1><div className="faq-list">{t.faq.items.map(([question, answer], index) => <FAQItem key={question} question={question} answer={answer} defaultOpen={index === 0} />)}</div></Section>;
 }
 export default FAQ;

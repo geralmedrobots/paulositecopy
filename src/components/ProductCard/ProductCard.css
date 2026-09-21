@@ -13,7 +13,7 @@
   order: -1;
 }
 
-.product-card__text h3 {
+.product-card__text h2 {
   font-size: var(--fs-h3);
   margin-bottom: var(--space-sm);
 }

@@ -18,7 +18,7 @@ function Navbar() {
           MEDROBOTS
         </Link>
 
-        <nav className={`navbar__nav ${isOpen ? "navbar__nav--open" : ""}`}>
+        <nav id="main-navigation" aria-label={t.nav.navigationLabel} className={`navbar__nav ${isOpen ? "navbar__nav--open" : ""}`}>
           <ul>
             {navigationPaths.map((itemPath, index) => (
               <li key={itemPath}>
@@ -32,7 +32,7 @@ function Navbar() {
                 </NavLink>
               </li>
             ))}
-            <li><Link className="navbar__language" to={equivalentPath(pathname, lang === "pt" ? "en" : "pt")} onClick={closeMenu}>{t.nav.language}</Link></li>
+            <li><Link className="navbar__language" to={equivalentPath(pathname, lang === "pt" ? "en" : "pt")} hrefLang={lang === "pt" ? "en" : "pt-PT"} lang={lang === "pt" ? "en" : "pt-PT"} aria-label={t.nav.languageLabel} onClick={closeMenu}>{t.nav.language}</Link></li>
           </ul>
         </nav>
 
@@ -40,6 +40,7 @@ function Navbar() {
           className="navbar__toggle"
           aria-label={isOpen ? t.nav.close : t.nav.open}
           aria-expanded={isOpen}
+          aria-controls="main-navigation"
           onClick={() => setIsOpen((open) => !open)}
         >
           {isOpen ? "\u2715" : "\u2630"}

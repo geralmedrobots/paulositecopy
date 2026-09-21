@@ -5,7 +5,7 @@
   margin-bottom: var(--space-xl);
 }
 
-.ultrabot__intro h3 {
+.ultrabot__intro h2 {
   font-size: var(--fs-h3);
   margin-bottom: 10px;
 }
@@ -22,7 +22,7 @@
   margin-bottom: var(--space-xl);
 }
 
-.ultrabot__feature h3 {
+.ultrabot__feature h2 {
   font-size: var(--fs-h3);
   margin-bottom: 8px;
 }
@@ -36,7 +36,7 @@
   max-width: 640px;
 }
 
-.ultrabot__day h3 {
+.ultrabot__day h2 {
   font-size: 2rem;
   margin-bottom: 12px;
 }

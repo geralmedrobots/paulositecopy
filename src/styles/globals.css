@@ -61,6 +61,12 @@ h2 {
   max-width: 640px;
 }
 
+.section-page-title {
+  font-size: var(--fs-h2);
+  margin: 0 0 var(--space-sm);
+  max-width: 640px;
+}
+
 .section-sub {
   color: var(--color-muted);
   max-width: 620px;
