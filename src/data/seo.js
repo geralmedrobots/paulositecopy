@@ -7,6 +7,17 @@ const incomplete = new Set([
   "/pt/genderequality",
   "/projeto",
 ]);
+export const isIncomplete = (path) => incomplete.has(path);
+const fallbackSocialImage = "/assets/home-2.webp";
+export const socialImages = {
+  home: fallbackSocialImage,
+  ultrabot: "/assets/ultrabot-2.webp",
+  benefits: "/assets/benefits-0.webp",
+  "healthcare-industry-1": "/assets/healthcare-industry-1-0.webp",
+  thecompany: "/assets/thecompany-0.webp",
+  recruitment: "/assets/copy-of-the-company-0.webp",
+  contacts: "/assets/contacts-0.webp",
+};
 export function getSEO(url) {
   const route = resolveRoute(url);
   const data = content[route.lang][route.id];
@@ -39,7 +50,7 @@ export function getSEO(url) {
             href: site.origin + pagePath(route.id, lang),
           }))
         : [],
-    image: site.origin + "/assets/home-2.webp",
+    image: site.origin + (socialImages[route.id] || fallbackSocialImage),
   };
 }
 export function applySEO(url) {

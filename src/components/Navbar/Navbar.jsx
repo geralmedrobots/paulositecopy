@@ -1,13 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import {
-  navigation,
-  secondaryNavigation,
-  legalNavigation,
-  site,
-  ui,
-} from "../data/site.js";
-import { pagePath } from "../data/routes.js";
-import { Picture } from "./Media.jsx";
+import { navigation, secondaryNavigation, ui } from "../../data/site.js";
+import { pagePath } from "../../data/routes.js";
+import { Picture } from "../Media/Picture.jsx";
 export function Navbar({ route }) {
   const [open, setOpen] = useState(false);
   const [more, setMore] = useState(false);
@@ -121,72 +115,5 @@ export function Navbar({ route }) {
         </nav>
       </div>
     </header>
-  );
-}
-export function ContactInformation() {
-  return (
-    <address className="contact-information">
-      <a href={`tel:+351${site.phone.replaceAll(" ", "")}`}>
-        Tel. {site.phone}
-      </a>
-      <a href={`tel:+351${site.mobile.replaceAll(" ", "")}`}>
-        Tlm. {site.mobile}
-      </a>
-      <a href={`mailto:${site.email}`}>{site.email}</a>
-      {site.addresses.map((address) => (
-        <p key={address} lang="pt">
-          {address}
-        </p>
-      ))}
-    </address>
-  );
-}
-export function Footer({ lang }) {
-  return (
-    <footer className="site-footer">
-      <div className="container footer-grid">
-        <div className="footer-identity">
-          <a href={pagePath("home", lang)}>
-            <Picture name="logo-footer" />
-          </a>
-          <a className="funding" href={pagePath("projeto", lang)}>
-            <span lang="pt">cofinanciado por:</span>
-            <img
-              src="/assets/funding.svg"
-              alt="COMPETE 2030 · Portugal 2030 · Cofinanciado pela União Europeia"
-              width="438"
-              height="60"
-              loading="lazy"
-            />
-          </a>
-        </div>
-        <nav aria-label={`${ui[lang].menu} — footer`}>
-          <h2>MENU</h2>
-          {[...navigation, ...secondaryNavigation].map((item) => (
-            <a key={item.id} href={pagePath(item.id, lang)}>
-              {item[lang]}
-            </a>
-          ))}
-        </nav>
-        <div>
-          <h2>{lang === "pt" ? "CONTATOS" : "CONTACTS"}</h2>
-          <ContactInformation lang={lang} />
-        </div>
-      </div>
-      <div className="container footer-bottom">
-        <small>
-          Copyright © {new Date().getFullYear()} {ui[lang].copyright}
-        </small>
-        <nav
-          aria-label={lang === "pt" ? "Informação legal" : "Legal information"}
-        >
-          {legalNavigation.map((item) => (
-            <a href={pagePath(item.id, lang)} key={item.id}>
-              {item[lang]}
-            </a>
-          ))}
-        </nav>
-      </div>
-    </footer>
   );
 }

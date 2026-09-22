@@ -1,5 +1,8 @@
 import http from "node:http";
-import { readFile, stat } from "node:fs/promises";
+import { createReadStream } from "node:fs";
+import { pipeline } from "node:stream/promises";
+import { pathToFileURL } from "node:url";
+import { stat } from "node:fs/promises";
 import { resolve, extname, sep } from "node:path";
 import { resolveRoute } from "../src/data/routes.js";
 const root = resolve("dist");
@@ -47,7 +50,7 @@ export const server = http.createServer(async (request, response) => {
       target = resolve(root, route.lang === "pt" ? "pt/404.html" : "404.html");
     }
     if (url.pathname.endsWith("404.html")) status = 404;
-    const buffer = await readFile(target);
+    const { size } = await stat(target);
     const headers = {
       "Content-Type": types[extname(target)] || "application/octet-stream",
       "X-Content-Type-Options": "nosniff",
@@ -58,43 +61,63 @@ export const server = http.createServer(async (request, response) => {
         extname(target) === ".html" ? "no-cache" : "public, max-age=3600",
     };
     if (status === 404) headers["X-Robots-Tag"] = "noindex";
-    if (extname(target) === ".mp4" && request.headers.range) {
-      const match = /^bytes=(\d+)-(\d*)$/.exec(request.headers.range);
-      if (!match) {
-        response.writeHead(416);
-        response.end();
-        return;
-      }
-      const start = Number(match[1]),
-        end = Math.min(
-          Number(match[2] || buffer.length - 1),
-          buffer.length - 1,
-        );
-      if (start > end) {
+    const video = extname(target) === ".mp4";
+    if (video) headers["Accept-Ranges"] = "bytes";
+    let start = 0;
+    let end = size - 1;
+    // Range applies to GET; HEAD describes the full representation without IO.
+    if (video && request.method === "GET" && request.headers.range) {
+      const range = parseRange(request.headers.range, size);
+      if (!range) {
         response.writeHead(416, {
-          "Content-Range": `bytes */${buffer.length}`,
+          ...headers,
+          "Content-Range": `bytes */${size}`,
+          "Content-Length": 0,
         });
         response.end();
         return;
       }
-      response.writeHead(206, {
-        ...headers,
-        "Accept-Ranges": "bytes",
-        "Content-Range": `bytes ${start}-${end}/${buffer.length}`,
-        "Content-Length": end - start + 1,
-      });
-      response.end(
-        request.method === "HEAD" ? undefined : buffer.subarray(start, end + 1),
-      );
+      ({ start, end } = range);
+      status = 206;
+      headers["Content-Range"] = `bytes ${start}-${end}/${size}`;
+    }
+    response.writeHead(status, {
+      ...headers,
+      "Content-Length": end - start + 1,
+    });
+    if (request.method === "HEAD" || size === 0) {
+      response.end();
       return;
     }
-    response.writeHead(status, { ...headers, "Content-Length": buffer.length });
-    response.end(request.method === "HEAD" ? undefined : buffer);
+    // pipeline propagates backpressure and closes the file on client disconnect.
+    await pipeline(createReadStream(target, { start, end }), response);
   } catch {
+    if (response.headersSent || response.destroyed) {
+      response.destroy();
+      return;
+    }
     response.writeHead(400);
     response.end("Bad request");
   }
 });
-server.listen(port, "127.0.0.1", () =>
-  console.log(`Med Robots: http://127.0.0.1:${port}`),
-);
+if (
+  process.argv[1] &&
+  import.meta.url === pathToFileURL(resolve(process.argv[1])).href
+) {
+  server.listen(port, "127.0.0.1", () =>
+    console.log(`Med Robots: http://127.0.0.1:${port}`),
+  );
+}
+
+// One byte range; malformed, empty and multipart ranges use a consistent 416.
+export function parseRange(value, size) {
+  const match = /^bytes=(\d*)-(\d*)$/.exec(value);
+  if (!match || (!match[1] && !match[2]) || size === 0) return null;
+  const first = Number(match[1]);
+  const last = Number(match[2]);
+  if (!Number.isSafeInteger(first) || !Number.isSafeInteger(last)) return null;
+  const start = match[1] ? first : Math.max(0, size - last);
+  const end = match[1] && match[2] ? Math.min(last, size - 1) : size - 1;
+  if (start >= size || start > end) return null;
+  return { start, end };
+}

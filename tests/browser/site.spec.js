@@ -113,18 +113,14 @@ test("mobile navigation, focus, Escape, resizing and language equivalence", asyn
     "false",
   );
 });
-test("FAQ works with keyboard and connected accessible panels", async ({
-  page,
-}) => {
+test("FAQ shows every answer without disclosure controls", async ({ page }) => {
   await page.goto("/faq");
-  const button = page.locator(".faq-item button").first();
-  await button.focus();
-  await page.keyboard.press("Enter");
-  await expect(button).toHaveAttribute("aria-expanded", "true");
-  const id = await button.getAttribute("aria-controls");
-  await expect(page.locator("#" + id)).toBeVisible();
-  await page.keyboard.press("Space");
-  await expect(page.locator("#" + id)).toBeHidden();
+  await expect(page.locator(".faq-item")).toHaveCount(6);
+  await expect(page.locator(".faq-item button")).toHaveCount(0);
+  for (const item of await page.locator(".faq-item").all()) {
+    await expect(item.locator("h2")).toBeVisible();
+    await expect(item.locator("p")).toBeVisible();
+  }
 });
 test("form is honest, validates email and never sends without an endpoint", async ({
   page,
@@ -188,23 +184,17 @@ test("direct reload, server redirects, 404 and no-JavaScript content", async ({
   ).toBeVisible();
   await context.close();
 });
-test("reduced motion, video opt-in and local-only runtime", async ({
-  page,
-}) => {
+test("reduced motion, static hero and local-only runtime", async ({ page }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
   const external = [];
   page.on("request", (r) => {
     if (!r.url().startsWith("http://127.0.0.1:4173")) external.push(r.url());
   });
   await page.goto("/");
-  expect(await page.locator("video").evaluate((v) => v.currentSrc)).toBe("");
-  await page.getByRole("button", { name: "Play background video" }).click();
-  await expect(
-    page.getByRole("button", { name: "Pause background video" }),
-  ).toBeVisible();
-  await page.getByRole("button", { name: "Pause background video" }).click();
-  await expect(
-    page.getByRole("button", { name: "Play background video" }),
-  ).toHaveAttribute("aria-pressed", "false");
+  await expect(page.locator("video, .video-toggle")).toHaveCount(0);
+  await expect(page.locator(".hero-image")).toBeVisible();
+  await page.goto("/ultrabot");
+  await expect(page.locator("video, .video-toggle")).toHaveCount(0);
+  await expect(page.locator(".hero-image")).toBeVisible();
   expect(external).toEqual([]);
 });

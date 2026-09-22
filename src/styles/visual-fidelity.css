@@ -1,0 +1,397 @@
+/* Align the local page proportions with the public Med Robots presentation. */
+@media (min-width: 64rem) {
+  .header-inner {
+    width: min(846px, calc(100% - 3rem));
+    min-height: 137px;
+  }
+}
+.site-header {
+  position: sticky;
+  top: 0;
+  border-bottom: 0;
+}
+.main-navigation {
+  font-size: 0.95rem;
+  gap: 1.8rem;
+  white-space: nowrap;
+}
+.main-navigation a[aria-current="page"],
+.more-nav > button[data-active] {
+  box-shadow: none;
+}
+.hero-media {
+  min-height: 325px;
+  padding-block: 3.5rem;
+}
+.hero-media::after {
+  background: #12253175;
+}
+.hero-media h1 {
+  font-size: clamp(1.8rem, 2.6vw, 2.1rem);
+  line-height: 1.4;
+}
+.hero-media .lead {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.hero-content {
+  gap: 0.15rem;
+}
+.page-home > .hero-media {
+  min-height: clamp(520px, 50.5vw, 646px);
+}
+.page-home > .hero-media .hero-image {
+  object-position: center;
+}
+.page-home > .hero-media h1 {
+  font-size: clamp(1.75rem, 2.6vw, 2.15rem);
+  max-width: 980px;
+}
+.page-home > .hero-media .lead {
+  max-width: 680px;
+}
+.section-soft {
+  background: #fff;
+}
+.page-home .product-intro {
+  padding-top: 5rem;
+}
+.page-home .product-name {
+  font-size: clamp(3.2rem, 7vw, 5.3rem);
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
+}
+.page-home .product-intro .lead {
+  max-width: 680px;
+}
+.page-home .product-image {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+.capabilities {
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
+  max-width: 980px;
+  margin: 4rem auto 0;
+}
+.capability,
+.capability.safety {
+  display: block;
+  border: 0;
+  padding: 0;
+}
+.capability h2 {
+  font-size: clamp(1.5rem, 2.5vw, 1.95rem);
+  margin: 0 0 0.25rem;
+  color: #222;
+}
+.capability p {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 730px;
+}
+.section-number {
+  display: none;
+}
+.page-home .section-operation {
+  padding-block: 4rem;
+  background: var(--soft);
+}
+.page-home .section-innovation {
+  padding-block: 5rem;
+}
+.page-home .section-innovation .media-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  text-align: center;
+}
+.page-home .section-innovation .section-image {
+  width: min(542px, 100%);
+  max-height: none;
+  aspect-ratio: 542 / 512;
+}
+.page-home .section-innovation .stack {
+  align-items: center;
+  max-width: 580px;
+}
+.page-home .section-objective .section-image {
+  order: 0;
+  width: min(477px, 100%);
+  max-height: 662px;
+  aspect-ratio: 477 / 662;
+}
+.page-home .section-objective .media-grid {
+  grid-template-columns: 1fr 0.85fr;
+  gap: clamp(3rem, 7vw, 7rem);
+}
+.page-home .section-what .media-grid {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 4rem;
+  text-align: center;
+}
+.page-home .section-what .stack {
+  align-items: center;
+  max-width: 650px;
+}
+.page-home .section-what .section-image {
+  width: min(980px, 100%);
+  max-height: none;
+  aspect-ratio: 980 / 710;
+}
+.page-ultrabot .ultrabot-explanation {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: flex-start;
+  min-height: 720px;
+  padding-block: 3rem;
+}
+.page-ultrabot .ultrabot-explanation::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: #ffffffe0;
+}
+.page-ultrabot .explanation-image {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.page-ultrabot .ultrabot-explanation .two-column {
+  max-width: 725px;
+  gap: 4rem;
+}
+.page-ultrabot .ultrabot-overview {
+  padding-block: 3rem;
+}
+.page-ultrabot .ultrabot-overview .media-grid {
+  max-width: 725px;
+}
+.page-ultrabot .ruled {
+  border: 0;
+  padding-top: 0;
+}
+.page-ultrabot .ruled h2 {
+  color: #222;
+}
+.page-ultrabot #how-it-works .media-grid {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  max-width: 725px;
+}
+.page-ultrabot #how-it-works .section-image {
+  width: min(717px, 100%);
+  max-height: none;
+  aspect-ratio: 717 / 350;
+  object-fit: contain;
+}
+.page-ultrabot #how-it-works .stack {
+  max-width: 725px;
+}
+.page-ultrabot .capabilities {
+  max-width: 725px;
+}
+.site-footer {
+  padding-top: 5rem;
+}
+.footer-grid {
+  gap: clamp(2rem, 4vw, 4rem);
+}
+@media (max-width: 63.99rem) {
+  .main-navigation {
+    font-size: 0.95rem;
+    gap: 0;
+  }
+}
+@media (max-width: 47.99rem) {
+  .site-header .header-inner {
+    min-height: 80px;
+  }
+  .hero-media {
+    min-height: 320px;
+    padding-block: 3rem;
+  }
+  .page-home > .hero-media {
+    min-height: 500px;
+  }
+  .hero-media h1,
+  .page-home > .hero-media h1 {
+    font-size: clamp(1.55rem, 6vw, 2rem);
+  }
+  .page-home .product-intro {
+    padding-top: 4rem;
+  }
+  .page-home .product-name {
+    font-size: clamp(2.75rem, 11vw, 4rem);
+    letter-spacing: 0.08em;
+  }
+  .page-home .product-image {
+    margin-top: 3rem;
+  }
+  .capabilities {
+    gap: 1.6rem;
+    margin-top: 3rem;
+  }
+  .capability h2 {
+    font-size: 1.5rem;
+  }
+  .page-home .section-objective .media-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .page-home .section-what .media-grid {
+    gap: 2rem;
+  }
+  .page-home .section-innovation .section-image,
+  .page-home .section-objective .section-image,
+  .page-home .section-what .section-image {
+    width: 100%;
+  }
+  .page-ultrabot .ultrabot-explanation {
+    min-height: 0;
+    padding-block: 3rem 5rem;
+  }
+  .page-ultrabot .ultrabot-explanation .two-column {
+    gap: 2.5rem;
+  }
+  .footer-grid {
+    gap: 2rem;
+  }
+}
+
+/* The public FAQ presents all six answers in an open two-column composition. */
+.faq-heading {
+  padding-top: 1.4rem;
+  text-align: center;
+}
+.faq-heading h1 {
+  width: fit-content;
+  margin-inline: auto;
+  padding-inline: 2.5rem;
+  border-bottom: 2px solid #458099;
+  color: #000;
+  font-family: ProductHeading, Poppins, sans-serif;
+  font-size: clamp(5.5rem, 13vw, 10rem);
+  line-height: 1.08;
+  letter-spacing: 0.04em;
+}
+.faq-section {
+  padding: 4.5rem 0 8rem;
+}
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 640px;
+  gap: 3rem 3.5rem;
+  margin: auto;
+}
+.faq-item h2 {
+  color: #222;
+  font-size: 1.3rem;
+  line-height: 1.35;
+  margin-bottom: 0.4rem;
+}
+.faq-item p {
+  line-height: 1.5;
+}
+
+/* Project follows the public sequence: financing marks, title, copy, poster. */
+.page-projeto {
+  display: flex;
+  flex-direction: column;
+}
+.page-projeto > .language-notice {
+  order: 3;
+  margin-bottom: 2rem;
+}
+.project-heading {
+  padding-top: 3rem;
+  text-align: center;
+}
+.project-heading img {
+  display: block;
+  width: min(760px, 100%);
+  height: auto;
+  margin: 0 auto 3.7rem;
+}
+.project-heading h1,
+.project-heading > p {
+  color: #171717;
+  font-size: clamp(1.65rem, 2.5vw, 2rem);
+  line-height: 1.4;
+}
+.project-heading h1 {
+  margin-bottom: 0.15rem;
+}
+.project-heading > p {
+  max-width: none;
+}
+.project-copy {
+  max-width: 790px;
+  padding-top: 2.5rem;
+}
+.project-copy p {
+  max-width: none;
+  line-height: 1.4;
+}
+.project-copy > * + * {
+  margin-top: 1rem;
+}
+.project-copy h2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #222;
+  font-size: clamp(1.65rem, 2.5vw, 2rem);
+}
+.project-original {
+  margin-top: 2rem;
+}
+.project-original p {
+  margin-top: 1rem;
+}
+.project-poster {
+  display: block;
+  width: min(790px, calc(100% - 2rem));
+  margin: 4rem auto 8rem;
+}
+.project-poster img {
+  width: 100%;
+}
+@media (max-width: 47.99rem) {
+  .faq-heading {
+    padding-top: 2rem;
+  }
+  .faq-heading h1 {
+    padding-inline: 1rem;
+    font-size: clamp(4rem, 17vw, 6rem);
+  }
+  .faq-section {
+    padding: 3rem 0 5rem;
+  }
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .project-heading {
+    padding-top: 2rem;
+  }
+  .project-heading img {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  .project-copy {
+    padding-top: 2rem;
+  }
+  .project-poster {
+    margin-block: 3rem 5rem;
+  }
+}

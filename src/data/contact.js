@@ -1,3 +1,53 @@
+export const contactFields = [
+  {
+    name: "firstName",
+    type: "text",
+    autoComplete: "given-name",
+    maxLength: 100,
+    required: false,
+    fullWidth: false,
+  },
+  {
+    name: "lastName",
+    type: "text",
+    autoComplete: "family-name",
+    maxLength: 100,
+    required: false,
+    fullWidth: false,
+  },
+  {
+    name: "email",
+    type: "email",
+    autoComplete: "email",
+    maxLength: 250,
+    required: true,
+    fullWidth: false,
+  },
+  {
+    name: "phone",
+    type: "tel",
+    autoComplete: "tel",
+    maxLength: 50,
+    required: false,
+    fullWidth: false,
+  },
+  {
+    name: "address",
+    type: "text",
+    autoComplete: "street-address",
+    maxLength: 250,
+    required: false,
+    fullWidth: true,
+  },
+  {
+    name: "message",
+    type: "textarea",
+    autoComplete: "off",
+    maxLength: 5000,
+    required: false,
+    fullWidth: true,
+  },
+];
 export const emptyContact = {
   firstName: "",
   lastName: "",

@@ -106,3 +106,17 @@ A real, approved same-origin contact service and its response contract must be d
 ## 17. Remaining work for Level 2
 
 Confirm current job availability and review the existing product, UV-C, benefits, and healthcare claims with the Med Robots content owner. Approve the outstanding translations and editorial corrections in a separate content phase. No further product claims or Level 3/4 pages were added.
+
+## 18. v3.0 technical refinement (22 September 2026)
+
+The approved Level 1/2 implementation was refined without changing editorial copy or its rendered page body. Page, navigation and media modules were split by responsibility; the contact field mapping is name-based; video responses stream; and Open Graph images use suitable page assets. The navigation and language/SEO decisions are documented in [navigation-decisions.md](navigation-decisions.md) and [TECHNICAL_REFINEMENT.md](TECHNICAL_REFINEMENT.md).
+
+Verification after refinement: lint, 19 unit/server tests, build, site audit, 34 browser tests and 64 visual captures passed. The 34 prerendered `#root` bodies were byte-identical to the prior build. The original source strings are unchanged. Editorial content intentionally unchanged.
+
+## 19. Visual alignment (22 September 2026)
+
+Home, UltraBot and shared desktop/mobile proportions were adjusted after comparison with the public site. The work and remaining differences are documented in [VISUAL_ALIGNMENT.md](VISUAL_ALIGNMENT.md). All required validation commands passed after the visual changes. The byte-identical rendered-body statement in the earlier technical-refinement verification describes the structural refactor before this later presentation change; layout markup and ordering now differ intentionally. Editorial content intentionally unchanged.
+
+## 20. Visual follow-up: hero, FAQ and Project (22 September 2026)
+
+Per the latest visual review, Home and UltraBot now show static hero images with no play button or video element. FAQ answers are visible without accordions, and Project follows the source's financing marks, centered headings, copy and poster composition. The local monochrome financing graphic is the principal remaining difference from the public Project header. Existing editorial strings are unchanged. See [VISUAL_ALIGNMENT.md](VISUAL_ALIGNMENT.md) for details and validation. The video behavior described in earlier historical sections no longer applies to the rendered pages; streaming support and local files remain available but unused.

@@ -1,5 +1,10 @@
 import { useRef, useState } from "react";
-import { emptyContact, validateContact, sendContact } from "../data/contact.js";
+import {
+  contactFields,
+  emptyContact,
+  validateContact,
+  sendContact,
+} from "../data/contact.js";
 import { ui, site } from "../data/site.js";
 // Configure only after a real same-origin service has been deployed and verified.
 const endpoint = import.meta.env.VITE_CONTACT_ENDPOINT || "";
@@ -31,15 +36,6 @@ export default function ContactForm({ data, lang }) {
       busy.current = false;
     }
   }
-  const fieldTypes = ["text", "text", "email", "tel", "text", "textarea"];
-  const autoComplete = [
-    "given-name",
-    "family-name",
-    "email",
-    "tel",
-    "street-address",
-    "off",
-  ];
   return (
     <form
       ref={form}
@@ -57,63 +53,58 @@ export default function ContactForm({ data, lang }) {
         </div>
       )}
       <div className="form-grid">
-        {Object.keys(emptyContact).map((name, index) => {
-          const Tag = fieldTypes[index] === "textarea" ? "textarea" : "input";
-          return (
-            <div
-              className={`field ${index > 3 ? "field-full" : ""}`}
-              key={name}
-            >
-              <label htmlFor={name}>
-                {data.fields[index]}
-                {name === "email" && (
-                  <span>
-                    {" "}
-                    * <span className="sr-only">{t.required}</span>
-                  </span>
+        {contactFields.map(
+          ({ name, type, autoComplete, maxLength, required, fullWidth }) => {
+            const Tag = type === "textarea" ? "textarea" : "input";
+            return (
+              <div
+                className={`field ${fullWidth ? "field-full" : ""}`}
+                key={name}
+              >
+                <label htmlFor={name}>
+                  {data.fields[name]}
+                  {name === "email" && (
+                    <span>
+                      {" "}
+                      * <span className="sr-only">{t.required}</span>
+                    </span>
+                  )}
+                </label>
+                <Tag
+                  id={name}
+                  name={name}
+                  type={Tag === "input" ? type : undefined}
+                  rows={Tag === "textarea" ? 6 : undefined}
+                  autoComplete={autoComplete}
+                  required={required}
+                  maxLength={maxLength}
+                  value={values[name]}
+                  disabled={status === "loading"}
+                  aria-invalid={Boolean(errors[name])}
+                  aria-describedby={errors[name] ? `${name}-error` : undefined}
+                  onChange={(e) => {
+                    setValues({ ...values, [name]: e.target.value });
+                    if (errors[name])
+                      setErrors({ ...errors, [name]: undefined });
+                    if (status !== "loading") setStatus("idle");
+                  }}
+                  onBlur={() => {
+                    if (name === "email")
+                      setErrors({
+                        ...errors,
+                        email: validateContact(values).email,
+                      });
+                  }}
+                />
+                {errors[name] && (
+                  <p className="field-error" id={`${name}-error`}>
+                    {t[errors[name]]}
+                  </p>
                 )}
-              </label>
-              <Tag
-                id={name}
-                name={name}
-                type={Tag === "input" ? fieldTypes[index] : undefined}
-                rows={Tag === "textarea" ? 6 : undefined}
-                autoComplete={autoComplete[index]}
-                required={name === "email"}
-                maxLength={
-                  name === "message"
-                    ? 5000
-                    : index < 2
-                      ? 100
-                      : name === "phone"
-                        ? 50
-                        : 250
-                }
-                value={values[name]}
-                disabled={status === "loading"}
-                aria-invalid={Boolean(errors[name])}
-                aria-describedby={errors[name] ? `${name}-error` : undefined}
-                onChange={(e) => {
-                  setValues({ ...values, [name]: e.target.value });
-                  if (errors[name]) setErrors({ ...errors, [name]: undefined });
-                  if (status !== "loading") setStatus("idle");
-                }}
-                onBlur={() => {
-                  if (name === "email")
-                    setErrors({
-                      ...errors,
-                      email: validateContact(values).email,
-                    });
-                }}
-              />
-              {errors[name] && (
-                <p className="field-error" id={`${name}-error`}>
-                  {t[errors[name]]}
-                </p>
-              )}
-            </div>
-          );
-        })}
+              </div>
+            );
+          },
+        )}
       </div>
       <button
         className="button"

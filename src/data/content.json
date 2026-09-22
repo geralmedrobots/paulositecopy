@@ -902,14 +902,14 @@
         "We will get back to you as soon as possible."
       ],
       "success": "Thanks for submitting!",
-      "fields": [
-        "First Name",
-        "Last Name",
-        "Email",
-        "Phone",
-        "Address",
-        "Type your message here"
-      ],
+      "fields": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "phone": "Phone",
+        "address": "Address",
+        "message": "Type your message here"
+      },
       "submit": "Submit"
     },
     "projeto": {
@@ -1840,14 +1840,14 @@
         "Preencha o formulário e entraremos em contato consigo."
       ],
       "success": "Obrigado por enviar!",
-      "fields": [
-        "Primeiro nome",
-        "Último nome",
-        "O email",
-        "Telefone",
-        "Endereço",
-        "Digite sua mensagem aqui"
-      ],
+      "fields": {
+        "firstName": "Primeiro nome",
+        "lastName": "Último nome",
+        "email": "O email",
+        "phone": "Telefone",
+        "address": "Endereço",
+        "message": "Digite sua mensagem aqui"
+      },
       "submit": "Enviar"
     },
     "projeto": {
