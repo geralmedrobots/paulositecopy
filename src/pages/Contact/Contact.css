@@ -51,13 +51,16 @@
   resize: vertical;
 }
 
-.contact-form__success {
-  color: var(--color-teal-dark);
+.contact-form__feedback {
   font-weight: 600;
   margin-top: 12px;
 }
 
-.contact-form__error { display: block; color: var(--color-teal-dark); font-size: .82rem; margin-top: 4px; }
+.contact-form__feedback--success { color: var(--color-teal-dark); }
+.contact-form__feedback--error { color: #b42318; }
+.contact-form__feedback--submitting { color: var(--color-muted); }
+
+.contact-form__error { display: block; color: #b42318; font-size: .82rem; margin-top: 4px; }
 
 .contact-info {
   display: flex;
