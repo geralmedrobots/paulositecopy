@@ -1,4 +1,10 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import {
+  ContactApiError,
+  createIdempotencyKey,
+  normalizeContact,
+  submitContact,
+} from "../services/contactApi";
 
 const INITIAL_STATE = {
   firstName: "",
@@ -9,19 +15,24 @@ const INITIAL_STATE = {
   message: "",
 };
 
-/**
- * Client-side only form state + validation.
- * Submission is abstracted behind `onSubmitSuccess` so a real backend
- * or email service can be wired in later without touching the UI.
- */
-export function useContactForm(messages, onSubmitSuccess) {
+function messageFor(messages, code) {
+  return messages.errors?.[code] ?? messages.errors?.fallback ?? messages.required;
+}
+
+export function useContactForm(messages) {
   const [values, setValues] = useState(INITIAL_STATE);
   const [errors, setErrors] = useState({});
-  const [submitted, setSubmitted] = useState(false);
+  const [submission, setSubmission] = useState({ status: "idle", message: "" });
+  const inFlight = useRef(false);
+  const retry = useRef({ fingerprint: null, key: null });
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setValues((prev) => ({ ...prev, [name]: value }));
+    setValues((previous) => ({ ...previous, [name]: value }));
+    setErrors((previous) => ({ ...previous, [name]: undefined }));
+    if (submission.status !== "submitting") {
+      setSubmission({ status: "idle", message: "" });
+    }
   };
 
   const validate = () => {
@@ -31,19 +42,50 @@ export function useContactForm(messages, onSubmitSuccess) {
     if (!values.email.trim() || !values.email.includes("@")) {
       nextErrors.email = messages.validEmail;
     }
+    if (!values.message.trim()) nextErrors.message = messages.required;
     setErrors(nextErrors);
-    return Object.keys(nextErrors).length === 0;
+    return nextErrors;
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    if (!validate()) return;
+    if (inFlight.current) return;
 
-    // Placeholder for a future backend/email integration.
-    setSubmitted(true);
-    setValues(INITIAL_STATE);
-    onSubmitSuccess?.();
+    const nextErrors = validate();
+    if (Object.keys(nextErrors).length > 0) {
+      setSubmission({ status: "error", message: messageFor(messages, "validation") });
+      return;
+    }
+
+    const fingerprint = JSON.stringify(normalizeContact(values));
+    if (retry.current.fingerprint !== fingerprint) {
+      retry.current = { fingerprint, key: createIdempotencyKey() };
+    }
+
+    inFlight.current = true;
+    setSubmission({ status: "submitting", message: messages.submitting });
+
+    try {
+      await submitContact(values, { idempotencyKey: retry.current.key });
+      setValues(INITIAL_STATE);
+      setErrors({});
+      retry.current = { fingerprint: null, key: null };
+      setSubmission({ status: "success", message: messages.success });
+    } catch (error) {
+      const code = error instanceof ContactApiError ? error.code : "fallback";
+      setSubmission({ status: "error", message: messageFor(messages, code) });
+    } finally {
+      inFlight.current = false;
+    }
   };
 
-  return { values, errors, submitted, handleChange, handleSubmit };
+  return {
+    values,
+    errors,
+    status: submission.status,
+    feedback: submission.message,
+    isSubmitting: submission.status === "submitting",
+    handleChange,
+    handleSubmit,
+  };
 }
