@@ -5,7 +5,7 @@ import "./Button.css";
  * Reusable CTA button. Renders an internal <Link>, an external <a>,
  * or a native <button> depending on the props provided.
  */
-function Button({ children, to, href, variant = "solid", type = "button", onClick }) {
+function Button({ children, to, href, variant = "solid", type = "button", onClick, disabled = false, ...props }) {
   const className = `btn btn--${variant}`;
 
   if (to) {
@@ -25,7 +25,7 @@ function Button({ children, to, href, variant = "solid", type = "button", onClic
   }
 
   return (
-    <button type={type} className={className} onClick={onClick}>
+    <button type={type} className={className} onClick={onClick} disabled={disabled} {...props}>
       {children}
     </button>
   );
