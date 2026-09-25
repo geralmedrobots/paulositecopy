@@ -17,7 +17,15 @@ const fieldDefinitions = [
 function Contact() {
   const { t } = useI18n();
   const copy = t.contact;
-  const { values, errors, submitted, handleChange, handleSubmit } = useContactForm(copy);
+  const {
+    values,
+    errors,
+    status,
+    feedback,
+    isSubmitting,
+    handleChange,
+    handleSubmit,
+  } = useContactForm(copy);
 
   return (
     <Section id="contacts" alt className="contact-page">
@@ -40,11 +48,31 @@ function Contact() {
           })}
           <div className="contact-form__full">
             <label htmlFor="message">{copy.fields.message}</label>
-            <textarea id="message" name="message" placeholder={copy.placeholder} value={values.message} onChange={handleChange} />
+            <textarea
+              id="message"
+              name="message"
+              placeholder={copy.placeholder}
+              value={values.message}
+              onChange={handleChange}
+              aria-invalid={Boolean(errors.message)}
+              aria-describedby={errors.message ? "message-error" : undefined}
+              required
+            />
+            {errors.message && <span id="message-error" className="contact-form__error" role="alert">{errors.message}</span>}
           </div>
           <div className="contact-form__full">
-            <Button type="submit">{copy.submit}</Button>
-            {submitted && <p className="contact-form__success" role="status" aria-live="polite">{copy.success}</p>}
+            <Button type="submit" disabled={isSubmitting} aria-busy={isSubmitting}>
+              {isSubmitting ? copy.submitting : copy.submit}
+            </Button>
+            {feedback && (
+              <p
+                className={`contact-form__feedback contact-form__feedback--${status}`}
+                role={status === "error" ? "alert" : "status"}
+                aria-live="polite"
+              >
+                {feedback}
+              </p>
+            )}
           </div>
         </form>
         <aside className="contact-info">
